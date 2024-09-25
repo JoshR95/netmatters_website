@@ -1,0 +1,128 @@
+.header{
+    padding: 20px 0px;
+
+    // This code below is to make the header stick when scrolling, cant get to disappear when scrolling down
+    // so going to leave commented for now - 
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    // width: 100%;    
+    // background-color: #fff; // Adjust this to match your design
+    // z-index: 1000;
+
+}
+
+.header--hidden {
+    transform: translateY(-100%);
+}
+
+///////////////////////////////////////////////
+///  Top part of header
+///////////////////////////////////////////////
+
+.header-bar-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-phone-icon{
+    color: #333645;
+    background-color: white;
+    font-size: 32px;
+    // The margin left pushes the element to the right to fill the space
+    margin-left: auto;
+    // The padding right we are giving to the phone icon to push it away from the hamburger button a bit
+    padding-right: 20px;
+}
+
+// We make this relative to the hamburger lines can be positioned according to this elements position
+.hamburger-icon{
+    background-color: #333645;
+    width: 63px;
+    height: 56px;
+    position: relative; 
+}
+
+.hamburger-line{
+    width: 33px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    
+}
+
+// This moves relative to the hamburger-icons top left corners position because of absolute
+// we then move it down and left 50%, this would have it off the box, so we use transfrom: translate()
+// to move it back right and up 50% of its own width; effectivley centering it.
+.hamburger-line-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+///////////////////////////////////////////////
+///  Bottom part of header
+///////////////////////////////////////////////
+
+// i have set the search bar to flex to allow the items to bne pinned to each corner
+
+.small-screen-search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // we have to give all elements a position value so they can use a z index
+    position: relative;
+    height: 47px;
+    width: 100%;
+    margin-top: 11px;
+
+
+    span{
+        position: relative;
+        padding: 5px 0px 5px 15px;
+        color: #888888;
+        z-index: 2;
+    }
+    .icon-search{
+        position: relative;
+        padding-right: 11px;
+        font-size: 20px;
+        font-weight: 400px;
+        color: #333645;
+        z-index: 2;
+    }
+    .small-screen-search-input{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // we give this padding so it lines up with the search text
+        padding: 5px 0px 5px 15px;
+        // this index is lower than everything elses so it sits behind the 'search' and icon
+        z-index: 1;
+        border: 2px solid #cecece;
+        background-color: #e5e5e5;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+}
+
+@media (min-width: 768px){
+
+    // this hides the long search bar on 768px's and up
+    .header-phone-icon{
+        display: none;
+    }
+    
+    // this hides the long search bar on 768px's and up
+    .bottom-header{
+        display: none;
+    }
+
+}

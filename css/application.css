@@ -1,0 +1,1452 @@
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/base/_base.scss */
+html {
+  font-size: 16px;
+}
+
+/* line 5, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/base/_base.scss */
+.segment {
+  padding: 50px 0px;
+}
+
+/* line 9, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/base/_base.scss */
+.btn {
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+/* line 22, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/base/_base.scss */
+.btn .main-buttons {
+  padding: 10px 30px;
+}
+
+/* line 32, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/utilities/_mixins.scss */
+.picture .colored-picture {
+  transition: filter 0.3s ease;
+}
+
+/* line 36, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/utilities/_mixins.scss */
+.picture:hover .colored-picture {
+  filter: grayscale(100%);
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+footer {
+  background-color: #323544;
+  color: #fff;
+  position: relative;
+}
+
+/* line 8, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-menu {
+  flex: 100%;
+  margin-bottom: 30px;
+}
+
+/* line 12, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-menu h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 26px;
+}
+
+/* line 23, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-row li {
+  list-style-type: none;
+}
+
+/* line 31, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.bottom-footer {
+  display: flex;
+  width: 100%;
+  font-size: .8125rem;
+  background-color: #212330;
+}
+
+/* line 36, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.bottom-footer .bottom-footer-text {
+  padding: 5px 0px 10px 10px;
+}
+
+/* line 42, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.bottom-anchor {
+  text-decoration: none;
+  /* Removes the underline */
+  color: inherit;
+}
+
+/* line 45, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.bottom-anchor:hover {
+  text-decoration: underline;
+  /* Adds underline on hover */
+}
+
+/* line 52, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-follow-links {
+  display: flex;
+  flex: row;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+/* line 57, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-follow-links a {
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  background-color: #212330;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 67, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-ul {
+  padding: 0px;
+}
+
+/* line 70, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+.footer-ul li {
+  font-size: .8125rem;
+  line-height: 1.375rem;
+}
+
+@media (min-width: 768px) {
+  /* line 90, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+  .footer-row .footer-menu-main {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 83, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+  .footer-row {
+    flex: 25%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 83, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_footer.scss */
+  .footer-row {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .4px;
+}
+
+/* line 8, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+div {
+  display: block;
+}
+
+/* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_layouts.scss */
+  .container {
+    width: 1200px;
+  }
+}
+
+/* line 5, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_typography.scss */
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
+}
+
+/* line 10, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_typography.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 2px;
+}
+
+/* line 5, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* line 14, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 18, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.about-title {
+  font-size: 2.25rem;
+}
+
+/* line 29, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.welcome-to-netmatters {
+  background-color: #323544;
+  color: #fff;
+}
+
+/* line 34, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.welcome-to-netmatters .btn, .welcome-to-netmatters btn-primary-inverse {
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 1px solid transparent;
+}
+
+/* line 42, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.row-1 .btn {
+  background-color: #272936;
+}
+
+/* line 46, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.icon-star-full {
+  color: #ffa500;
+  margin-bottom: 25px;
+  font-size: 50px;
+}
+
+/* line 52, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.btn-google {
+  background-color: #4387f6;
+}
+
+/* line 56, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.btn-trustpilot {
+  background-color: #00b67b;
+}
+
+/* line 60, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+/* line 64, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.welcome-to-netmatters a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 68, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.welcome-to-netmatters a:hover {
+  text-decoration: underline;
+  /* Adds underline on hover */
+}
+
+/* line 75, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.row-2 .client-quote {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* line 82, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.btn {
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+/* line 95, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.btn .main-buttons {
+  padding: 10px 30px;
+}
+
+/* line 110, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.latest-news-block {
+  padding-bottom: 30px;
+}
+
+/* line 114, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.article-padding {
+  padding-top: 30px;
+}
+
+/* line 119, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.img-container {
+  position: relative;
+}
+
+/* line 124, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.latest-news-h1 {
+  color: #333645;
+  font-weight: 600;
+  margin: 0px;
+}
+
+/* line 131, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.latest-news-view-all {
+  color: #333645;
+  font-size: 1.625rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 139, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/* line 149, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.news-link {
+  color: #fff;
+  position: absolute;
+  text-decoration: none;
+  font-size: .75rem;
+  padding: 0px 10px;
+  right: 0;
+  top: 10px;
+  z-index: 1;
+}
+
+/* line 161, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.news-link-one {
+  background-color: #4183d7;
+}
+
+/* line 165, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.news-link-two {
+  background-color: #db8c0d;
+}
+
+/* line 175, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.content-section .article-1 .block h3,
+.content-section .article-2 .block h3,
+.content-section .article-3 .block h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* line 179, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.content-section .article-1 .block h3 a,
+.content-section .article-2 .block h3 a,
+.content-section .article-3 .block h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 184, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.content-section .article-1 .block p,
+.content-section .article-2 .block p,
+.content-section .article-3 .block p {
+  line-height: 1.375rem;
+  font-size: .8125rem;
+}
+
+/* line 194, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .btn-article-1 {
+  background-color: #4183d7;
+}
+
+/* line 197, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .btn-article-2 {
+  background-color: #db8c0d;
+}
+
+/* line 200, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .btn-article-3 {
+  background-color: #d64541;
+}
+
+/* line 203, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .article-1-h3 {
+  color: #4183d7;
+}
+
+/* line 206, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .article-2-h3 {
+  color: #db8c0d;
+}
+
+/* line 208, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .article-2-h3 .time-to-read {
+  color: #adaeae;
+  font-size: .85rem;
+}
+
+/* line 213, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.block .article-3-h3 {
+  color: #d64541;
+}
+
+/* line 222, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.article-1,
+.article-2,
+.article-3 {
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease;
+  text-decoration: none;
+}
+
+/* line 21, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/utilities/_mixins.scss */
+.article-1:hover,
+.article-2:hover,
+.article-3:hover {
+  top: -10px;
+  transition: top 0.5s ease;
+}
+
+/* line 236, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.bar {
+  padding-top: 50px;
+}
+
+/* line 241, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.author {
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+/* line 247, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 252, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.author-img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 256, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.author-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* line 261, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.author-details {
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+/* line 273, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.view-all {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* line 276, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.view-all a {
+  font-size: 1.625rem;
+}
+
+/* line 284, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.bottom-clients-bar {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 289, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+.bottom-bar-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 767px) {
+  /* line 303, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .responsive-image {
+    width: 100%;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  /* line 310, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .latest-news-block .latest-news-view-all {
+    display: none;
+    /* Increase specificity */
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 321, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .latest-news-block {
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  /* line 327, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .row {
+    display: flex;
+  }
+  /* line 331, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .row .article-1 {
+    width: 50%;
+    padding-left: 15px;
+    order: 1;
+  }
+  /* line 337, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .row .article-2 {
+    width: 50%;
+    padding-right: 15px;
+  }
+  /* line 343, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .row .article-3 {
+    display: none;
+  }
+  /* line 349, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_about.scss */
+  .container .view-all {
+    display: none;
+  }
+}
+
+/* line 7, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.services-section service-item {
+  padding: 30px;
+}
+
+/* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.our-services-title {
+  font-size: 43.2px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+/* line 21, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.top-services-arrow {
+  font-size: 36px;
+}
+
+/* line 26, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item-header {
+  padding-bottom: 10px;
+  margin-bottom: 11px;
+  font-size: 20.8px;
+  font-weight: 400;
+  color: #333645;
+}
+
+/* line 40, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item-text {
+  font-size: 13px;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  font-weight: 400;
+  color: #333645;
+}
+
+/* line 53, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item {
+  position: relative;
+  top: 0;
+  transition: top 0.5s ease;
+  text-decoration: none;
+}
+
+/* line 21, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/utilities/_mixins.scss */
+.service-item:hover {
+  top: -10px;
+  transition: top 0.5s ease;
+}
+
+/* line 62, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover .service-item-header,
+.service-item:hover .service-item-text {
+  color: white;
+}
+
+/* line 68, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.bespoke-software {
+  background-color: #67809f;
+}
+
+/* line 72, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.bespoke-software .icon-laptop,
+.service-item:hover.bespoke-software .bespoke-software-btn {
+  background-color: white;
+  color: #67809f;
+}
+
+/* line 78, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.it-support {
+  background-color: #4183d7;
+}
+
+/* line 80, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.it-support .icon-display,
+.service-item:hover.it-support .it-support-btn {
+  background-color: white;
+  color: #4183d7;
+}
+
+/* line 86, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.digital-marketing {
+  background-color: #2ecc71;
+}
+
+/* line 88, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.digital-marketing .icon-stats-bars2,
+.service-item:hover.digital-marketing .digital-marketing-btn {
+  background-color: white;
+  color: #2ecc71;
+}
+
+/* line 94, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.telecoms-services {
+  background-color: #d64541;
+}
+
+/* line 96, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.telecoms-services .icon-phone,
+.service-item:hover.telecoms-services .telecoms-services-btn {
+  background-color: white;
+  color: #d64541;
+}
+
+/* line 102, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.web-design {
+  background-color: #926fb1;
+}
+
+/* line 104, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.web-design .icon-embed2,
+.service-item:hover.web-design .web-design-btn {
+  background-color: white;
+  color: #926fb1;
+}
+
+/* line 110, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.cyber-security {
+  background-color: #f62459;
+}
+
+/* line 112, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.cyber-security .icon-shield,
+.service-item:hover.cyber-security .cyber-security-btn {
+  background-color: white;
+  color: #f62459;
+}
+
+/* line 118, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.developer-training {
+  background-color: #ce4125;
+}
+
+/* line 120, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item:hover.developer-training .icon-bubbles,
+.service-item:hover.developer-training .developer-training-btn {
+  background-color: white;
+  color: #d64541;
+}
+
+/* line 132, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  text-align: center;
+  gap: 10px;
+  padding: 30px;
+  margin-top: 30px;
+  border: solid #ccc 1px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+}
+
+/* line 151, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.services-container-padding {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* line 158, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 164, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.services-avatar {
+  color: #fff;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 175, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-laptop {
+  background-color: #67809f;
+}
+
+/* line 178, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-display {
+  background-color: #4183d7;
+}
+
+/* line 181, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-stats-bars2 {
+  background-color: #2ecc71;
+}
+
+/* line 184, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-phone {
+  background-color: #d64541;
+}
+
+/* line 187, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-embed2 {
+  background-color: #926fb1;
+}
+
+/* line 190, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-shield {
+  background-color: #f62459;
+}
+
+/* line 193, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.icon-bubbles {
+  background-color: #ce4125;
+}
+
+/* line 203, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.service-view-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  border: none;
+  margin-top: 30px;
+  font-size: 1.625rem;
+}
+
+/* line 214, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.our-work-examples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+/* line 226, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+}
+
+/* line 235, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.bespoke-software .btn {
+  background-color: #f7b322;
+}
+
+/* line 238, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.it-support .btn {
+  background-color: #4183d7;
+}
+
+/* line 241, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.digital-marketing .btn {
+  background-color: #2ecc71;
+}
+
+/* line 244, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.telecoms-services .btn {
+  background-color: #d64541;
+}
+
+/* line 247, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.web-design .btn {
+  background-color: #926fb1;
+}
+
+/* line 250, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.cyber-security .btn {
+  background-color: #f62459;
+}
+
+/* line 253, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+.developer-training .btn {
+  background-color: #ce4125;
+}
+
+@media (max-width: 767px) {
+  /* line 265, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .services-header .top-services-arrow {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 274, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .services-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 282, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .services-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  /* line 290, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .services-section > .main-item {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  /* line 296, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .services-section > .secondary-item {
+    flex-basis: 50%;
+  }
+  /* line 308, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_services-section.scss */
+  .service-view-work {
+    display: none;
+  }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  height: 550px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* line 15, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* line 31, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* line 42, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-title {
+  position: relative;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+/* line 47, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-title h2 {
+  font-size: 40px;
+}
+
+/* line 50, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-title p {
+  font-size: 20px;
+}
+
+/* line 53, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/_banner.scss */
+.banner-title .banner-btn {
+  background-color: #926fb1;
+  font-size: 20px;
+  padding: 20px 20px;
+  line-height: 50px;
+  border-radius: 3px;
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.header {
+  padding: 20px 0px;
+}
+
+/* line 15, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+/* line 23, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.header-bar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 28, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 35, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.header-phone-icon {
+  color: #333645;
+  background-color: white;
+  font-size: 32px;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+/* line 46, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.hamburger-icon {
+  background-color: #333645;
+  width: 63px;
+  height: 56px;
+  position: relative;
+}
+
+/* line 53, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.hamburger-line {
+  width: 33px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+/* line 64, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.hamburger-line-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 77, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.small-screen-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 47px;
+  width: 100%;
+  margin-top: 11px;
+}
+
+/* line 88, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.small-screen-search-bar span {
+  position: relative;
+  padding: 5px 0px 5px 15px;
+  color: #888888;
+  z-index: 2;
+}
+
+/* line 94, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.small-screen-search-bar .icon-search {
+  position: relative;
+  padding-right: 11px;
+  font-size: 20px;
+  font-weight: 400px;
+  color: #333645;
+  z-index: 2;
+}
+
+/* line 102, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+.small-screen-search-bar .small-screen-search-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0px 5px 15px;
+  z-index: 1;
+  border: 2px solid #cecece;
+  background-color: #e5e5e5;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+@media (min-width: 768px) {
+  /* line 119, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+  .header-phone-icon {
+    display: none;
+  }
+  /* line 124, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+  .bottom-header {
+    display: none;
+  }
+}
+
+/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_buttons.scss */
+.facebook btn-primary {
+  background-color: #212330;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-rightArrow/icomoon.eot?x44i61");
+  src: url("../img/icon-moon-rightArrow/icomoon.eot?x44i61#iefix") format("embedded-opentype"), url("../img/icon-moon-rightArrow/icomoon.ttf?x44i61") format("truetype"), url("../img/icon-moon-rightArrow/icomoon.woff?x44i61") format("woff"), url("../img/icon-moon-rightArrow/icomoon.svg?x44i61#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 16, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 31, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-star/icomoon.eot?or8dx7");
+  src: url("../img/icon-moon-star/icomoon.eot?or8dx7#iefix") format("embedded-opentype"), url("../img/icon-moon-star/icomoon.ttf?or8dx7") format("truetype"), url("../img/icon-moon-star/icomoon.woff?or8dx7") format("woff"), url("../img/icon-moon-star/icomoon.svg?or8dx7#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 51, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 66, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-laptop/icomoon.eot?yvom5q");
+  src: url("../img/icon-moon-laptop/icomoon.eot?yvom5q#iefix") format("embedded-opentype"), url("../img/icon-moon-laptop/icomoon.ttf?yvom5q") format("truetype"), url("../img/icon-moon-laptop/icomoon.woff?yvom5q") format("woff"), url("../img/icon-moon-laptop/icomoon.svg?yvom5q#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 84, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 99, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-laptop:before {
+  content: "\e957";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-display/icomoon.eot?8ggxft");
+  src: url("../img/icon-moon-display/icomoon.eot?8ggxft#iefix") format("embedded-opentype"), url("../img/icon-moon-display/icomoon.ttf?8ggxft") format("truetype"), url("../img/icon-moon-display/icomoon.woff?8ggxft") format("woff"), url("../img/icon-moon-display/icomoon.svg?8ggxft#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 118, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 133, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-display:before {
+  content: "\e956";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-phone/icomoon.eot?5wbhyb");
+  src: url("../img/icon-moon-phone/icomoon.eot?5wbhyb#iefix") format("embedded-opentype"), url("../img/icon-moon-phone/icomoon.ttf?5wbhyb") format("truetype"), url("../img/icon-moon-phone/icomoon.woff?5wbhyb") format("woff"), url("../img/icon-moon-phone/icomoon.svg?5wbhyb#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 153, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 168, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-phone:before {
+  content: "\e942";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-stats-bar/icomoon.eot?fnie4e");
+  src: url("../img/icon-moon-stats-bar/icomoon.eot?fnie4e#iefix") format("embedded-opentype"), url("../img/icon-moon-stats-bar/icomoon.ttf?fnie4e") format("truetype"), url("../img/icon-moon-stats-bar/icomoon.woff?fnie4e") format("woff"), url("../img/icon-moon-stats-bar/icomoon.svg?fnie4e#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 189, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 204, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-embed2/icomoon.eot?9x518c");
+  src: url("../img/icon-moon-embed2/icomoon.eot?9x518c#iefix") format("embedded-opentype"), url("../img/icon-moon-embed2/icomoon.ttf?9x518c") format("truetype"), url("../img/icon-moon-embed2/icomoon.woff?9x518c") format("woff"), url("../img/icon-moon-embed2/icomoon.svg?9x518c#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 224, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 239, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-shield/icomoon.eot?8pixc5");
+  src: url("../img/icon-moon-shield/icomoon.eot?8pixc5#iefix") format("embedded-opentype"), url("../img/icon-moon-shield/icomoon.ttf?8pixc5") format("truetype"), url("../img/icon-moon-shield/icomoon.woff?8pixc5") format("woff"), url("../img/icon-moon-shield/icomoon.svg?8pixc5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 259, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 274, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-shield:before {
+  content: "\e9b4";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-bubbles/icomoon.eot?rulxsz");
+  src: url("../img/icon-moon-bubbles/icomoon.eot?rulxsz#iefix") format("embedded-opentype"), url("../img/icon-moon-bubbles/icomoon.ttf?rulxsz") format("truetype"), url("../img/icon-moon-bubbles/icomoon.woff?rulxsz") format("woff"), url("../img/icon-moon-bubbles/icomoon.svg?rulxsz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 294, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 309, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-bubbles:before {
+  content: "\e96c";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-search/icomoon.eot?tzq1wn");
+  src: url("../img/icon-moon-search/icomoon.eot?tzq1wn#iefix") format("embedded-opentype"), url("../img/icon-moon-search/icomoon.ttf?tzq1wn") format("truetype"), url("../img/icon-moon-search/icomoon.woff?tzq1wn") format("woff"), url("../img/icon-moon-search/icomoon.svg?tzq1wn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 329, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 344, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-search:before {
+  content: "\e986";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-facebook/icomoon.eot?rc0u6k");
+  src: url("../img/icon-moon-facebook/icomoon.eot?rc0u6k#iefix") format("embedded-opentype"), url("../img/icon-moon-facebook/icomoon.ttf?rc0u6k") format("truetype"), url("../img/icon-moon-facebook/icomoon.woff?rc0u6k") format("woff"), url("../img/icon-moon-facebook/icomoon.svg?rc0u6k#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 364, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 379, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-linkedin2/icomoon.eot?buatk9");
+  src: url("../img/icon-moon-linkedin2/icomoon.eot?buatk9#iefix") format("embedded-opentype"), url("../img/icon-moon-linkedin2/icomoon.ttf?buatk9") format("truetype"), url("../img/icon-moon-linkedin2/icomoon.woff?buatk9") format("woff"), url("../img/icon-moon-linkedin2/icomoon.svg?buatk9#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 399, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 414, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-x/icomoon.eot?rtms1k");
+  src: url("../img/icon-moon-x/icomoon.eot?rtms1k#iefix") format("embedded-opentype"), url("../img/icon-moon-x/icomoon.ttf?rtms1k") format("truetype"), url("../img/icon-moon-x/icomoon.woff?rtms1k") format("woff"), url("../img/icon-moon-x/icomoon.svg?rtms1k#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 434, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 449, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-x:before {
+  content: "\e900";
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../img/icon-moon-instagram/icomoon.eot?w7oy0g");
+  src: url("../img/icon-moon-instagram/icomoon.eot?w7oy0g#iefix") format("embedded-opentype"), url("../img/icon-moon-instagram/icomoon.ttf?w7oy0g") format("truetype"), url("../img/icon-moon-instagram/icomoon.woff?w7oy0g") format("woff"), url("../img/icon-moon-instagram/icomoon.svg?w7oy0g#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 469, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 484, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/modules/_icons.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,31 @@
+html{
+    font-size: 16px;
+}
+
+.segment {
+    padding: 50px 0px; // this adds padding to the top and bottom of the section
+}
+
+.btn{
+    font-weight: 400;
+    text-decoration: none;
+    color: $primary-white;
+
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+
+    .main-buttons{
+        padding: 10px 30px;
+    }
+}
+
+///// CHANGES THE PICTURES GREY
+// This mixin changes the pictures inside the div with class 'picture' grey 
+.picture{
+    @include turn-picture-grey;
+}

@@ -1,0 +1,312 @@
+    // ==========================================================================
+    // SERVICES SECTION
+    // ==========================================================================
+
+.services-section{
+
+    service-item{
+        padding: 30px;
+    }
+
+
+}
+
+
+
+.our-services-title{
+    font-size: 43.2px;
+    font-weight: 400;
+    margin: 0px;
+}
+.top-services-arrow{
+    font-size: 36px;
+}
+
+// this styles the header of each service block
+.service-item-header{
+    padding-bottom: 10px;
+    margin-bottom: 11px;
+    font-size: 20.8px;
+    font-weight: 400;
+    color: #333645;
+    // span{
+    //     font-size: 13px;
+    //     line-height: 1.375rem;
+    //     margin-bottom: 13px;
+    //     font-weight: 400;
+    // }
+}
+
+.service-item-text{
+    font-size: 13px;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
+    color: #333645;
+}
+////////////////////////////////////////////////////////
+// HOVER SHIFT -
+///////////////////////////////////////////////////////
+
+// IMPORTANT - This 'hover-move' mixin is what moves our element, the selector below this one is whats 
+// styling the buttons
+.service-item{
+    @include hover-move;
+}
+
+// the top -10px and transition is what make the element move when hovered
+// this targets all service-items and gives the :hover pseudo class
+.service-item:hover {
+
+    // this changes all texts color when hovered.
+    .service-item-header,
+    .service-item-text{
+        color: white;
+    }
+    // the & selects the parent element 
+    // this changes the background to this color when hovered.
+    &.bespoke-software {
+        background-color: #67809f;
+        // this is selecting the btn in bespoke-software and changing its color
+        // this is selecting the icon and styling it and the background.
+        .icon-laptop,
+        .bespoke-software-btn{
+            background-color: white;
+            color: #67809f;
+        }
+    }
+    &.it-support {
+        background-color: #4183d7;
+        .icon-display,
+        .it-support-btn{
+            background-color: white;
+            color: #4183d7;
+        }
+    }
+    &.digital-marketing {
+        background-color: #2ecc71;
+        .icon-stats-bars2,
+        .digital-marketing-btn{
+            background-color: white;
+            color: #2ecc71;
+        }
+    }
+    &.telecoms-services {
+        background-color: #d64541;
+        .icon-phone,
+        .telecoms-services-btn{
+            background-color: white;
+            color: #d64541;
+        }
+    }
+    &.web-design {
+        background-color: #926fb1;
+        .icon-embed2,
+        .web-design-btn{
+            background-color: white;
+            color: #926fb1;
+        }
+    }
+    &.cyber-security {
+        background-color: #f62459;
+        .icon-shield,
+        .cyber-security-btn{
+            background-color: white;
+            color: #f62459;
+        }
+    }
+    &.developer-training {
+        background-color: #ce4125;
+        .icon-bubbles,
+        .developer-training-btn{
+            background-color: white;
+            color: #d64541;
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////
+
+// This adds flex to each service-item div and stacks all the content ontop of each other
+// and aligns the content to the center
+.service-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    text-align: center;
+    // I DONT THINK THIS IS RIGHT, NEEDS TO BE CHECKED 
+    gap: 10px;
+    padding: 30px;
+    // this is what seperates each div
+    margin-top: 30px;
+    // THIS NEEDS TO BE ALTERED 
+    border: solid #ccc 1px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+}
+
+// This gives the whole services section bar the bottom scroll bar padding
+.services-container-padding{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+// This gives every item in services padding, this needed to be done individually
+// and not in a container because of how it behaves in flex at higher viewports
+.service-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// This is what is styling the icons and their backgrounds for each service-item div
+.services-avatar{
+    color: $primary-white;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.icon-laptop{
+    background-color: #67809f;
+}
+.icon-display{
+    background-color: #4183d7;
+}
+.icon-stats-bars2{
+    background-color: #2ecc71;
+}
+.icon-phone{
+    background-color: #d64541;
+}
+.icon-embed2{
+    background-color: #926fb1;
+}
+.icon-shield{
+    background-color: #f62459;
+}
+.icon-bubbles{
+    background-color: #ce4125;
+}
+
+//////////////////////////////////////////////////////////////////////
+/// BOTTOM BAR 
+/////////////////////////////////////////////////////////////////////
+
+
+// this centers the 'view our work' and gives it a margin to push it down
+.service-view-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    border: none;
+    margin-top: 30px;
+    font-size: 1.625rem;
+}
+
+.our-work-examples{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+
+// BUTTONS
+// ==========================================================================
+
+.btn{
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+}
+ 
+.bespoke-software .btn{
+    background-color: #f7b322;
+}
+.it-support .btn{
+    background-color: #4183d7;
+}
+.digital-marketing .btn{
+    background-color: #2ecc71;
+}
+.telecoms-services .btn{
+    background-color: #d64541;
+}
+.web-design .btn{
+    background-color: #926fb1;
+}
+.cyber-security .btn{
+    background-color: #f62459;
+}
+.developer-training .btn{
+    background-color: #ce4125;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// Media queris 
+/////////////////////////////////////////////////////////////////////////////
+
+@media (max-width: 767px) {
+    
+    // this gets rid of the view our work --> next to 'our services' under 767 px's
+    .services-header{
+        .top-services-arrow{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px){
+
+
+    .services-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // makes the services section flex and wrap to have the side by side bits possible
+    .services-section{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    // this makes the items with 'main-item' class take up 100% width of the page and 100% width of container
+    // i didnt nest in .services-section as it made the logos go weird.
+    .services-section > .main-item{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    // this makes the secondary items 50% of their container so they can go side by side
+    .services-section > .secondary-item{
+        flex-basis: 50%;
+    }
+
+    
+
+
+    /////////////////////////////////////
+    /// bottom section 
+    //////////////////////////////////////
+    
+    // this gets rid of the view our work arrow 
+    .service-view-work{
+        display: none;
+    }
+
+}

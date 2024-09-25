@@ -1,0 +1,104 @@
+footer {
+    background-color: $primary-background;
+    color: #fff;
+
+    position: relative;
+}
+
+.footer-menu  {   
+   flex: 100%;
+   margin-bottom: 30px;
+  
+   h4 {
+       text-transform: uppercase;
+       font-size: 1rem;
+       margin-bottom: 26px;	
+   }
+}	  
+
+// Targets all lists in footer
+
+// This removes the bullet points
+.footer-row {
+   li {
+     list-style-type: none;
+   }
+}
+
+// This is for the bottom footer it should span the whole width of the page but doesnt
+// its because of footer-rows padding, but i need the padding for the text to be offset from the left side
+// NEED TO SORT 
+.bottom-footer {
+   display: flex;
+   width: 100%;
+   font-size: .8125rem;
+   background-color: #212330;
+   .bottom-footer-text{
+      padding: 5px 0px 10px 10px;
+   }
+}
+
+// this is what removes the standard blue color and only adds the underline when hovered over
+.bottom-anchor{
+   text-decoration: none; /* Removes the underline */
+   color: inherit;
+   &:hover {
+   text-decoration: underline; /* Adds underline on hover */
+   }
+}
+
+
+
+.footer-follow-links{
+   display: flex;
+   flex: row;
+   font-size: 26px;
+   margin-bottom: 30px;
+   a{
+      padding: 12px 22px 16px;
+      margin-right: 10px;
+      background-color: #212330;
+      color: $primary-white;
+      text-decoration: none;
+   }
+}
+
+// Had to add this as couldnt figure out where the 40px of left padding it was adding 
+.footer-ul{
+   padding: 0px;
+   // this is setting the size and line height for the li elements
+   li{
+      font-size: .8125rem;
+      line-height: 1.375rem;
+   }
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+/// MEDIA QUERIES
+////////////////////////////////////////////////////////////////////
+
+.footer-row {
+   @media (max-width: $brkpoint-sm) {
+
+   }
+
+   @media (min-width: 768px) {
+      
+      .footer-menu-main{
+         display: grid;
+         grid-template: repeat(2, auto) / repeat(2, 1fr);
+      }
+
+   }
+
+   @media (min-width: $brkpoint-md) {
+       flex: 25%;
+   }
+
+   @media (min-width: $brkpoint-lg) {
+       margin-bottom: 40px;
+   }
+}

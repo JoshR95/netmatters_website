@@ -1,0 +1,64 @@
+.banner-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+    position: relative;
+    align-items: center; 
+    justify-content: center; 
+    // Ensures the pseudo-element doesn't overflow
+    overflow: hidden;
+
+    // this is basically creating a black background with 50% opacity
+    // we give it a z index of 1 so it sits infont of the image, but not the text 
+    // as that has a value of 2
+    &::before {
+        content: '';
+        position: absolute;
+        // positions it to the very top left
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); 
+        // this ensures the overlay is behind the text but in front of the image 
+        z-index: 1; 
+    }
+}
+
+
+// this is for the picture
+.banner-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+}
+
+// this is styling the heading and nested elements, and has a z-index of 2 
+// so that it sits infront of the image
+.banner-title{
+    position: relative;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .banner-btn{
+        background-color: #926fb1;
+        font-size: 20px;
+        padding: 20px 20px;
+        line-height: 50px;
+        border-radius: 3px;
+    }
+}
+
+
+
+
