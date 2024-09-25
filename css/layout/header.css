@@ -1,20 +1,20 @@
-/* line 1, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 1, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .header {
   padding: 20px 0px;
 }
 
-/* line 15, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 15, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .header--hidden {
   transform: translateY(-100%);
 }
 
-/* line 23, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 23, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .header-bar-container {
   display: flex;
   flex-direction: column;
 }
 
-/* line 28, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 28, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .top-header {
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-/* line 35, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 35, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .header-phone-icon {
   color: #333645;
   background-color: white;
@@ -31,7 +31,7 @@
   padding-right: 20px;
 }
 
-/* line 46, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 46, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .hamburger-icon {
   background-color: #333645;
   width: 63px;
@@ -39,7 +39,7 @@
   position: relative;
 }
 
-/* line 53, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 53, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .hamburger-line {
   width: 33px;
   height: 4px;
@@ -47,7 +47,7 @@
   margin: 6px 0;
 }
 
-/* line 64, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 64, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .hamburger-line-container {
   position: absolute;
   top: 50%;
@@ -55,7 +55,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* line 77, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 77, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .small-screen-search-bar {
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@
   margin-top: 11px;
 }
 
-/* line 88, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 88, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .small-screen-search-bar span {
   position: relative;
   padding: 5px 0px 5px 15px;
@@ -74,7 +74,7 @@
   z-index: 2;
 }
 
-/* line 94, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 94, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .small-screen-search-bar .icon-search {
   position: relative;
   padding-right: 11px;
@@ -84,7 +84,7 @@
   z-index: 2;
 }
 
-/* line 102, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+/* line 102, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .small-screen-search-bar .small-screen-search-input {
   position: absolute;
   width: 100%;
@@ -97,11 +97,11 @@
 }
 
 @media (min-width: 768px) {
-  /* line 119, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+  /* line 119, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
   .header-phone-icon {
     display: none;
   }
-  /* line 124, ../../../../../Nettmaters_main/assessments/html-css_assessment/scss/layout/header.scss */
+  /* line 124, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
   .bottom-header {
     display: none;
   }
