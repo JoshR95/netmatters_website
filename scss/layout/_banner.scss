@@ -57,8 +57,30 @@
         line-height: 50px;
         border-radius: 3px;
     }
-}
 
+    // this displays all the circles in a row horizontaly, the justify content centers them in the div
+    .banner-dots-container {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        // added 18px's extra because i couldnt apply the 18px's of bottom margin to the button 
+        margin-top: 78px; 
+        width: 100%; 
+    }
+
+    .banner-dot {
+        margin: 0 5px; // Add horizontal spacing between dots
+
+        span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: grey;
+            border-radius: 50%;
+        }
+    }
+
+}
 
 
 

@@ -932,6 +932,29 @@ p {
   border-radius: 3px;
 }
 
+/* line 62, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+.banner-title .banner-dots-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 78px;
+  width: 100%;
+}
+
+/* line 71, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+.banner-title .banner-dot {
+  margin: 0 5px;
+}
+
+/* line 74, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+.banner-title .banner-dot span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
 /* line 1, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
 .header {
   padding: 20px 0px;
