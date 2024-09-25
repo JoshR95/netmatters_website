@@ -158,14 +158,21 @@
 
 @media (min-width: 768px){
 
-    // this hides the long search bar on 768px's and up
-    .header-phone-icon{
+    // this hides the long search bar and phone on 768px's and up
+    .header-phone-icon,
+    .bottom-header{
         display: none;
     }
     
-    // this hides the long search bar on 768px's and up
-    .bottom-header{
-        display: none;
+    // adds some space between the netmatters and search bar
+    .top-header {
+        gap: 30px;
+    }
+
+    // adujsts the netmatters logo for this viewport
+    .header-netmatters{
+        width: 345px;
+        height: 60.06px;
     }
 
 }
