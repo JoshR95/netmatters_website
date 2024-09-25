@@ -37,7 +37,11 @@
     background-color: white;
     font-size: 32px;
     margin-left: auto; // The margin left pushes the element to the right to fill the space
-    padding-right: 20px; // The padding right we are giving to the phone icon to push it away from the hamburger button a bit
+}
+
+.header-search-and-icons{
+    display: flex;
+    flex-direction: row;
 }
 
 .large-screen-search-container {
@@ -45,21 +49,34 @@
 }
 // TRY CHANGE OUTLINE TO BORDER-BOW FOR SHADOW
 .large-screen-search-bar {
-    padding: 10px 15px; 
+    padding: 5px 15px; 
     height: 56px;
     width: 174px;
     border: 1px solid #e5e5e5;
     color: #e5e5e5;
+    font-size: 14px;
     outline: 1px solid rgba(0, 0, 0, .075); // THIS SHOULD BE BOX-SHADOW BUT I COULDNT GET IT TO WORK
  
 }
 
+// this is for the icon button in big view ports
+.icon-search-big-btn{
+    height: 56px;
+    padding: 7px 20px 3px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    background-color: #999aa2;
+    color: #fff;
+}
+
 // We make this relative to the hamburger lines can be positioned according to this elements position
 .hamburger-icon{
+    position: relative; 
     background-color: #333645;
     width: 63px;
     height: 56px;
-    position: relative; 
+    margin-left: 20px;
+
 }
 
 .hamburger-line{
@@ -103,7 +120,7 @@
         color: #888888;
         z-index: 2;
     }
-    .icon-search{
+    .icon-search-small{
         position: relative;
         padding-right: 11px;
         font-size: 20px;
@@ -131,9 +148,12 @@
 
 @media (max-width: 767px) {
 
-    .large-screen-search-container{
+    .large-screen-search-container,
+    .icon-search-big-btn{
         display: none;
     }
+
+
 }
 
 @media (min-width: 768px){
