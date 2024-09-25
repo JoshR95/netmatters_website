@@ -85,7 +85,7 @@
     }
     &.digital-marketing {
         background-color: #2ecc71;
-        .icon-stats-bars2,
+        .icon-bar-graph,
         .digital-marketing-btn{
             background-color: white;
             color: #2ecc71;
@@ -93,7 +93,7 @@
     }
     &.telecoms-services {
         background-color: #d64541;
-        .icon-phone,
+        .icon-phone_in_talk,
         .telecoms-services-btn{
             background-color: white;
             color: #d64541;
@@ -109,7 +109,7 @@
     }
     &.cyber-security {
         background-color: #f62459;
-        .icon-shield,
+        .icon-security,
         .cyber-security-btn{
             background-color: white;
             color: #f62459;
@@ -117,7 +117,7 @@
     }
     &.developer-training {
         background-color: #ce4125;
-        .icon-bubbles,
+        .icon-study,
         .developer-training-btn{
             background-color: white;
             color: #d64541;
@@ -178,19 +178,19 @@
 .icon-display{
     background-color: #4183d7;
 }
-.icon-stats-bars2{
+.icon-bar-graph{
     background-color: #2ecc71;
 }
-.icon-phone{
+.icon-phone_in_talk{
     background-color: #d64541;
 }
 .icon-embed2{
     background-color: #926fb1;
 }
-.icon-shield{
+.icon-security{
     background-color: #f62459;
 }
-.icon-bubbles{
+.icon-study{
     background-color: #ce4125;
 }
 

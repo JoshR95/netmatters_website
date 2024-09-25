@@ -640,7 +640,7 @@ p {
 }
 
 /* line 88, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.service-item:hover.digital-marketing .icon-stats-bars2,
+.service-item:hover.digital-marketing .icon-bar-graph,
 .service-item:hover.digital-marketing .digital-marketing-btn {
   background-color: white;
   color: #2ecc71;
@@ -652,7 +652,7 @@ p {
 }
 
 /* line 96, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.service-item:hover.telecoms-services .icon-phone,
+.service-item:hover.telecoms-services .icon-phone_in_talk,
 .service-item:hover.telecoms-services .telecoms-services-btn {
   background-color: white;
   color: #d64541;
@@ -676,7 +676,7 @@ p {
 }
 
 /* line 112, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.service-item:hover.cyber-security .icon-shield,
+.service-item:hover.cyber-security .icon-security,
 .service-item:hover.cyber-security .cyber-security-btn {
   background-color: white;
   color: #f62459;
@@ -688,7 +688,7 @@ p {
 }
 
 /* line 120, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.service-item:hover.developer-training .icon-bubbles,
+.service-item:hover.developer-training .icon-study,
 .service-item:hover.developer-training .developer-training-btn {
   background-color: white;
   color: #d64541;
@@ -745,12 +745,12 @@ p {
 }
 
 /* line 181, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.icon-stats-bars2 {
+.icon-bar-graph {
   background-color: #2ecc71;
 }
 
 /* line 184, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.icon-phone {
+.icon-phone_in_talk {
   background-color: #d64541;
 }
 
@@ -760,12 +760,12 @@ p {
 }
 
 /* line 190, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.icon-shield {
+.icon-security {
   background-color: #f62459;
 }
 
 /* line 193, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
-.icon-bubbles {
+.icon-study {
   background-color: #ce4125;
 }
 
@@ -1067,412 +1067,6 @@ p {
 /* line 1, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_buttons.scss */
 .facebook btn-primary {
   background-color: #212330;
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-rightArrow/icomoon.eot?x44i61");
-  src: url("../img/icon-moon-rightArrow/icomoon.eot?x44i61#iefix") format("embedded-opentype"), url("../img/icon-moon-rightArrow/icomoon.ttf?x44i61") format("truetype"), url("../img/icon-moon-rightArrow/icomoon.woff?x44i61") format("woff"), url("../img/icon-moon-rightArrow/icomoon.svg?x44i61#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 16, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 31, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-arrow-right2:before {
-  content: "\ea3c";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-star/icomoon.eot?or8dx7");
-  src: url("../img/icon-moon-star/icomoon.eot?or8dx7#iefix") format("embedded-opentype"), url("../img/icon-moon-star/icomoon.ttf?or8dx7") format("truetype"), url("../img/icon-moon-star/icomoon.woff?or8dx7") format("woff"), url("../img/icon-moon-star/icomoon.svg?or8dx7#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 51, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 66, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-star-full:before {
-  content: "\e9d9";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-laptop/icomoon.eot?yvom5q");
-  src: url("../img/icon-moon-laptop/icomoon.eot?yvom5q#iefix") format("embedded-opentype"), url("../img/icon-moon-laptop/icomoon.ttf?yvom5q") format("truetype"), url("../img/icon-moon-laptop/icomoon.woff?yvom5q") format("woff"), url("../img/icon-moon-laptop/icomoon.svg?yvom5q#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 84, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 99, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-laptop:before {
-  content: "\e957";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-display/icomoon.eot?8ggxft");
-  src: url("../img/icon-moon-display/icomoon.eot?8ggxft#iefix") format("embedded-opentype"), url("../img/icon-moon-display/icomoon.ttf?8ggxft") format("truetype"), url("../img/icon-moon-display/icomoon.woff?8ggxft") format("woff"), url("../img/icon-moon-display/icomoon.svg?8ggxft#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 118, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 133, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-display:before {
-  content: "\e956";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-phone/icomoon.eot?5wbhyb");
-  src: url("../img/icon-moon-phone/icomoon.eot?5wbhyb#iefix") format("embedded-opentype"), url("../img/icon-moon-phone/icomoon.ttf?5wbhyb") format("truetype"), url("../img/icon-moon-phone/icomoon.woff?5wbhyb") format("woff"), url("../img/icon-moon-phone/icomoon.svg?5wbhyb#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 153, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 168, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-phone:before {
-  content: "\e942";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-stats-bar/icomoon.eot?fnie4e");
-  src: url("../img/icon-moon-stats-bar/icomoon.eot?fnie4e#iefix") format("embedded-opentype"), url("../img/icon-moon-stats-bar/icomoon.ttf?fnie4e") format("truetype"), url("../img/icon-moon-stats-bar/icomoon.woff?fnie4e") format("woff"), url("../img/icon-moon-stats-bar/icomoon.svg?fnie4e#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 189, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 204, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-stats-bars2:before {
-  content: "\e99d";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-embed2/icomoon.eot?9x518c");
-  src: url("../img/icon-moon-embed2/icomoon.eot?9x518c#iefix") format("embedded-opentype"), url("../img/icon-moon-embed2/icomoon.ttf?9x518c") format("truetype"), url("../img/icon-moon-embed2/icomoon.woff?9x518c") format("woff"), url("../img/icon-moon-embed2/icomoon.svg?9x518c#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 224, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 239, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-embed2:before {
-  content: "\ea80";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-shield/icomoon.eot?8pixc5");
-  src: url("../img/icon-moon-shield/icomoon.eot?8pixc5#iefix") format("embedded-opentype"), url("../img/icon-moon-shield/icomoon.ttf?8pixc5") format("truetype"), url("../img/icon-moon-shield/icomoon.woff?8pixc5") format("woff"), url("../img/icon-moon-shield/icomoon.svg?8pixc5#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 259, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 274, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-shield:before {
-  content: "\e9b4";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-bubbles/icomoon.eot?rulxsz");
-  src: url("../img/icon-moon-bubbles/icomoon.eot?rulxsz#iefix") format("embedded-opentype"), url("../img/icon-moon-bubbles/icomoon.ttf?rulxsz") format("truetype"), url("../img/icon-moon-bubbles/icomoon.woff?rulxsz") format("woff"), url("../img/icon-moon-bubbles/icomoon.svg?rulxsz#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 294, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 309, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-bubbles:before {
-  content: "\e96c";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-search/icomoon.eot?tzq1wn");
-  src: url("../img/icon-moon-search/icomoon.eot?tzq1wn#iefix") format("embedded-opentype"), url("../img/icon-moon-search/icomoon.ttf?tzq1wn") format("truetype"), url("../img/icon-moon-search/icomoon.woff?tzq1wn") format("woff"), url("../img/icon-moon-search/icomoon.svg?tzq1wn#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 329, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 344, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-search:before {
-  content: "\e986";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-facebook/icomoon.eot?rc0u6k");
-  src: url("../img/icon-moon-facebook/icomoon.eot?rc0u6k#iefix") format("embedded-opentype"), url("../img/icon-moon-facebook/icomoon.ttf?rc0u6k") format("truetype"), url("../img/icon-moon-facebook/icomoon.woff?rc0u6k") format("woff"), url("../img/icon-moon-facebook/icomoon.svg?rc0u6k#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 364, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 379, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-facebook:before {
-  content: "\ea90";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-linkedin2/icomoon.eot?buatk9");
-  src: url("../img/icon-moon-linkedin2/icomoon.eot?buatk9#iefix") format("embedded-opentype"), url("../img/icon-moon-linkedin2/icomoon.ttf?buatk9") format("truetype"), url("../img/icon-moon-linkedin2/icomoon.woff?buatk9") format("woff"), url("../img/icon-moon-linkedin2/icomoon.svg?buatk9#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 399, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 414, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-x/icomoon.eot?rtms1k");
-  src: url("../img/icon-moon-x/icomoon.eot?rtms1k#iefix") format("embedded-opentype"), url("../img/icon-moon-x/icomoon.ttf?rtms1k") format("truetype"), url("../img/icon-moon-x/icomoon.woff?rtms1k") format("woff"), url("../img/icon-moon-x/icomoon.svg?rtms1k#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 434, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 449, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-x:before {
-  content: "\e900";
-}
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("../img/icon-moon-instagram/icomoon.eot?w7oy0g");
-  src: url("../img/icon-moon-instagram/icomoon.eot?w7oy0g#iefix") format("embedded-opentype"), url("../img/icon-moon-instagram/icomoon.ttf?w7oy0g") format("truetype"), url("../img/icon-moon-instagram/icomoon.woff?w7oy0g") format("woff"), url("../img/icon-moon-instagram/icomoon.svg?w7oy0g#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-/* line 469, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 484, ../../../../../Nettmaters_main/assessments/websiteNew/scss/modules/_icons.scss */
-.icon-instagram:before {
-  content: "\ea92";
 }
 
 /*# sourceMappingURL=application.css.map */
