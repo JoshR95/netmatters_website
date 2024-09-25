@@ -24,8 +24,10 @@ html{
     }
 }
 
-///// CHANGES THE PICTURES GREY
-// This mixin changes the pictures inside the div with class 'picture' grey 
-.picture{
-    @include turn-picture-grey;
+  ///// THIS MIXIN REMOVES THE GREYSCALE ON THE COLORED IMAGES WHEN HOVERED OVER
+// i had to be very specific with selectors as the top set of pictures didnt work correctly
+// this selects picture that are nested in the middle selector, which are descendants of the first selector
+.bottom-clients-bar .bottom-bar-images .picture,
+.bottom-services-bar .our-work-examples .picture {
+    @include turn-picture-colored;
 }

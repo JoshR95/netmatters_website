@@ -27,14 +27,17 @@ html {
   padding: 10px 30px;
 }
 
-/* line 32, ../../../../../Nettmaters_main/assessments/websiteNew/scss/utilities/_mixins.scss */
-.picture .colored-picture {
+/* line 34, ../../../../../Nettmaters_main/assessments/websiteNew/scss/utilities/_mixins.scss */
+.bottom-clients-bar .bottom-bar-images .picture img,
+.bottom-services-bar .our-work-examples .picture img {
+  filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 
-/* line 36, ../../../../../Nettmaters_main/assessments/websiteNew/scss/utilities/_mixins.scss */
-.picture:hover .colored-picture {
-  filter: grayscale(100%);
+/* line 39, ../../../../../Nettmaters_main/assessments/websiteNew/scss/utilities/_mixins.scss */
+.bottom-clients-bar .bottom-bar-images .picture:hover img,
+.bottom-services-bar .our-work-examples .picture:hover img {
+  filter: grayscale(0%);
 }
 
 /* line 1, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_footer.scss */

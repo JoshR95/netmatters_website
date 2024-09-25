@@ -24,16 +24,19 @@
     }
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
-/// TURN-PICTURE-GREY  -  THIS CHANGES A PICTURE IN THE PICTURE DIV GREY
-///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// TURN-PICTURE-COLORED -  THIS SET THE PICTURES GREYSCALE TO 100% AND TURNS IT OFF WHEN HOVERED OVER
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@mixin turn-picture-grey($transition-time: 0.3s) {
-    .colored-picture {
-        transition: filter $transition-time ease;
+
+// this mixin sets all imgs 
+@mixin turn-picture-colored {
+    img {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
     }
-    
-    &:hover .colored-picture {
-        filter: grayscale(100%);
+  
+    &:hover img {
+      filter: grayscale(0%);
     }
-}
+  }
