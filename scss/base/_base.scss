@@ -31,6 +31,51 @@ html{
     white-space: nowrap; // this keeps everything in  one line and stops is wrapping
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+///BODY
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// this makes the manage consent button stick to the bottom of the page even when scrolling
+// this needs to have button too for extra specificty, the .btn in base.scss would overide otherwise.
+.sticky-consent {
+    position: fixed;
+    bottom: 0px;
+    font-size: 12.8px;
+    button{
+       padding: 5px 10px;
+       border: none;
+       border-top-right-radius: 10px;
+       background-color: #75788a;
+       color: $primary-white;
+    }
+}
+
+.sticky-help {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+
+ }
+
+// .sticky-help {
+//     position: fixed;
+//     bottom: 0px;
+//     font-size: 12.8px;
+//     span{
+//        padding: 5px 10px;
+//        border: none;
+//        border-top-right-radius: 10px;
+//        background-color: #75788a;
+//        color: $primary-white;
+//     }
+//  }
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////
 /// MIXIN
 //////////////////////////////////////////////////////////////////////////////////////////////
