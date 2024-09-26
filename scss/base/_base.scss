@@ -53,8 +53,9 @@ html{
 
 .sticky-help {
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    // the bottom and right make its stick 25px's to the left of the right edge and up from the bottom
+    bottom: 25px;
+    right: 25px;
     height: 60px;
     width: 60px;
     background-color: #333645;
@@ -65,19 +66,6 @@ html{
     padding: 11px;
 
  }
-
-// .sticky-help {
-//     position: fixed;
-//     bottom: 0px;
-//     font-size: 12.8px;
-//     span{
-//        padding: 5px 10px;
-//        border: none;
-//        border-top-right-radius: 10px;
-//        background-color: #75788a;
-//        color: $primary-white;
-//     }
-//  }
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -91,3 +79,15 @@ html{
 .bottom-services-bar .our-work-examples .picture {
     @include turn-picture-colored;
 }
+
+// @media (max-width: 767px) {
+//     body {
+//         max-width: 767px; // Set maximum width
+//         margin: 0 auto; // Center the body
+//         overflow-x: hidden; // Prevent horizontal scrolling
+//     }
+
+//     .container {
+//         width: 100%; // Ensure the container takes full width
+//     }
+// }

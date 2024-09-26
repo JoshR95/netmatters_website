@@ -87,9 +87,6 @@ footer {
 ////////////////////////////////////////////////////////////////////
 
 .footer-row {
-   @media (max-width: $brkpoint-sm) {
-
-   }
 
    @media (min-width: 768px) {
       
@@ -105,8 +102,13 @@ footer {
 
    }
 
-   @media (min-width: $brkpoint-md) {
+   @media (min-width: 992px) {
        flex: 25%;
+       
+       .footer-menu-main{
+         display: grid;
+         grid-template: repeat(2, auto) / repeat(4, 1fr);
+      }
    }
 
    @media (min-width: $brkpoint-lg) {
