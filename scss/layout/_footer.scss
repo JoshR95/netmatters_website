@@ -29,6 +29,7 @@ footer {
 // its because of footer-rows padding, but i need the padding for the text to be offset from the left side
 // NEED TO SORT 
 .bottom-footer {
+   position: relative;
    display: flex;
    width: 100%;
    font-size: .8125rem;
@@ -37,6 +38,15 @@ footer {
       display: flex;
       flex-direction: column;
       padding: 10px 0px 10px 15px;
+   }
+   // this makes the manage consent button stick to the bottom of the page even when scrolling
+   // this needs to have button too for extra specificty, the .btn in base.scss would overide otherwise.
+   .sticky-consent button{
+      position: fixed;
+      bottom: 0px;
+      font-size: 12.8px;
+      border: none;
+      border-top-right-radius: 10px;
    }
 }
 
