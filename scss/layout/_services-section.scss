@@ -321,3 +321,14 @@
     }
 
 }
+
+@media (min-width: 992px){
+
+    .services-section {
+        width: 100%;
+    }
+
+    .services-section > .main-item{
+        flex-basis: 33.3%;
+    }
+}

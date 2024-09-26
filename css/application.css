@@ -998,6 +998,17 @@ p {
   }
 }
 
+@media (min-width: 992px) {
+  /* line 327, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
+  .services-section {
+    width: 100%;
+  }
+  /* line 331, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
+  .services-section > .main-item {
+    flex-basis: 33.3%;
+  }
+}
+
 /* line 1, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
 .banner-container {
   display: flex;
