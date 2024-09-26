@@ -34,6 +34,8 @@ footer {
    font-size: .8125rem;
    background-color: #212330;
    .bottom-footer-text{
+      display: flex;
+      flex-direction: column;
       padding: 10px 0px 10px 15px;
    }
 }
@@ -93,6 +95,11 @@ footer {
       .footer-menu-main{
          display: grid;
          grid-template: repeat(2, auto) / repeat(2, 1fr);
+      }
+
+      .bottom-footer-text{
+         flex-direction: row;
+         align-items: center;
       }
 
    }
