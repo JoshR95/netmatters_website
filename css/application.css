@@ -1222,15 +1222,21 @@ p {
 
 @media (min-width: 768px) {
   /* line 162, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 169, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
   .header-phone-icon,
   .bottom-header {
     display: none;
   }
-  /* line 168, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
+  /* line 175, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
   .top-header {
     gap: 30px;
   }
-  /* line 173, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
+  /* line 180, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/header.scss */
   .header-netmatters {
     width: 345px;
     height: 60.06px;

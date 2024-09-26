@@ -158,6 +158,13 @@
 
 @media (min-width: 768px){
 
+    // this aligns the header to the middle up to 991px
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     // this hides the long search bar and phone on 768px's and up
     .header-phone-icon,
     .bottom-header{
