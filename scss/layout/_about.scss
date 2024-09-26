@@ -341,7 +341,11 @@
     /// LATEST NEWS
     /////////////////////////////////////////////////////////////////////////////////
 
+    // this aligns the content in latest-news-block to the center
     .latest-news-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top: 15px;
         padding-bottom: 50px;
         width: 100%
@@ -393,5 +397,6 @@
             margin-bottom: 20px;
         }
     }
+
 
 }

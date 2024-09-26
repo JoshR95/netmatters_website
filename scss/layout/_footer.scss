@@ -86,10 +86,15 @@ footer {
 /// MEDIA QUERIES
 ////////////////////////////////////////////////////////////////////
 
-.footer-row {
 
-   @media (min-width: 768px) {
-      
+@media (min-width: 768px) {
+   
+   // this is centering the items in this div 
+   .footer-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //this is making the grid to keep the links in two columns
       .footer-menu-main{
          display: grid;
          grid-template: repeat(2, auto) / repeat(2, 1fr);
@@ -98,20 +103,30 @@ footer {
       .bottom-footer-text{
          flex-direction: row;
          align-items: center;
+         gap: 5px;
       }
-
    }
+   
+   .bottom-footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+   
 
-   @media (min-width: 992px) {
-       flex: 25%;
-       
-       .footer-menu-main{
+@media (min-width: 992px) {
+
+   .footer-row {
+      flex: 25%;
+
+      // this is keeping the links in 4 columns 
+      .footer-menu-main{
          display: grid;
          grid-template: repeat(2, auto) / repeat(4, 1fr);
       }
    }
-
-   @media (min-width: $brkpoint-lg) {
-       margin-bottom: 40px;
-   }
+}
+@media (min-width: $brkpoint-lg) {
+      margin-bottom: 40px;
 }

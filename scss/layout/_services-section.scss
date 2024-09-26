@@ -269,12 +269,23 @@
 
 @media (min-width: 768px){
 
+    .services-container-padding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // this sets the services section to not grow more than this to match nettmatters layout
+    .services-section {
+        width: 750px;
+    }
 
     .services-header{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        width: 750px; // i need this to be 750px so it doesnt expand when the page gets biggerand aligns to the flex box below
     }
 
     // makes the services section flex and wrap to have the side by side bits possible
