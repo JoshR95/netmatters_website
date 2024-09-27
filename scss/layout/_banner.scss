@@ -79,7 +79,10 @@
 .banner-inner-dropdown-container {
     display: none; 
     position: absolute; 
-    min-width: 100%;
+    width: 100vw; /* Full viewport width */
+    left: 0;      /* Align to the left */
+    right: 0;     /* Align to the right */
+    margin: 0;    /* Remove margin */
     z-index: 100; 
     list-style-type: none;
     padding-top: 50px;
