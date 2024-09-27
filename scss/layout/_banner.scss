@@ -98,9 +98,11 @@
     margin-bottom: 10px;
 }
 
-// this is what keeps the dropdown items in line
+// this is what keeps the dropdown items in line and at the right width thanks to the flex
 .banner-dropdown-item {
     display: flex;
+    flex: 1 1 30%; // this says Grow to fill space, shrink if necessary, base width of 30% */
+    margin: 10px;
     align-items: center;
     font-size: 19.2px;
     padding: 10px 15px 10px 0px;
