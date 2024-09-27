@@ -69,7 +69,6 @@
 
 // this is what shows the dropdown when the li in the banner header is hovered over
 .banner-dropdown li {
-    position: relative;
     &:hover .banner-inner-dropdown-container {
         display: block; // this shows the dropdown.
     }
@@ -79,14 +78,9 @@
 .banner-inner-dropdown-container {
     display: none; 
     position: absolute; 
-    width: 100vw; /* Full viewport width */
-    left: 0;      /* Align to the left */
-    right: 0;     /* Align to the right */
-    margin: 0;    /* Remove margin */
-    z-index: 100; 
-    list-style-type: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    z-index: 10; 
+    width: 100vw;
+    left: 0;
 }
 
 .banner-inner-dropdown{
