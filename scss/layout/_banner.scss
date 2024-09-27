@@ -67,6 +67,57 @@
     margin-top: -5px;
 }
 
+// this is what shows the dropdown when the li in the banner header is hovered over
+.banner-dropdown li {
+    position: relative;
+    &:hover .banner-inner-dropdown-container {
+        display: block; // this shows the dropdown.
+    }
+}
+
+// this is the container that only appear when hovered over
+.banner-inner-dropdown-container {
+    display: none; 
+    position: absolute; 
+    min-width: 100%;
+    z-index: 100; 
+    list-style-type: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner-inner-dropdown{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// this styles the dropdown h1 and has it alignn to the left
+.banner-dropdown-h1{
+    display: flex;
+    align-items: flex-start;
+    font-size: 32px;
+    color: $primary-white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+// this is what keeps the dropdown items in line
+.banner-dropdown-item {
+    display: flex;
+    align-items: center;
+    font-size: 19.2px;
+    padding: 10px 15px 10px 0px;
+    span{
+        color: $primary-white;
+        padding-left: 10px;
+    } 
+}
+
+.inner-bespoke-software{
+    background-color: #67809f;
+}
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 .banner-container {
     display: flex;
