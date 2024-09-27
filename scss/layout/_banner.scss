@@ -6,6 +6,7 @@
 .banner-header{
     display: flex;
     justify-content: center;
+    background-color: #333645;
 }
 
 // this makes the ul list items display in a line with space between eachother
@@ -18,12 +19,53 @@
     li{
         text-align: center;
     }
+    a{
+        padding-top: 19px;
+        padding-bottom: 18px;
+    }
 }
 // this stacks the text inside the banner-dropdowns li
 .banner-dropdown li span {
     display: block; 
 }
+// this adds specificty so it only selects the icons in the banner section
+.banner-avatar.icon-laptop {
+    color: #67809f;
+}
+.banner-avatar.icon-display {
+    color: #4183d7;
+}
+.banner-avatar.icon-bar-graph {
+    color: #2ecc71;
+}
+.banner-avatar.icon-phone_in_talk {
+    color: #d64541;
+}
+.banner-avatar.icon-embed2 {
+    color: #926fb1;
+}
+.banner-avatar.icon-security {
+    color: #f62459; 
+}
+.banner-avatar.icon-study {
+    color: #ce4125; 
+}
 
+.banner-avatar{
+    font-size: 23px;
+    padding-bottom: 8px;
+}
+
+.banner-text-small{
+    color: $primary-white;
+    font-size: 10px;
+}
+// the -margin brings the text closer together
+.banner-text{
+    color: $primary-white;
+    font-size: 18px;
+    margin-top: -5px;
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 .banner-container {
