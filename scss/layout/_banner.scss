@@ -102,7 +102,6 @@
 .banner-dropdown-item {
     display: flex;
     flex: 1 1 30%; // this says Grow to fill space, shrink if necessary, base width of 30% */
-    margin: 10px;
     align-items: center;
     font-size: 19.2px;
     padding: 10px 15px 10px 0px;
@@ -114,6 +113,24 @@
 
 .inner-bespoke-software{
     background-color: #67809f;
+}
+.inner-it-support{
+    background-color: #4183d7;
+}
+.inner-digital-marketing{
+    background-color: #2ecc71;
+}
+.inner-telecoms-services{
+    background-color: #d64541;;
+}
+.inner-web-design{
+    background-color: #926fb1;;
+}
+.inner-cyber-security{
+    background-color: #f62459;
+}
+.inner-developer-course{
+    background-color: #ce4125; 
 }
 
 
