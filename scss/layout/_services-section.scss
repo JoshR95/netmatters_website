@@ -170,26 +170,27 @@
     align-items: center;  
 }
 
-.icon-laptop{
+// this uses combined class selctor to set bnackground color as we use these icons elsewhere and dont need the background color there.
+.services-avatar.icon-laptop {
     background-color: #67809f;
 }
-.icon-display{
+.services-avatar.icon-display {
     background-color: #4183d7;
 }
-.icon-bar-graph{
+.services-avatar.icon-bar-graph {
     background-color: #2ecc71;
 }
-.icon-phone_in_talk{
+.services-avatar.icon-phone_in_talk {
     background-color: #d64541;
 }
-.icon-embed2{
+.services-avatar.icon-embed2 {
     background-color: #926fb1;
 }
-.icon-security{
-    background-color: #f62459;
+.services-avatar.icon-security {
+    background-color: #f62459; 
 }
-.icon-study{
-    background-color: #ce4125;
+.services-avatar.icon-study {
+    background-color: #ce4125; 
 }
 
 //////////////////////////////////////////////////////////////////////

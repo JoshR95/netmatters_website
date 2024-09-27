@@ -13,6 +13,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    list-style-type: none;
+    // this aligns the icon to the center
+    li{
+        text-align: center;
+    }
+}
+// this stacks the text inside the banner-dropdowns li
+.banner-dropdown li span {
+    display: block; 
 }
 
 
