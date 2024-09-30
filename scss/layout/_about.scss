@@ -328,7 +328,7 @@
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 1259px){
 
     .welcome-to-netmatters {
         display: flex;
@@ -355,6 +355,12 @@
         padding-top: 0px;
     }
 
+    // this gets rid of the view all and -->
+    .container .view-all {
+        display: none;
+    }
+
+    // this shows only two articles and gives them the correct size.
     .row{
         display: flex;
 
@@ -376,10 +382,6 @@
         }
 
     }    
-    // this gets rid of the view all and -->
-    .container .view-all {
-        display: none;
-    }
 
 }
 
@@ -387,7 +389,7 @@
     
     .wtn-rows{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); // Create two equal columns
+        grid-template-columns: repeat(2, 1fr); // Creates two equal columns
         gap: 20px;
     }
     // this gives space between the buttons 
@@ -399,4 +401,30 @@
     }
 
 
+}
+
+// this shows all three articles in full screen and sizes them correctly 
+@media (min-width: 1260px){
+
+    .row{
+        display: flex;
+
+        .article-1{
+            width: 33.3%;
+            padding-left: 15px;
+        }
+
+        .article-2{
+            width: 33.3%;
+            padding-left: 15px;
+            padding-top: 0px;
+        }
+
+        .article-3{
+            width: 33.3%;
+            padding-left: 15px;
+            padding-top: 0px;
+        }
+
+    }
 }
