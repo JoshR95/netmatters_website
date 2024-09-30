@@ -32,8 +32,6 @@ footer {
 // its because of footer-rows padding, but i need the padding for the text to be offset from the left side
 // NEED TO SORT 
 .bottom-footer {
-   display: flex;
-   justify-content: space-between;
    font-size: .8125rem;
    padding-top: 10px;
    width: 100%;
@@ -41,9 +39,6 @@ footer {
    background: #212330;
    border: 0;
    .bottom-footer-text{
-      display: flex;
-      flex-direction: column;
-      padding-top: 10px;
       color: $primary-white;
    }
 }
@@ -71,6 +66,12 @@ footer {
       color: $primary-white;
       text-decoration: none; 
    }
+   &:hover{
+      facebook-btn{
+         background-color: orange;
+      }
+   }
+
 }
 
 // Had to add this as couldnt figure out where the 40px of left padding it was adding 
@@ -99,6 +100,12 @@ footer {
 /// MEDIA QUERIES
 ////////////////////////////////////////////////////////////////////
 
+@media(max-width: 767px){
+   // this gives the needed padding only in the mobile view
+   .bottom-footer-text{
+      padding-top: 10px;
+   }
+}
 
 @media (min-width: 768px) {
    
@@ -111,6 +118,17 @@ footer {
       //this is making the grid to keep the links in two columns
 
    }
+
+   // these two selectors are aligning the items in a row and giving correct padding
+   .bottom-footer{
+      display: flex;
+      align-content: center;
+   }
+   .bottom-footer-text{
+      display: flex;
+      gap: 5px;
+      padding: 0px 0px 10px;
+   }
    
 
 }
@@ -119,16 +137,32 @@ footer {
 @media (min-width: 992px) {
 
    .footer-row {
-      flex: 25%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
 
-      // this is keeping the links in 4 columns 
-      .footer-menu-main{
-         display: grid;
-         grid-template: repeat(2, auto) / repeat(4, 1fr);
-      }
    }
 }
 
-// @media (min-width: $brkpoint-lg) {
-//       margin-bottom: 40px;
-// }
+@media(min-width: 1260px){
+
+   footer{
+      padding-top: 50px;
+   }
+
+   .netmatters-footer-info{
+      padding-top: 0px;
+   }
+
+   .footer-menu{
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .top-footer{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px
+   }
+   
+}

@@ -431,4 +431,14 @@
         }
 
     }
+
+    // This makes the buttons align in a row in fullscreen
+    .button-container {
+        display: flex; 
+        gap: 10px; 
+        .btn{
+            font-size: 18px;
+            height: 50px;
+        }
+    }
 }
