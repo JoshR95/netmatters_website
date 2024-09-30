@@ -994,7 +994,7 @@ p {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-wdith: 1259px) {
   /* line 328, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
   .services-section {
     width: 100%;
@@ -1002,6 +1002,21 @@ p {
   /* line 332, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
   .services-section > .main-item {
     flex-basis: 33.3%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 339, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
+  .services-section {
+    width: 100%;
+  }
+  /* line 343, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
+  .services-section > .main-item {
+    flex-basis: 33.3%;
+  }
+  /* line 347, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_services-section.scss */
+  .services-section > .secondary-item {
+    flex-basis: 25%;
   }
 }
 

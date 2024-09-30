@@ -323,7 +323,7 @@
 
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-wdith: 1259px){
 
     .services-section {
         width: 100%;
@@ -331,5 +331,20 @@
 
     .services-section > .main-item{
         flex-basis: 33.3%;
+    }
+}
+
+@media (min-width: 1260px){
+
+    .services-section {
+        width: 100%;
+    }
+
+    .services-section > .main-item{
+        flex-basis: 33.3%;
+    }
+
+    .services-section > .secondary-item{
+        flex-basis: 25%;
     }
 }
