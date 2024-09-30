@@ -82,15 +82,3 @@ html{
 .bottom-services-bar .our-work-examples .picture {
     @include turn-picture-colored;
 }
-
-// @media (max-width: 767px) {
-//     body {
-//         max-width: 767px; // Set maximum width
-//         margin: 0 auto; // Center the body
-//         overflow-x: hidden; // Prevent horizontal scrolling
-//     }
-
-//     .container {
-//         width: 100%; // Ensure the container takes full width
-//     }
-// }

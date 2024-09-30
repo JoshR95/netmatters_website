@@ -410,7 +410,7 @@
 
         <div class="main-content">
             <div class="top-and-bottom-padding ">
-                <div class="services-container-padding">
+                <div class="container">
                     <div class ="services-header service-padding">
                         <h2 class="our-services-title"> Our Services</h2>
                         <a class="top-services-arrow"><strong>View Our Work <span class="icon-arrow-right2"></span></strong></a>
@@ -757,12 +757,12 @@
 
             
         <!-- Turn all these classes of 'bottom-anchor' into a mixin later -->
-        <footer>
-            <div class="footer-row">
-                <div class="container">
+        <footer>                
+            <div class="container">
+
                     <div class="top-footer">
                         <div class="netmatters-footer-info">
-                            <img src="img/nm-logo-white-med.png" alt="Netmatters Logo in white">
+                            <img class ="footer-main-logo"src="img/nm-logo-white-med.png" alt="Netmatters Logo in white">
                             <h4>Follow us on:</h4>
                             <div class="footer-follow-links">
                                 <a class="facebook-btn" href="#">
@@ -779,7 +779,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="footer-menu-main">
+                        <div class="footer-row">
                             <div class="footer-menu">
                                 <h4>About Netmatters</h4>
                                 <ul class="footer-ul">
@@ -834,19 +834,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom-footer">
-                    <div class="container bottom-footer-text">
-                        <div>
-                            &copy; Copyright Netmatters 2024
-                        </div>
-                        <div>
-                            All rights reserved.
-                        </div>
-                        <a class="bottom-anchor" href="#"> - Sitemap</a> 
-                    </div>
-                </div>
             </div>
         </footer>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="bottom-footer-text">
+                    <div>
+                        &copy; Copyright Netmatters 2024
+                    </div>
+                    <div>
+                        All rights reserved.
+                    </div>
+                    <a class="bottom-anchor" href="#"> - Sitemap</a> 
+                </div>
+            </div>
+        </div>
         <button class="sticky-help">
             <span class="icon-chat"></span>
         </button>

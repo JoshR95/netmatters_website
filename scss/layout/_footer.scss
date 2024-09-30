@@ -12,7 +12,8 @@ footer {
    h4 {
        text-transform: uppercase;
        font-size: 1rem;
-       margin-bottom: 26px;	
+       margin-bottom: 26px;
+       margin-top: 0px;	
    }
 }	  
 
@@ -20,6 +21,8 @@ footer {
 
 // This removes the bullet points
 .footer-row {
+   display: flex;
+   flex-wrap: wrap;
    li {
      list-style-type: none;
    }
@@ -29,24 +32,28 @@ footer {
 // its because of footer-rows padding, but i need the padding for the text to be offset from the left side
 // NEED TO SORT 
 .bottom-footer {
-   position: relative;
    display: flex;
-   width: 100%;
+   justify-content: space-between;
    font-size: .8125rem;
-   background-color: #212330;
+   padding-top: 10px;
+   width: 100%;
+   left: 0;
+   background: #212330;
+   border: 0;
    .bottom-footer-text{
       display: flex;
       flex-direction: column;
-      padding: 10px 0px 10px 15px;
+      padding-top: 10px;
+      color: $primary-white;
    }
 }
 
 // this is what removes the standard blue color and only adds the underline when hovered over
 .bottom-anchor{
-   text-decoration: none; /* Removes the underline */
+   text-decoration: none; 
    color: inherit;
    &:hover {
-   text-decoration: underline; /* Adds underline on hover */
+   text-decoration: underline; 
    }
 }
 
@@ -77,9 +84,15 @@ footer {
 }
 
 .netmatters-footer-info{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
    padding-top: 27px;
 }
 
+.footer-main-logo{
+   width: 320px;
+}
 
 
 /////////////////////////////////////////////////////////////////////
@@ -93,25 +106,13 @@ footer {
    .footer-row {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(2, 1fr);
       //this is making the grid to keep the links in two columns
-      .footer-menu-main{
-         display: grid;
-         grid-template: repeat(2, auto) / repeat(2, 1fr);
-      }
 
-      .bottom-footer-text{
-         flex-direction: row;
-         align-items: center;
-         gap: 5px;
-      }
    }
    
-   .bottom-footer{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
+
 }
    
 
