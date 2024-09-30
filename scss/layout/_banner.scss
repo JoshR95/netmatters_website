@@ -219,7 +219,19 @@
 
 }
 
+// this makes the dropdown anchors underline white on hover
+.banner-inner-dropdown-container a {
+    text-decoration: none; // No underline by default
+    &:hover {
+        text-decoration: underline; // Underline on hover
+        text-decoration-color: $primary-white;
+    }
+}
 
+// i need this and to give each span an anchor as it was adding weird padding from somewhere without
+.banner-dropdown-item .banner-dropdown-a {
+    padding: 0;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES  
