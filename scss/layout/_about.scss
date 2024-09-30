@@ -27,12 +27,12 @@
 // This adds the top and bottom padding of 50px, made so it can be used on other parts if needed. 
 
 // setting the brand-backgrounds color
-.welcome-to-netmatters{
+.about{
     background-color: $primary-background;
     color: $primary-white;
 
     // sets styling for buttons in welcome to net matters section
-    .btn, btn-primary-inverse {
+    .btn, .btn-primary-inverse {
         border-radius: 6px;
         padding: 10px 30px;
         font-size: 20px;
@@ -67,7 +67,7 @@
     content: "\ea3c";
     }
 
-.welcome-to-netmatters a{ // this takes away the underlines of the anchors and applies white
+.about a{ // this takes away the underlines of the anchors and applies white
     text-decoration: none;
     color: $primary-white;
 

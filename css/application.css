@@ -301,13 +301,13 @@ p {
 }
 
 /* line 30, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_about.scss */
-.welcome-to-netmatters {
+.about {
   background-color: #323544;
   color: #fff;
 }
 
 /* line 35, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_about.scss */
-.welcome-to-netmatters .btn, .welcome-to-netmatters btn-primary-inverse {
+.about .btn, .about .btn-primary-inverse {
   border-radius: 6px;
   padding: 10px 30px;
   font-size: 20px;
@@ -348,13 +348,13 @@ p {
 }
 
 /* line 70, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_about.scss */
-.welcome-to-netmatters a {
+.about a {
   text-decoration: none;
   color: #fff;
 }
 
 /* line 74, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_about.scss */
-.welcome-to-netmatters a:hover {
+.about a:hover {
   text-decoration: underline;
   /* Adds underline on hover */
 }
