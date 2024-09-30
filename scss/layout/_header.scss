@@ -220,7 +220,7 @@
     }
 }
 
-@media(min-width: 992px){
+@media(min-width: 992px) and (max-width: 1259px){
 
     .large-screen-search-bar{
         display: none;
@@ -229,5 +229,17 @@
     // cant have below as search bar would be there
     .icon-search-big-btn{
         margin-left: 20px;
+    }
+}
+
+
+@media(min-width: 1260px){
+    // these two bits of code maken the search bar appear, give padding and the correct width 
+    .large-screen-search-container{
+        display: block;
+        padding-left: 20px;
+    }
+    .large-screen-search-bar{
+        width: 240px;
     }
 }
