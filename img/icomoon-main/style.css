@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ok5g0i');
-  src:  url('fonts/icomoon.eot?ok5g0i#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ok5g0i') format('truetype'),
-    url('fonts/icomoon.woff?ok5g0i') format('woff'),
-    url('fonts/icomoon.svg?ok5g0i#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sbg5g8');
+  src:  url('fonts/icomoon.eot?sbg5g8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sbg5g8') format('truetype'),
+    url('fonts/icomoon.woff?sbg5g8') format('woff'),
+    url('fonts/icomoon.svg?sbg5g8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -177,6 +177,9 @@
 }
 .icon-chat:before {
   content: "\e904";
+}
+.icon-graduation-cap:before {
+  content: "\e919";
 }
 .icon-flask:before {
   content: "\e916";
