@@ -16,6 +16,8 @@
     transform: translateY(-100%);
 }
 
+
+
 ///////////////////////////////////////////////
 ///  Top part of header
 ///////////////////////////////////////////////
@@ -59,6 +61,22 @@
  
 }
 
+// These mixins turn the color slightly darker when hovered over
+.large-screen-mouse {
+    @include button-hover(#4183d7);
+}
+
+.large-screen-paperplane {
+    @include button-hover(#999aa2); 
+}
+
+.icon-search-big-btn {
+    @include button-hover(#999aa2);
+}
+
+.hamburger-icon {
+    @include button-hover(#333645);
+}
 
 
 .large-screen-mouse{

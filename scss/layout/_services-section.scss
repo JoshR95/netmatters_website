@@ -275,11 +275,6 @@
         align-items: center;
     }
 
-    // this sets the services section to not grow more than this to match nettmatters layout
-    .services-section {
-        width: 750px;
-    }
-
     .services-header{
         display: flex;
         flex-direction: row;
@@ -322,6 +317,13 @@
 
 }
 
+@media(min-width: 768px) and (max-width: 991px){
+
+        // this sets the services section to not grow more than this to match nettmatters layout
+        .services-section {
+            width: 750px;
+        }
+}
 
 @media (min-width: 992px) and (max-width: 1259px){
 
@@ -329,10 +331,16 @@
         width: 100%;
     }
 
+    .services-header{
+        width: 100%;
+    }
+
     .services-section > .main-item{
         flex-basis: 33.3%;
     }
 }
+
+
 
 @media (min-width: 1260px){
 
@@ -363,6 +371,10 @@
 
     .services-section > .secondary-item{
         flex-basis: 25%;
+    }
+
+    .services-header{
+        width: 100%;
     }
 
     

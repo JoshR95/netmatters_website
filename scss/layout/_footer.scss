@@ -56,22 +56,39 @@ footer {
 
 .footer-follow-links{
    display: flex;
-   flex: row;
    font-size: 26px;
    margin-bottom: 30px;
+   .facebook-btn {
+      &:hover {
+         background-color: #3b5998;
+      }
+   }
+   .linkedin-btn{
+      &:hover {
+         background-color: #0077b5;
+      }
+   }
+   .x-btn{
+      &:hover {
+         background-color: #00aced;
+      }
+   }
+   .instagram-btn{
+      &:hover {
+         background-color: #d93175;
+      }
+   }
+   // this aligns all the icons in the center of their container
    a{
+      display: flex;
+      align-items: center; 
+      justify-content: center;
       padding: 12px 22px 16px;
       margin-right: 10px;
       background-color: #212330;
       color: $primary-white;
       text-decoration: none; 
    }
-   &:hover{
-      facebook-btn{
-         background-color: orange;
-      }
-   }
-
 }
 
 // Had to add this as couldnt figure out where the 40px of left padding it was adding 

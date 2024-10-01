@@ -50,6 +50,7 @@
 
 .row-1 .btn{
     background-color: #272936;
+    @include button-hover(#272936);
 }
 
 .icon-star-full{
@@ -58,25 +59,28 @@
     font-size: 50px;
 }
 
+// These two selectors and styling apply color to these buttons and turn darker shade when hovered over
 .btn-google{
     background-color: #4387f6;
     margin-right: 10px;
+    @include button-hover(#4387f6);
 }
-
 .btn-trustpilot{
     background-color: #00b67b;
+    @include button-hover(#00b67b);
 }
 
 .icon-arrow-right2:before {
     content: "\ea3c";
     }
 
-.about a{ // this takes away the underlines of the anchors and applies white
+.about .wtn-text{ // this takes away the underlines of the anchors and applies white
     text-decoration: none;
     color: $primary-white;
 
+    // This adds underline on hover 
     &:hover {
-        text-decoration: underline; /* Adds underline on hover */
+        text-decoration: underline;  
     }
 }
 
@@ -107,10 +111,7 @@
     }
 }
 
-// .btn.main-buttons{
-//     padding: 10px 30px;
 
-// }
 
 // ==========================================================================
 // Latest-news-block
@@ -318,9 +319,7 @@
     // sizes the image to 100% width whilst 768px's and under
     .responsive-image {
         max-width: 100%;
-        // Remove these lines
-        // margin-left: 50%;
-        // transform: translateX(-50%);
+
     }
     // this makes the view all in the latest news block disappear under 268px's
     .latest-news-block .latest-news-view-all {

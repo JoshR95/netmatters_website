@@ -40,3 +40,17 @@
       filter: grayscale(0%);
     }
   }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// BUTTON-HOVER - THIS TURNS THINGS A SLIGHLT DIFFERENT COLOR WHEN HOVERED OVER
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+@mixin button-hover($color) {
+  transition: background-color 0.3s ease; // Smooth transition 
+  
+  &:hover {
+      background-color: darken($color, 10%); // DarkenS the original color by 10% 
+      color: white; // Optional: change text color on hover 
+  }
+}
