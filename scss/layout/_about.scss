@@ -318,8 +318,9 @@
     // sizes the image to 100% width whilst 768px's and under
     .responsive-image {
         max-width: 100%;
-        margin-left: 50%;
-        transform: translateX(-50%);
+        // Remove these lines
+        // margin-left: 50%;
+        // transform: translateX(-50%);
     }
     // this makes the view all in the latest news block disappear under 268px's
     .latest-news-block .latest-news-view-all {
