@@ -11,10 +11,12 @@
 
 // this makes the ul list items display in a line with space between eachother
 .banner-dropdown{
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    list-style-type: none;
     // this aligns the icon to the center
     li{
         text-align: center;
@@ -24,6 +26,73 @@
         padding-bottom: 18px;
     }
 }
+
+// this adds a bit more space between each item in the banner nav
+.banner-dropdown a {
+    padding: 10px; 
+}
+
+
+// These selectors turn the background color to the relevant colours when hovered
+// CANT FIGURE OUT HOW TO GET IT CORRECT
+.banner-bespoke-software{
+    &:hover{
+        background-color: #67809f;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-it-support{
+    &:hover{
+        background-color: #4183d7;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-digital-marketing{
+    &:hover{
+        background-color: #2ecc71;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-telecoms-services{
+    &:hover{
+        background-color: #d64541;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-web-design{
+    &:hover{
+        background-color: #926fb1;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-cyber-security{
+    &:hover{
+        background-color: #f62459;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+.banner-developer-course{
+    &:hover{
+        background-color: #ce4125;
+        .banner-avatar{
+            color: $primary-white;
+        }
+    }
+}
+
+
 // this stacks the text inside the banner-dropdowns li
 .banner-dropdown li span {
     display: block; 
@@ -117,25 +186,25 @@
 
 
 .inner-bespoke-software{
-    background-color: #67809f;
+    background-color: #526781;
 }
 .inner-it-support{
-    background-color: #4183d7;
+    background-color: #286abd;
 }
 .inner-digital-marketing{
-    background-color: #2ecc71;
+    background-color: #25a25a;
 }
 .inner-telecoms-services{
-    background-color: #d64541;;
+    background-color: #bc2c28;
 }
 .inner-web-design{
-    background-color: #926fb1;;
+    background-color: #79539a;
 }
 .inner-cyber-security{
-    background-color: #f62459;
+    background-color: #de093f;
 }
 .inner-developer-course{
-    background-color: #ce4125; 
+    background-color: #a3331d; 
 }
 
 
