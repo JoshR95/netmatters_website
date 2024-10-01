@@ -3,13 +3,6 @@
 ////////////////////////////////////////////////////////////////////
 
 
-
-// This mixin is what makes an element move when hovered over
-// to use we need to use @include i.e.
-// .service-item {
-//    @include hover-move;
-//}
-
 // the top needs to have a relative postioning so the top: 0 can work
 // the two arguments in parenthesis is what moves it when hovered 
 @mixin hover-move($hover-distance: -10px, $transition-time: 0.5s) {

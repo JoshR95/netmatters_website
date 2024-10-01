@@ -12,9 +12,9 @@
 
 // sizes the images with responsive-image class to 100% of its container width 
 .responsive-image {
-    width: 100%; // Ensure it takes full width of its container
-    height: auto; // Maintain aspect ratio
-    max-width: 100%; // Prevent it from exceeding its container
+    width: 100%; 
+    height: auto;
+    max-width: 100%;
 }
 .about-title{
     font-size: 2.25rem;
@@ -74,7 +74,8 @@
     content: "\ea3c";
     }
 
-.about .wtn-text{ // this takes away the underlines of the anchors and applies white
+ // this takes away the underlines of the anchors and applies white   
+.about .wtn-text{ 
     text-decoration: none;
     color: $primary-white;
 
@@ -176,7 +177,7 @@
 .news-link-one{
     background-color: #4183d7;
 }
-    // this is a secondary class to the .new-link so it has a unique color
+// this is a secondary class to the .new-link so it has a unique color
 .news-link-two{
     background-color: #db8c0d;
 }
@@ -323,7 +324,7 @@
     }
     // this makes the view all in the latest news block disappear under 268px's
     .latest-news-block .latest-news-view-all {
-        display: none; /* Increase specificity */
+        display: none;
     }
     // this adds some top padding in mobile view, not ideal
     // but was behaving weirdly

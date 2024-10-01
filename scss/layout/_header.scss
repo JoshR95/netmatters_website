@@ -1,22 +1,10 @@
 .header{
     padding: 20px 0px;
-
-    // This code below is to make the header stick when scrolling, cant get to disappear when scrolling down
-    // so going to leave commented for now - 
-    // position: sticky;
-    // top: 0;
-    // left: 0;
-    // width: 100%;    
-    // background-color: #fff; // Adjust this to match your design
-    // z-index: 1000;
-
 }
 
 .header--hidden {
     transform: translateY(-100%);
 }
-
-
 
 ///////////////////////////////////////////////
 ///  Top part of header
@@ -49,7 +37,7 @@
 .large-screen-search-container {
     display: flex;
 }
-// TRY CHANGE OUTLINE TO BORDER-BOW FOR SHADOW
+
 .large-screen-search-bar {
     padding: 5px 15px; 
     height: 56px;
@@ -57,7 +45,7 @@
     border: 1px solid #e5e5e5;
     color: #e5e5e5;
     font-size: 14px;
-    outline: 1px solid rgba(0, 0, 0, .075); // THIS SHOULD BE BOX-SHADOW BUT I COULDNT GET IT TO WORK
+    outline: 1px solid rgba(0, 0, 0, .075); 
  
 }
 

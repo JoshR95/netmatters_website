@@ -26,12 +26,6 @@
     font-size: 20.8px;
     font-weight: 400;
     color: #333645;
-    // span{
-    //     font-size: 13px;
-    //     line-height: 1.375rem;
-    //     margin-bottom: 13px;
-    //     font-weight: 400;
-    // }
 }
 
 .service-item-text{
@@ -133,12 +127,10 @@
     align-items: center;
     flex: wrap;
     text-align: center;
-    // I DONT THINK THIS IS RIGHT, NEEDS TO BE CHECKED 
     gap: 10px;
     padding: 30px;
     // this is what seperates each div
     margin-top: 30px;
-    // THIS NEEDS TO BE ALTERED 
     border: solid #ccc 1px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;

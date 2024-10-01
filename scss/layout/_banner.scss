@@ -112,7 +112,7 @@
 }
 
 .banner-inner-dropdown-container .banner-dropdown-item {
-    text-align: left; /* Aligns text to the left */
+    text-align: left;
 }
 
 
@@ -226,9 +226,9 @@
 
 // this makes the dropdown anchors underline white on hover
 .banner-inner-dropdown-container a {
-    text-decoration: none; // No underline by default
+    text-decoration: none;
     &:hover {
-        text-decoration: underline; // Underline on hover
+        text-decoration: underline;
         text-decoration-color: $primary-white;
     }
 }
