@@ -4,17 +4,17 @@ html {
   line-height: 1.42857143;
 }
 
-/* line 6, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 7, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .top-and-bottom-padding {
   padding: 50px 0px;
 }
 
-/* line 9, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 10, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .bottom-padding {
   padding-bottom: 50px;
 }
 
-/* line 13, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 14, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn {
   font-weight: 400;
   text-decoration: none;
@@ -28,25 +28,25 @@ html {
   white-space: normal;
 }
 
-/* line 26, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 27, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn .main-buttons {
   padding: 10px 30px;
 }
 
-/* line 32, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 33, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .overflow-hidden {
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 44, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 45, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-consent {
   position: fixed;
   bottom: 0px;
   font-size: 12.8px;
 }
 
-/* line 48, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 49, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-consent button {
   padding: 5px 10px;
   border: none;
@@ -55,7 +55,7 @@ html {
   color: #fff;
 }
 
-/* line 57, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 58, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-help {
   position: fixed;
   bottom: 25px;

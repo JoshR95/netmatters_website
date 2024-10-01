@@ -3,8 +3,9 @@ html{
     line-height: 1.42857143;
 }
 
+// this adds padding to the top and bottom of the section
 .top-and-bottom-padding {
-    padding: 50px 0px; // this adds padding to the top and bottom of the section
+    padding: 50px 0px; 
 }
 .bottom-padding{
     padding-bottom: 50px;
@@ -28,10 +29,10 @@ html{
     }
 }
 
-// this 
+// This hides any content that overflows the container
 .overflow-hidden {
-    overflow: hidden; // This hides any content that overflows the container
-    white-space: nowrap; // this keeps everything in  one line and stops is wrapping
+    overflow: hidden; 
+    white-space: nowrap; 
 }
 
 
@@ -75,7 +76,7 @@ html{
 /// MIXIN
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-  ///// THIS MIXIN REMOVES THE GREYSCALE ON THE COLORED IMAGES WHEN HOVERED OVER
+///// THIS MIXIN REMOVES THE GREYSCALE ON THE COLORED IMAGES WHEN HOVERED OVER
 // i had to be very specific with selectors as the top set of pictures didnt work correctly
 // this selects picture that are nested in the middle selector, which are descendants of the first selector
 .bottom-clients-bar .bottom-bar-images .picture,
