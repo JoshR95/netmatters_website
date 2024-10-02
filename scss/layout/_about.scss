@@ -305,10 +305,14 @@
 
 .bottom-bar-images{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 100px;
     max-width: 100%;
+    .colored-picture{
+        max-width: 200px; /* Set maximum width */
+        max-height: 75px; /* Set maximum height */
+    }
 }
 
 
