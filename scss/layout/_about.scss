@@ -19,6 +19,7 @@
 }
 .about-title{
     font-size: 2.25rem;
+    margin: 0;
 }
 
 // ==========================================================================
@@ -28,10 +29,14 @@
 // This adds the top and bottom padding of 50px, made so it can be used on other parts if needed. 
 
 // setting the brand-backgrounds color
-.about{
+
+.wtn-background{
     background-color: $primary-background;
     color: $primary-white;
+}
 
+
+.about{
     // sets styling for buttons in welcome to net matters section
     .btn, .btn-primary-inverse {
         border-radius: 6px;
@@ -42,7 +47,7 @@
 }
 
 .wtn-rows{
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .top-btn{
@@ -56,8 +61,11 @@
 
 .icon-star-full{
     color: #ffa500;
-    margin-bottom: 25px;
     font-size: 50px;
+}
+
+.icon-star-container{
+    margin-bottom: 25px;
 }
 
 // These two selectors and styling apply color to these buttons and turn darker shade when hovered over
@@ -92,6 +100,9 @@
         font-size: 1.3rem;
         font-weight: 600;
         font-style: italic;
+    }
+    .about-title{
+        margin: 40px 0;
     }
 }
 
@@ -320,7 +331,21 @@
 // Media queris 
 /////////////////////////////////////////////////////////////////////////////
 
+@media(max-width: 601px){
+    .about .btn{
+        margin-bottom: 17px;
+    }
+}
+
 @media (max-width: 767px) {
+    
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     
     // sizes the image to 100% width whilst 768px's and under
     .responsive-image {
@@ -333,9 +358,6 @@
     }
     // this adds some top padding in mobile view, not ideal
     // but was behaving weirdly
-    .about-title{
-        padding-top: 50px;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1259px){
@@ -397,20 +419,36 @@
 
 @media (min-width: 992px){
     
-    .wtn-rows{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); // Creates two equal columns
-        gap: 20px;
-    }
-    // this gives space between the buttons 
+    // this switches the content in welcome to netmatters to be in side by side columns
+    .wtn-rows {
+        display: flex;
+        justify-content: space-between;
+      }
+
     .row-1,
     .row-2{
+        width: 50%; /* Adjust this value as needed */
+        padding: 0 15px;
         a{
             margin-bottom: 20px;
         }
+        .about-title{
+            margin: 0 0 30px 0;
+        }
     }
 
+    // IMPORTANT - i have a weird bug where i have to turn off the containers left and right padding for things to align correctly
+    .about .container {
+        padding: 0;
+    }
 
+}
+
+@media(min-width: 992px) and (max-width: 1259px){
+    // this adds some margin to get the buttons inline at this view port
+    .btn-google{
+        margin-top: 25px;
+    }
 }
 
 // this shows all three articles in full screen and sizes them correctly 
@@ -445,5 +483,10 @@
         .btn{
             font-size: 18px;
         }
+    }
+
+    .btn-google,
+    .btn-trustpilot{
+        margin-top: 30px;
     }
 }
