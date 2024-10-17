@@ -70,23 +70,35 @@
 .large-screen-mouse{
     height: 56px;
     line-height: 46px;
-    padding: 7px 20px 3px;
+    padding: 5px 15px;
     border-radius: 3px;
     font-size: 23px;
     border: none;
     background-color: #4183d7;
     color: #fff;
+    .icon-mouse { 
+        position: relative;
+        top: 3px; 
+    }
+    &__text {
+        font-size: 18px;
+    }
 }
 
 .large-screen-paperplane{
     height: 56px;
-    padding: 7px 20px 3px;
+    padding: 5px 15px;
     margin-left: 20px;
     border-radius: 3px;
     font-size: 23px;
     border: none;
     background-color: #999aa2;
     color: #fff;
+    // this moves the icon down a little in the button
+    .icon-paperplane { 
+        position: relative;
+        top: 3px; 
+    }
     &__text {
         font-size: 18px;
     }
