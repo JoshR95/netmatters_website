@@ -152,6 +152,7 @@
     left: 0;
 }
 
+
 .banner-inner-dropdown{
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +165,7 @@
     font-size: 32px;
     color: $primary-white;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 // this is what keeps the dropdown items in line and at the right width thanks to the flex
