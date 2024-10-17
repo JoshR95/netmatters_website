@@ -7,7 +7,6 @@
     service-item{
         padding: 30px;
     }
-
 }
 
 .our-services-title{
@@ -17,6 +16,9 @@
 }
 .top-services-arrow{
     font-size: 36px;
+    font-weight: 600;
+    color: $primary-black;
+
 }
 
 // this styles the header of each service block

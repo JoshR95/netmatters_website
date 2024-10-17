@@ -268,6 +268,12 @@
         padding: 20px 20px;
         line-height: 50px;
         border-radius: 3px;
+        span{
+            margin-left: 12px;
+            // pushes the arrow down very slightly to be centered
+            position: relative;
+            top: 1px; 
+        }
     }
 
     // this displays all the circles in a row horizontaly, the justify content centers them in the div
