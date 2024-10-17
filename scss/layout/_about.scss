@@ -139,14 +139,14 @@
 
 //styles the latest news h1
 .latest-news-h1{
-    color: #333645;
+    color: $primary-black;
     font-weight: 600;
     margin: 0px;
 }
 
 // colors the view all --> in latest news
 .latest-news-view-all{
-    color: #333645;
+    color: $primary-black;
     font-size: 1.625rem;
     font-weight: 600;
     text-decoration: none;

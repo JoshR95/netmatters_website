@@ -1,6 +1,7 @@
 html{
     font-size: 16px;
     line-height: 1.42857143;
+    font-family: $font-family--primary;
 }
 
 // this adds padding to the top and bottom of the section
@@ -61,7 +62,7 @@ html{
     right: 25px;
     height: 60px;
     width: 60px;
-    background-color: #333645;
+    background-color: $primary-black;
     color: white;
     font-size: 30px;
     border: none;
