@@ -50,6 +50,11 @@
     color: #e5e5e5;
     font-size: 14px;
     outline: 1px solid rgba(0, 0, 0, .075); 
+    // adds a light blue box shadow to the search box when its clicked
+    &:focus{
+        border-color: #2cdff7; 
+        box-shadow: 0 0 2px 2px #b3f1f1; 
+    }
  
 }
 
@@ -126,6 +131,7 @@
     width: 63px;
     height: 56px;
     margin-left: 20px;
+    border-radius: 3px;
 
 }
 
@@ -163,7 +169,6 @@
     width: 100%;
     margin-top: 11px;
 
-
     span{
         position: relative;
         padding: 5px 0px 5px 15px;
@@ -189,6 +194,9 @@
         border: 2px solid #cecece;
         background-color: #e5e5e5;
         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        &:focus {
+            outline: none;
+        }
     }
 }
 
