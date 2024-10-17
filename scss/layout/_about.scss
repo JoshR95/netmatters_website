@@ -11,12 +11,12 @@
 }
 
 
-// sizes the images with responsive-image class to 100% of its container width 
 .responsive-image {
-    width: 100%; 
-    height: auto;
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover; // This ensures the image covers the area without distortion
+    object-position: center; // This centers the image within its container
 }
+
 .about-title{
     font-size: 2.25rem;
     margin: 0;
@@ -124,7 +124,13 @@
     }
 }
 
-
+.client-quote-author{
+    font-size: 18px;
+}
+.author-name {
+    color: #a3a8ac;
+    font-weight: 600;
+}
 
 // ==========================================================================
 // Latest-news-block
@@ -187,7 +193,7 @@
 }
 // this is a secondary class to the .news-link so it has a unique color
 .news-link-one{
-    background-color: #4183d7;
+    background-color: #926fb1;
 }
 // this is a secondary class to the .new-link so it has a unique color
 .news-link-two{
@@ -220,7 +226,7 @@
 // this block of selectors lets me set the titles colors individually
 .block {
     .btn-article-1{
-        background-color: #4183d7;
+        background-color: #926fb1;
     }
     .btn-article-2{
         background-color: #db8c0d;
@@ -229,7 +235,7 @@
         background-color: #d64541;
     }
     .article-1-h3{
-        color: #4183d7;
+        color: #926fb1;
     }
     .article-2-h3{
         color: #db8c0d;
