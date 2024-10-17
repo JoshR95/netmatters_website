@@ -320,6 +320,14 @@
 
 @media (min-width: 992px){
 
+    // this adds the linear gradient netmatters have here, this can have its color changed to match their images later
+    .banner-container {
+        &::before {
+            background: linear-gradient(270deg,transparent 25%,#000)
+        }
+
+        
+    }
 
     .banner-text {
         position: relative;

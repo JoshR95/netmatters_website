@@ -1529,13 +1529,17 @@ p {
 }
 
 @media (min-width: 992px) {
-  /* line 324, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+  /* line 325, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+  .banner-container::before {
+    background: linear-gradient(270deg, transparent 25%, #000);
+  }
+  /* line 332, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
   .banner-text {
     position: relative;
     text-align: left;
     padding: 0px 15px;
   }
-  /* line 330, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
+  /* line 338, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_banner.scss */
   .banner-text h2 {
     font-size: 64px;
     line-height: 80px;
