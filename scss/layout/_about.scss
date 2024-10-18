@@ -169,7 +169,7 @@
     align-content: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    width: 95%;
+    padding-top: 50px;
     
 }
 
@@ -177,6 +177,7 @@
     font-size: 36px;
     font-weight: 600;
     color: $primary-black;
+    margin-top: -5px;
 }
 
 // as this is set to absolute, its positioned relative to img-container as thats its ancestor,
@@ -284,9 +285,6 @@
 
 
 
-.bar{
-    padding-top: 50px;
-}
 
 // These are for the first articles text and picture styles.
 .author {
@@ -326,6 +324,11 @@
     text-align: center;
     a{
         font-size: 1.625rem;
+        font-weight: 600;
+        color: $primary-black;
+    }
+    span{
+        padding-left: 5px;
     }
 }
 
@@ -510,5 +513,11 @@
     .btn-google,
     .btn-trustpilot{
         margin-top: 30px;
+    }
+
+    // this has to be left and right or it messes with the top padding already set
+    .heading-container{
+        padding-left:  15px;
+        padding-right: 15px;
     }
 }
