@@ -5,17 +5,23 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-/* line 8, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 7, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 13, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .top-and-bottom-padding {
   padding: 50px 0px;
 }
 
-/* line 11, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 16, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .bottom-padding {
   padding-bottom: 50px;
 }
 
-/* line 15, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 22, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn {
   font-weight: 400;
   text-decoration: none;
@@ -29,25 +35,25 @@ html {
   white-space: normal;
 }
 
-/* line 28, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 35, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn .main-buttons {
   padding: 10px 30px;
 }
 
-/* line 34, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 41, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .overflow-hidden {
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 45, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 52, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-consent {
   position: fixed;
   bottom: 0px;
   font-size: 12.8px;
 }
 
-/* line 49, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 56, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-consent button {
   padding: 5px 10px;
   border: none;
@@ -56,7 +62,7 @@ html {
   color: #fff;
 }
 
-/* line 58, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 65, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-help {
   position: fixed;
   bottom: 25px;
@@ -702,7 +708,7 @@ p {
 .bottom-clients-bar {
   padding-top: 50px;
   padding-bottom: 50px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* line 349, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_about.scss */
