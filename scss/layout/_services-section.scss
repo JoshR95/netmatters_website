@@ -23,7 +23,6 @@
 
 // this styles the header of each service block
 .service-item-header{
-    padding-bottom: 10px;
     margin-bottom: 11px;
     font-size: 20.8px;
     font-weight: 400;
@@ -336,7 +335,14 @@
     .services-section > .main-item{
         flex-basis: 33.3%;
     }
+    
+    // had to add this as was getting an annoying bug that was causing this main-item to be smaller
+    .services-section .service-item.digital-marketing {
+        min-height: 345px;
+    }
+
 }
+
 
 
 
