@@ -10,13 +10,6 @@
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
 }
 
-
-.responsive-image {
-    width: 100%;
-    object-fit: cover; // This ensures the image covers the area without distortion
-    object-position: center; // This centers the image within its container
-}
-
 .about-title{
     font-size: 2.25rem;
     margin: 0;
@@ -175,7 +168,14 @@
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
+    margin-bottom: 40px;
     
+}
+
+.latest-news-about-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: $primary-black;
 }
 
 // as this is set to absolute, its positioned relative to img-container as thats its ancestor,
@@ -236,17 +236,33 @@
     }
     .article-1-h3{
         color: #926fb1;
+        font-weight: 600;
     }
     .article-2-h3{
         color: #db8c0d;
+        font-weight: 600;
         .time-to-read{
             color: #adaeae;
             font-size: .85rem;
+            font-weight: 400;
         }
     }
     .article-3-h3{
         color :#d64541;
+        font-weight: 600;
     }
+    p{
+        color: $primary-black;
+    }
+}
+
+
+.responsive-image {
+    width: 100%;
+    object-fit: cover; 
+    object-position: center;
+    // this pushes the image down so they connect with the text box 
+    margin-bottom: -10px; 
 }
 
 ////////////////////////////////////////////////////////
