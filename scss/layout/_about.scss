@@ -169,6 +169,7 @@
     align-content: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    width: 95%;
     
 }
 
@@ -400,7 +401,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 15px;
         padding-bottom: 50px;
         width: 100%
     }
@@ -481,18 +481,18 @@
 
         .article-1{
             width: 33.3%;
-            padding-left: 15px;
+            padding: 0 15px;
         }
 
         .article-2{
             width: 33.3%;
-            padding-left: 15px;
+            padding: 0 15px;
             padding-top: 0px;
         }
 
         .article-3{
             width: 33.3%;
-            padding-left: 15px;
+            padding: 0 15px;
             padding-top: 0px;
         }
 
