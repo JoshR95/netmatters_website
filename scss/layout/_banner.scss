@@ -20,7 +20,8 @@
     width: 100%; 
 
     > li{
-        flex: 1 1 0; // this allows equal growth, shrink, and base size
+        flex: 1 1 0%; // Equal growth and shrink
+        min-width: 0; // Allows shrinking below content size
     }
     > li > a{
         display: flex;
@@ -32,10 +33,50 @@
         padding-top: 19px;
         padding-bottom: 18px;
         text-align: center;
+        overflow: visible; // Change this to visible
     }
 
-    
 }
+
+/// drop down arrow
+///////////////////////////////////////////////////////////////////////////////
+
+.banner-header .banner-dropdown {
+    > li {
+      > a:first-child {
+        position: relative;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-left: 67px solid transparent;
+          border-right: 67px solid transparent;
+          border-top: 30px solid;
+          display: none;
+          z-index: 50;
+        }
+  
+        &:hover::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+// this is chaning the colour of the arrow to match the colour of the li's background thats hovered over
+.banner-dropdown > li.banner-bespoke-software > a:first-child::after { border-top-color: #67809f; }
+.banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: #4183d7; }
+.banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: #2ecc71; }
+.banner-dropdown > li.banner-telecoms-services > a:first-child::after { border-top-color: #d64541; }
+.banner-dropdown > li.banner-web-design > a:first-child::after { border-top-color: #926fb1; }
+.banner-dropdown > li.banner-cyber-security > a:first-child::after { border-top-color: #f62459; }
+.banner-dropdown > li.banner-developer-course > a:first-child::after { border-top-color: #ce4125; }
+
+///////////////////////////////////////////////////////////////////////////////////
+
 
 // this adds a bit more space between each item in the banner nav
 .banner-dropdown a {
@@ -130,20 +171,28 @@
     color: #ce4125; 
 }
 
-.banner-avatar{
-    font-size: 23px;
-    padding-bottom: 8px;
+.banner-text-small,
+.banner-bar-text {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.banner-text-small{
+.banner-text-small {
     color: $primary-white;
     font-size: 10px;
 }
-// the -margin brings the text closer together
-.banner-text{
+
+.banner-bar-text {
     color: $primary-white;
     font-size: 18px;
     margin-top: -5px;
+}
+
+.banner-avatar {
+    font-size: 23px;
+    padding-bottom: 8px;
 }
 
 // this is what shows the dropdown when the li in the banner header is hovered over
@@ -359,3 +408,12 @@
     }
 }
 
+
+@media (min-width: 1260px) {
+
+    // this code here changes the arrows width when at the highest viewport so it matches the block 
+    .banner-header .banner-dropdown > li > a:first-child::after {
+        border-left-width: 85px;
+        border-right-width: 85px;
+    }
+}
