@@ -3,14 +3,14 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // this keeps the list items centered to their container div
-.banner-header{
+.banner-header {
     display: flex;
     justify-content: center;
     background-color: $primary-black;
 }
 
 // this makes the ul list items display in a line with space between eachother
-.banner-dropdown{
+.banner-dropdown {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -19,11 +19,11 @@
     justify-content: space-between;
     width: 100%; 
 
-    > li{
+    > li {
         flex: 1 1 0%; // Equal growth and shrink
         min-width: 0; // Allows shrinking below content size
     }
-    > li > a{
+    > li > a {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -33,40 +33,37 @@
         padding-top: 19px;
         padding-bottom: 18px;
         text-align: center;
-        overflow: visible; // Change this to visible
+        overflow: visible;
     }
-
 }
 
 /// drop down arrow
-///////////////////////////////////////////////////////////////////////////////
-
 .banner-header .banner-dropdown {
     > li {
-      > a:first-child {
-        position: relative;
-  
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -30px;
-          left: 50%;
-          transform: translateX(-50%);
-          border-left: 67px solid transparent;
-          border-right: 67px solid transparent;
-          border-top: 30px solid;
-          display: none;
-          z-index: 50;
+        > a:first-child {
+            position: relative;
+    
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-left: 67px solid transparent;
+                border-right: 67px solid transparent;
+                border-top: 30px solid;
+                display: none;
+                z-index: 50;
+            }
+    
+            &:hover::after {
+                display: block;
+            }
         }
-  
-        &:hover::after {
-          display: block;
-        }
-      }
     }
-  }
+}
 
-// this is chaning the colour of the arrow to match the colour of the li's background thats hovered over
+// Arrow colors
 .banner-dropdown > li.banner-bespoke-software > a:first-child::after { border-top-color: #67809f; }
 .banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: #4183d7; }
 .banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: #2ecc71; }
@@ -75,101 +72,82 @@
 .banner-dropdown > li.banner-cyber-security > a:first-child::after { border-top-color: #f62459; }
 .banner-dropdown > li.banner-developer-course > a:first-child::after { border-top-color: #ce4125; }
 
-///////////////////////////////////////////////////////////////////////////////////
-
-
-// this adds a bit more space between each item in the banner nav
+// Spacing between banner nav items
 .banner-dropdown a {
     padding: 10px; 
 }
 
-
-// These selectors turn the background color to the relevant colours when hovered
-// CANT FIGURE OUT HOW TO GET IT CORRECT
-.banner-bespoke-software{
-    &:hover{
+// Hover background colors
+.banner-bespoke-software {
+    &:hover {
         background-color: #67809f;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-it-support{
-    &:hover{
+.banner-it-support {
+    &:hover {
         background-color: #4183d7;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-digital-marketing{
-    &:hover{
+.banner-digital-marketing {
+    &:hover {
         background-color: #2ecc71;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-telecoms-services{
-    &:hover{
+.banner-telecoms-services {
+    &:hover {
         background-color: #d64541;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-web-design{
-    &:hover{
+.banner-web-design {
+    &:hover {
         background-color: #926fb1;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-cyber-security{
-    &:hover{
+.banner-cyber-security {
+    &:hover {
         background-color: #f62459;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
-.banner-developer-course{
-    &:hover{
+.banner-developer-course {
+    &:hover {
         background-color: #ce4125;
-        .banner-avatar{
+        .banner-avatar {
             color: $primary-white;
         }
     }
 }
 
-
-// this stacks the text inside the banner-dropdowns li
+// Stack text inside banner-dropdowns li
 .banner-dropdown li span {
     display: block; 
 }
-// this adds specificty so it only selects the icons in the banner section
-.banner-avatar.icon-laptop {
-    color: #67809f;
-}
-.banner-avatar.icon-display {
-    color: #4183d7;
-}
-.banner-avatar.icon-bar-graph {
-    color: #2ecc71;
-}
-.banner-avatar.icon-phone_in_talk {
-    color: #d64541;
-}
-.banner-avatar.icon-embed2 {
-    color: #926fb1;
-}
-.banner-avatar.icon-security {
-    color: #f62459; 
-}
-.banner-avatar.icon-study {
-    color: #ce4125; 
-}
+
+// Icon colors
+.banner-avatar.icon-laptop { color: #67809f; }
+.banner-avatar.icon-display { color: #4183d7; }
+.banner-avatar.icon-bar-graph { color: #2ecc71; }
+.banner-avatar.icon-phone_in_talk { color: #d64541; }
+.banner-avatar.icon-embed2 { color: #926fb1; }
+.banner-avatar.icon-security { color: #f62459; }
+.banner-avatar.icon-study { color: #ce4125; }
 
 .banner-text-small,
 .banner-bar-text {
@@ -195,14 +173,13 @@
     padding-bottom: 8px;
 }
 
-// this is what shows the dropdown when the li in the banner header is hovered over
+// Dropdown show/hide
 .banner-dropdown li {
     &:hover .banner-inner-dropdown-container {
-        display: block; // this shows the dropdown.
+        display: block;
     }
 }
 
-// this is the container that only appear when hovered over
 .banner-inner-dropdown-container {
     display: none; 
     position: absolute; 
@@ -211,14 +188,12 @@
     left: 0;
 }
 
-
-.banner-inner-dropdown{
+.banner-inner-dropdown {
     display: flex;
     flex-wrap: wrap;
 }
 
-// this styles the dropdown h1 and has it alignn to the left
-.banner-dropdown-h1{
+.banner-dropdown-h1 {
     display: flex;
     align-items: flex-start;
     font-size: 32px;
@@ -227,14 +202,13 @@
     margin-bottom: 30px;
 }
 
-// this is what keeps the dropdown items in line and at the right width thanks to the flex
 .banner-dropdown-item {
     display: flex;
-    flex: 1 1 30%; // this says Grow to fill space, shrink if necessary, base width of 30% */
+    flex: 1 1 30%;
     align-items: center;
     font-size: 19.2px;
     padding: 10px 15px 10px 0px;
-    span{
+    span {
         color: $primary-white;
         padding-left: 10px;
     } 
@@ -244,122 +218,16 @@
     text-align: left;
 }
 
+// Inner dropdown background colors
+.inner-bespoke-software { background-color: #526781; }
+.inner-it-support { background-color: #286abd; }
+.inner-digital-marketing { background-color: #25a25a; }
+.inner-telecoms-services { background-color: #bc2c28; }
+.inner-web-design { background-color: #79539a; }
+.inner-cyber-security { background-color: #de093f; }
+.inner-developer-course { background-color: #a3331d; }
 
-.inner-bespoke-software{
-    background-color: #526781;
-}
-.inner-it-support{
-    background-color: #286abd;
-}
-.inner-digital-marketing{
-    background-color: #25a25a;
-}
-.inner-telecoms-services{
-    background-color: #bc2c28;
-}
-.inner-web-design{
-    background-color: #79539a;
-}
-.inner-cyber-security{
-    background-color: #de093f;
-}
-.inner-developer-course{
-    background-color: #a3331d; 
-}
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-.banner-container {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    height: 550px;
-    position: relative;
-    align-items: center; 
-    justify-content: center; 
-    // Ensures the pseudo-element doesn't overflow
-    overflow: hidden;
-
-    // this is basically creating a black background with 50% opacity
-    // we give it a z index of 1 so it sits infont of the image, but not the text 
-    // as that has a value of 2
-    &::before {
-        content: '';
-        position: absolute;
-        // positions it to the very top left
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); 
-        // this ensures the overlay is behind the text but in front of the image 
-        z-index: 1; 
-    }
-}
-
-
-// this is for the picture
-.banner-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    z-index: 0;
-}
-
-// this is styling the heading and nested elements, and has a z-index of 2 
-// so that it sits infront of the image
-.banner-title{
-    position: relative;
-    color: white;
-    z-index: 2;
-    text-align: center;
-    h2{
-        font-size: 40px;
-    }
-    p{
-        font-size: 20px;
-    }
-    .banner-btn{
-        background-color: #926fb1;
-        font-size: 20px;
-        padding: 20px 20px;
-        line-height: 50px;
-        border-radius: 3px;
-        span{
-            margin-left: 12px;
-            // pushes the arrow down very slightly to be centered
-            position: relative;
-            top: 1px; 
-        }
-    }
-
-    // this displays all the circles in a row horizontaly, the justify content centers them in the div
-    .banner-dots-container {
-        display: flex;
-        flex-direction: row; 
-        justify-content: center;
-        // added 18px's extra because i couldnt apply the 18px's of bottom margin to the button 
-        margin-top: 78px; 
-        width: 100%; 
-    }
-
-    .banner-dot {
-        margin: 0 5px; // Add horizontal spacing between dots
-
-        span {
-            display: block;
-            width: 10px;
-            height: 10px;
-            background-color: grey;
-            border-radius: 50%;
-        }
-    }
-
-}
-
-// this makes the dropdown anchors underline white on hover
+// Dropdown link styles
 .banner-inner-dropdown-container a {
     text-decoration: none;
     &:hover {
@@ -368,7 +236,6 @@
     }
 }
 
-// i need this and to give each span an anchor as it was adding weird padding from somewhere without
 .banner-dropdown-item .banner-dropdown-a {
     padding: 0;
 }
@@ -377,41 +244,13 @@
 /// MEDIA QUERIES  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media(max-width: 991px){
-    .banner-dropdown{
+@media(max-width: 991px) {
+    .banner-dropdown {
         display: none;
     }
 }
 
-@media (min-width: 992px){
-
-    // this adds the linear gradient netmatters have here, this can have its color changed to match their images later
-    .banner-container {
-        &::before {
-            background: linear-gradient(270deg,transparent 25%,#000)
-        }
-
-        
-    }
-
-    .banner-text {
-        position: relative;
-        text-align: left;
-        padding: 0px 15px;
-        // margin: 0px 145px;
-
-        h2{
-            font-size: 64px;
-            line-height: 80px;
-            margin-bottom: 20px;
-        }
-    }
-}
-
-
 @media (min-width: 1260px) {
-
-    // this code here changes the arrows width when at the highest viewport so it matches the block 
     .banner-header .banner-dropdown > li > a:first-child::after {
         border-left-width: 85px;
         border-right-width: 85px;
