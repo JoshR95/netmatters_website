@@ -35,14 +35,14 @@
     z-index: 0;
 }
 .banner-title {
-    position: absolute;  // Change from relative to absolute
+    position: absolute;
     color: white;
     z-index: 2;
     text-align: center;
-    top: 50%;          // Add this
-    left: 50%;         // Add this
-    transform: translate(-50%, -50%);  // Add this
-    width: 100%;       // Add this to ensure full width
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     
     h2 {
         font-size: 40px;
@@ -105,9 +105,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media (min-width: 992px) {
-    .banner-slide {
-        &::before {
-            background: linear-gradient(270deg,transparent 25%,#000)
+    .banner-slider {  // Add this parent selector
+        .banner-slide {
+            &::before {
+                background: linear-gradient(270deg,transparent 25%,#000);
+            }
         }
     }
 

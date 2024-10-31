@@ -1826,17 +1826,17 @@ p {
 }
 
 @media (min-width: 992px) {
-  /* line 109, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
-  .banner-slide::before {
+  /* line 110, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
+  .banner-slider .banner-slide::before {
     background: linear-gradient(270deg, transparent 25%, #000);
   }
-  /* line 114, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
+  /* line 116, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
   .banner-text {
     position: relative;
     text-align: left;
     padding: 0px 15px;
   }
-  /* line 119, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
+  /* line 121, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_bannerSlider.scss */
   .banner-text h2 {
     font-size: 64px;
     line-height: 80px;
