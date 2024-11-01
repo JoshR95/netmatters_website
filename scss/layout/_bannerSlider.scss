@@ -96,6 +96,9 @@
             background-color: grey;
             text-indent: -9999px;
             cursor: pointer;
+            &:hover {
+                background-color: #3333;
+            }
         }
         
         &.slick-active button {
