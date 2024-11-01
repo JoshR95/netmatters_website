@@ -53,3 +53,6 @@ function handleCookieConsent() {
 $(document).ready(function() {
     handleCookieConsent();                  // Run when document is ready
 });
+
+
+
