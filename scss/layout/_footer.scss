@@ -54,6 +54,8 @@ footer {
 
 .footer-follow-links{
    display: flex;
+   flex-wrap: wrap;
+   max-width: 100%;
    font-size: 26px;
    margin-bottom: 30px;
    .facebook-btn {
@@ -82,7 +84,7 @@ footer {
       align-items: center; 
       justify-content: center;
       padding: 12px 22px 16px;
-      margin-right: 10px;
+      margin: 0 10px 10px 0;
       background-color: #212330;
       color: $primary-white;
       text-decoration: none; 
@@ -114,6 +116,12 @@ footer {
 /////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES
 ////////////////////////////////////////////////////////////////////
+
+@media (max-width: 480px) {
+   .top-footer .netmatters-footer-info .footer-follow-links a {
+       width: 35%;
+   }
+}
 
 @media(max-width: 767px){
    // this gives the needed padding only in the mobile view

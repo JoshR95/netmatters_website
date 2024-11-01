@@ -1,0 +1,58 @@
+// this makes the manage consent button stick to the bottom of the page even when scrolling
+// this needs to have button too for extra specificty, the .btn in base.scss would overide otherwise.
+.sticky-consent {
+    position: fixed;
+    bottom: 0px;
+    button{
+        font-size: 12.8px;
+        font-weight: 600;
+        line-height: 22px;
+        padding: 0 10px;
+        border: none;
+        border-top-right-radius: 10px;
+        background-color: #75788a;
+        color: $primary-white;
+        cursor: pointer;
+        &:hover{
+            background-color: #999aa2;
+            border-color: #999aa2;
+            box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+        }
+    }
+}
+
+.cookie-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // this makes the whole screen go semi transparent when the buttons clicked
+    z-index: 1000;
+    
+    &.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cookie-popup-content{
+        background-color: white;
+        max-width: 800px;
+        margin: 20px;
+        border-radius: 5px;
+
+        .cookie-popup-header{
+            padding: 15px 20px;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+        
+        p {
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+    }
+}
