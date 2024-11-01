@@ -123,6 +123,12 @@ footer {
    }
 }
 
+@media(min-width: 481px){
+   .footer-follow-links{
+      flex-wrap: nowrap;
+   }
+}
+
 @media(max-width: 767px){
    // this gives the needed padding only in the mobile view
    .bottom-footer-text{
