@@ -1,0 +1,82 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 275px;
+    background-color: $primary-black;
+    z-index: 1000;
+    // we dont have top padding here as we add it to the ul's anchors
+    padding: 0 21px 21px 21px;
+    
+}
+
+
+.sidebar-hidden {
+    transform: translateX(100%);
+}
+
+#body-container {
+    transition: transform 0.3s ease-in-out;
+}
+
+.body-shifted {
+    transform: translateX(-275px); /* should match sidebar width */
+    filter: brightness(0.6); /* darkens the content to 80% brightness */
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+/// MOBILE SIDEBAR 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.sidebar .mobile-sidebar{
+    width: 100%;
+    // removing bullet points and centering text
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+// adding some padding for spacing of items
+.sidebar>.mobile-sidebar>ul>li{
+    padding-top: 20px;
+}
+
+// settings the styling of each anchors box
+.sidebar>.mobile-sidebar>ul>li>a{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    color: $primary-white;
+    padding: 19px 0 18px 0;
+    outline: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 3px;
+    border: 1px solid hsla(0, 0%, 100%, .1);
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///  DESKTOP SIDEBAR
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+///  MEDIA QUERIES
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+@media(max-width: 991px){
+    // hides the desktop version of the sidebar in small viewports
+    .desktop-sidebar{
+        display: none;
+    }
+}
+
+@media(min-width: 992px){
+    // hides the mobile version of the sidebar in large viewports
+    .mobile-sidebar{
+        display: none;
+    }
+}

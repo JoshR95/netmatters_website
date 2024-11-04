@@ -55,4 +55,92 @@ $(document).ready(function() {
 });
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// HEADER APPEAR ON SCROLL UP
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// the main use here is a scroll tracker to apply the header appearing and to evaluate wether were 
+// scrolling up or down 
+
+// store the last known scroll position - used to determine scroll direction
+let lastScrollTop = 0;
+const header = document.querySelector('.header');
+// define how far the user needs to scroll before header behavior changes
+const scrollThreshold = 100;
+
+// adding a scroll event listner
+window.addEventListener('scroll', () => {
+    // get current scroll position (works across different browsers)
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // check if we've scrolled past our threshold,
+    // if we have make the header fixed at the top of the screen
+    if (currentScroll > scrollThreshold) {
+        header.classList.add('header--scrolling');
+        
+        // compare current scroll to last scroll to determine direction
+        if (currentScroll < lastScrollTop) {
+            // we're scrolling UP
+            // show header by sliding it down
+            header.classList.add('header-visible');
+        } else {
+            // we're scrolling DOWN
+            // hide header by sliding it up
+            header.classList.remove('header-visible');
+        }
+    } else {
+        // we're near the top of the page
+        // check if header is currently in fixed position
+        if (header.classList.contains('header--scrolling')) {
+            // first make sure header is visible
+            header.classList.add('header-visible');
+            
+            // wait for transition to complete (300ms matches CSS transition)
+            setTimeout(() => {
+                // remove fixed positioning and visibility classes making it have default css.
+                header.classList.remove('header--scrolling');
+                header.classList.remove('header-visible');
+            }, 300);
+        }
+    }
+    
+    // update last known scroll position for next scroll event
+    lastScrollTop = currentScroll;
+});
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// SIDE BAR 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(function() {
+    const $hamburger = $('.hamburger-icon.header');
+    const $sidebar = $('.sidebar');
+    const $bodyContainer = $('#body-container');
+    
+    // Toggle sidebar function
+    function toggleSidebar() {
+        $sidebar.toggleClass('sidebar-hidden');
+        $bodyContainer.toggleClass('body-shifted');
+        // this line here turns the hamburger into an x
+        $hamburger.toggleClass('active');
+    }
+    
+    // Hamburger click event
+    $hamburger.on('click', function(e) {
+        e.stopPropagation(); // Prevent click from bubbling to body
+        toggleSidebar();
+    });
+    
+    // Click outside sidebar to close
+    $bodyContainer.on('click', function() {
+        if (!$sidebar.hasClass('sidebar-hidden')) {
+            toggleSidebar();
+        }
+    });
+    
+    // Prevent sidebar clicks from closing
+    $sidebar.on('click', function(e) {
+        e.stopPropagation();
+    });
+});

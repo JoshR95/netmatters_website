@@ -1,3 +1,30 @@
+.header {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+// When header becomes fixed during scroll
+.header--scrolling {
+    position: fixed;       // takes header out of normal flow when scrolling
+    top: 0;               // pins header to top of viewport
+    transform: translateY(-100%);  // Initially hidden above viewport
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  // Visual depth
+    transition: transform 0.3s ease-in-out;      // Smooth animation
+}
+
+// When header is visible during scroll
+.header-visible {
+    transform: translateY(0);
+}
+
+
+///////////////////////////////////////////////
+///  Top part of header
+///////////////////////////////////////////////
+
 .inner-header{
     padding: 20px 0;
 }
@@ -5,10 +32,6 @@
 .header--hidden {
     transform: translateY(-100%);
 }
-
-///////////////////////////////////////////////
-///  Top part of header
-///////////////////////////////////////////////
 
 .header-bar-container{
     display: flex;
@@ -151,6 +174,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+}
+
+
+// these 4 lines of code turn the hamburger lines into an x when clicked
+.hamburger-line {
+    transition: all 0.3s ease-in-out;
+}
+.hamburger-icon.active .hamburger-line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+// this hides one of the lines so we get an x as we have three lines originally 
+.hamburger-icon.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.active .hamburger-line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 ///////////////////////////////////////////////

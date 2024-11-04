@@ -344,7 +344,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     // IMPORTANT - if this is set to visible it will show tool tips but it makes the sceen way to wide as the items dont clip
-    overflow: hidden;
+    overflow-x: hidden;
     
         .bottom-bar-images {
             overflow: visible;
