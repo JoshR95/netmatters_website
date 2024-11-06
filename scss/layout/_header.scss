@@ -147,6 +147,10 @@
     color: #fff;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/// HAMBURGER 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // We make this relative to the hamburger lines can be positioned according to this elements position
 .hamburger-icon{
     position: relative; 
@@ -297,7 +301,6 @@
     .large-screen-search-bar{
         display: none;
     }
-    // this adds some margin for when the screens at 992px, 
     // cant have below as search bar would be there
     .icon-search-big-btn{
         margin-left: 20px;

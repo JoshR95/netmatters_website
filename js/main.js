@@ -117,6 +117,7 @@ $(function() {
     const $hamburger = $('.hamburger-icon.header');
     const $sidebar = $('.sidebar');
     const $bodyContainer = $('#body-container');
+    const $body = $('body');
     
     // Toggle sidebar function
     function toggleSidebar() {
@@ -124,6 +125,7 @@ $(function() {
         $bodyContainer.toggleClass('body-shifted');
         // this line here turns the hamburger into an x
         $hamburger.toggleClass('active');
+        $body.toggleClass('body-no-scroll');
     }
     
     // Hamburger click event

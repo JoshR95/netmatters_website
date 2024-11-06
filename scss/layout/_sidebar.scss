@@ -6,8 +6,8 @@
     width: 275px;
     background-color: $primary-black;
     z-index: 1000;
-    // we dont have top padding here as we add it to the ul's anchors
-    padding: 0 21px 21px 21px;
+    overflow-y: auto; // this adds scrolling for the sidebar when its active
+    -webkit-overflow-scrolling: touch; // adds smooth scrolling for iOS
     
 }
 
@@ -21,17 +21,39 @@
 }
 
 .body-shifted {
-    transform: translateX(-275px); /* should match sidebar width */
-    filter: brightness(0.6); /* darkens the content to 80% brightness */
+    transform: translateX(-275px);
+    filter: brightness(0.6); // i need this or the header doesnt darken 
+    position: relative;
+    
+    // this adds a darkend element accross the whole page when the body shifts on the nav sidebar pop out
+    &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        pointer-events: none; 
+    }
 }
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 /// MOBILE SIDEBAR 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-.sidebar .mobile-sidebar{
+
+.sidebar .mobile-sidebar .mobile-services-section{
     width: 100%;
-    // removing bullet points and centering text
+    list-style: none;
+    // we dont have top padding here as we add it to the ul's anchors
+    padding: 0 21px 21px 21px;
+    margin: 0;
+    text-align: center;
+    
+    // targeting nested ul elements within mobile-services-section
     ul{
         list-style: none;
         padding: 0;
@@ -40,13 +62,14 @@
     }
 }
 
+
 // adding some padding for spacing of items
-.sidebar>.mobile-sidebar>ul>li{
+.sidebar>.mobile-sidebar>.mobile-services-section>li {
     padding-top: 20px;
 }
 
 // settings the styling of each anchors box
-.sidebar>.mobile-sidebar>ul>li>a{
+.sidebar>.mobile-sidebar>.mobile-services-section>li>a{
     display: block;
     width: 100%;
     font-size: 18px;
@@ -57,6 +80,142 @@
     border: 1px solid hsla(0, 0%, 100%, .1);
 
 }
+
+// this makes the elements for each li be the same as nettmaters homepage
+.m-sidebar-anchor{
+
+    .sidebar-title-small{
+        margin: -5px 0 -10px 0;
+    }
+    .sidebar-title{
+        margin: 0;
+    }
+
+}
+
+// ICON COLOURS
+.icon-laptop.sidebar-icon{
+    color: #67809f;
+}
+.icon-display.sidebar-icon {
+    color: #4183d7;
+}
+.icon-bar-graph.sidebar-icon  {
+    color: #2ecc71;
+}
+.icon-phone_in_talk.sidebar-icon  {
+    color: #d64541;
+}
+.icon-embed2.sidebar-icon  {
+    color: #926fb1;
+}
+.icon-security.sidebar-icon  {
+    color: #f62459; 
+}
+.icon-study.sidebar-icon  {
+    color: #ce4125; 
+}
+
+// text styling for sidebar section title 
+.sidebar-icon{
+    font-size: 28px;
+}
+.sidebar-title-small{
+    font-size: 10px;
+}
+.sidebar-title{
+    font-size: 19px;
+}
+
+.msm-top-item{
+    margin-top: 20px;
+}
+
+// this is needed to match offical netmatters box styling.
+.mobile-sub-menu > li{
+    border-top: 1px solid rgba(0, 0, 0, .45);
+}
+
+.mobile-sub-menu > li > a > p {
+    padding: 10px; // should be 10px but their padding works different to mine so i had to lower it 
+    margin: 0;
+    font-size: 16px;
+    background-color: #262834;
+    color: $primary-white;
+    border-top: 1px solid hsla(0, 0%, 100%, .05);
+}
+
+/////////////////////////////////////////////////////////////////////
+/// SECOND SECTION OF MOBILE NAV
+/////////////////////////////////////////////////////////////////////
+
+.mobile-second-section{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.main-sidebar-item-secondary-title{
+    font-size: 16px;
+    // the margin and padding isnt the same as nettmaters ones but i have to have it like this to look correct
+    margin: 0 0 0 10px;
+    padding: 10px;
+}
+
+.mobile-second-section {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .main-sidebar-item{
+        outline: 1px solid rgba(0, 0, 0, .25);
+        // added a top and bottom rather than all border as it gave a weird left and right border otherwise.
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+        ul{
+            padding: 0;
+        }
+    }
+    
+    li {
+        list-style: none;
+        padding: 0;
+        
+        a {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            text-align: left;
+            color: $primary-white;
+            border-radius: 3px;
+        }
+    }
+}
+
+.main-item-sub-menu{
+    li{
+        a{
+            p{
+                padding: 15px 20px;
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.4;
+                background-color: #262834;
+                color: $primary-white;
+                border-top: 1px solid hsla(0, 0%, 100%, .05);
+                span{
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///  DESKTOP SIDEBAR
