@@ -39,6 +39,38 @@
     }
 }
 
+// IMPORTANT - this styles the main-items in both the mobile and desktop viewports, it made sense to bring it out of the mobile/desktop sections
+
+.mobile-second-section,
+.desktop-sidebar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .main-sidebar-item{
+        // added a top and bottom rather than all border as it gave a weird left and right border otherwise.
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        border-bottom: 1px solid rgba(0, 0, 0, .25);
+        ul{
+            padding: 0;
+        }
+    }
+    
+    li {
+        list-style: none;
+        padding: 0;
+        
+        a {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            text-align: left;
+            color: $primary-white;
+            border-radius: 3px;
+        }
+    }
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 /// MOBILE SIDEBAR 
@@ -149,7 +181,26 @@
 /// SECOND SECTION OF MOBILE NAV
 /////////////////////////////////////////////////////////////////////
 
+// IMPORTANT - there is a styling in the top section of the css sheet that styles both mobile and desktop main-items
+
+.mobile-sidebar a {
+    text-decoration: none;
+    outline: none; // Remove default outline
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover, &:focus {
+        background-color: $primary-black-active;
+    }
+    
+    &:active {
+        background-color: $primary-black-active;
+    }
+}
+
+
 .mobile-second-section{
+    border-top: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -164,36 +215,6 @@
     // the margin and padding isnt the same as nettmaters ones but i have to have it like this to look correct
     margin: 0 0 0 10px;
     padding: 10px;
-}
-
-.mobile-second-section {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    .main-sidebar-item{
-        outline: 1px solid rgba(0, 0, 0, .25);
-        // added a top and bottom rather than all border as it gave a weird left and right border otherwise.
-        border-top: 1px solid hsla(0, 0%, 100%, .1);
-        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
-        ul{
-            padding: 0;
-        }
-    }
-    
-    li {
-        list-style: none;
-        padding: 0;
-        
-        a {
-            display: block;
-            width: 100%;
-            font-size: 18px;
-            text-align: left;
-            color: $primary-white;
-            border-radius: 3px;
-        }
-    }
 }
 
 .main-item-sub-menu{
@@ -221,6 +242,15 @@
 ///  DESKTOP SIDEBAR
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
+// IMPORTANT - there is a styling in the top section of the css sheet that styles both mobile and desktop main-items
+
+// sorts th padding and margin differences between mobile view and desktop
+.desktop-sidebar{
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ///  MEDIA QUERIES
@@ -237,5 +267,9 @@
     // hides the mobile version of the sidebar in large viewports
     .mobile-sidebar{
         display: none;
+    }
+
+    .sidebar{
+        width: 350px;
     }
 }
