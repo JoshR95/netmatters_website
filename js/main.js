@@ -146,3 +146,30 @@ $(function() {
     });
 });
 
+//////////////////////////////////////////////////////////////////////////////////////
+
+$('.bottom-bar-images').owlCarousel({
+    loop: true,
+    margin: 30, // Set fixed margin between items
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        576: {
+            items: 3
+        },
+        768: {
+            items: 4
+        },
+        992: {
+            items: 5
+        },
+        1200: {
+            items: 6
+        }
+    }
+});

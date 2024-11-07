@@ -335,6 +335,7 @@
 // setting the font size and pushing the content down 20px's and to the center
 .view-all{
     margin-top: 50px;
+    margin-bottom: 30px;
     text-align: center;
     a{
         font-size: 1.625rem;
@@ -358,24 +359,61 @@
 // TOOL TIP CODE
 /////////////////////////////////////////////////////////////
 
+.bottom-bar-images .item {
+    padding: 0 15px; /* Add padding to ensure images don't touch the edges */
+}
+
+.bottom-bar-images .item .picture {
+    width: 100%; /* Make sure images fill their container */
+    height: auto;
+}
+
+.bottom-bar-images .item .picture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+
 .bottom-clients-bar{
     padding-top: 50px;
     padding-bottom: 50px;
-    // IMPORTANT - if this is set to visible it will show tool tips but it makes the sceen way to wide as the items dont clip
-    overflow-x: hidden;
-    
-        .bottom-bar-images {
-            overflow: visible;
+}
 
-        .picture-container {
-            position: relative;
-            display: inline-block;
+.bottom-bar-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: visible;
 
-            &:hover .tooltip {
-                visibility: visible;
-                opacity: 1;
-            }
+    // New carousel-specific styling
+    .owl-stage {
+        display: flex;
+        align-items: center;
+    }
+
+    .picture-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        position: relative;  // Keep this for tooltips
+        
+        &:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
         }
+    }
+
+    .colored-picture {
+        max-width: 200px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
 
         .tooltip {
             visibility: hidden;
@@ -442,7 +480,7 @@
                 }
             }
         }
-    }
+
 }
 ///////////////////////////////////////////////////////////////////////////////////////
 
