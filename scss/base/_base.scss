@@ -18,8 +18,11 @@ html{
 //     overflow-x: hidden;
 // }
 
+// this adds a pointer to all buttons and anchors
+// i also had to set the font family here for all buttons as they were defualting to arial for some weird reason
 button, a {
     cursor: pointer;
+    font-family: $font-family--primary;
 }
 
 

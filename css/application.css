@@ -15,12 +15,13 @@ html {
   padding-bottom: 50px;
 }
 
-/* line 21, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 23, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 button, a {
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
-/* line 26, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 29, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn {
   font-weight: 400;
   text-decoration: none;
@@ -34,23 +35,23 @@ button, a {
   white-space: normal;
 }
 
-/* line 39, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 42, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .btn .main-buttons {
   padding: 10px 30px;
 }
 
-/* line 45, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 48, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .overflow-hidden {
   overflow: hidden;
   white-space: nowrap;
 }
 
-/* line 51, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 54, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .body-no-scroll {
   overflow: hidden;
 }
 
-/* line 60, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 63, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-help {
   position: fixed;
   bottom: 25px;
