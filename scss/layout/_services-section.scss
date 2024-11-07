@@ -202,19 +202,33 @@
     font-size: 1.625rem;
 }
 
-.our-work-examples{
+.our-work-examples {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
     padding-top: 50px;
     max-width: 100%;
-    .colored-picture{
-        max-width: 200px; /* Set maximum width */
-        max-height: 75px; /* Set maximum height */
+
+    .item {
+        vertical-align: middle;
+        padding: 0 20px;
+        position: relative;
+        max-height: 70px; 
+        height: 70px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .colored-picture {
+        max-width: 200px;
+        max-height: 75px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 }
-
 
 // BUTTONS
 // ==========================================================================

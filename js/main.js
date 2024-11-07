@@ -148,16 +148,20 @@ $(function() {
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-$('.bottom-bar-images').owlCarousel({
+$('.our-work-examples, .bottom-bar-images').owlCarousel({
     loop: true,
     margin: 30, // Set fixed margin between items
     nav: false,
     dots: false,
     autoplay: true,
     autoplayTimeout: 2000,
+    // this decides how many images are shown at each breakpoint
     responsive: {
         0: {
             items: 1
+        },
+        350:{
+            items: 2
         },
         576: {
             items: 3
@@ -170,6 +174,13 @@ $('.bottom-bar-images').owlCarousel({
         },
         1200: {
             items: 6
+        },
+        1450: {
+            items: 8
+        },
+        155:{
+            items: 9
         }
     }
 });
+
