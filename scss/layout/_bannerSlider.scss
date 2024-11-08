@@ -56,13 +56,15 @@
     }
     
     .banner-btn {
-        background-color: #926fb1;
         font-size: 20px;
         padding: 5px 20px;
         margin: 31px 0 18px 0;
         line-height: 50px;
         border-radius: 3px;
         display: inline-block;
+        text-decoration: none;
+        color: $primary-white;
+        background-color: #926fb1;
         
         span {
             margin-left: 12px;
@@ -71,20 +73,31 @@
         }
     }
 
+    .slide-1-btn{
+        @include button-hover(#926fb1);
+    }
     .slide-2-btn{
         background-color: #f7b322;
+        @include button-hover(#f7b322);
     }
     .slide-3-btn{
         background-color: #4183d7;
+        @include button-hover(#4183d7);
     }
     .slide-4-btn{
         background-color: #2ecc71;
+        @include button-hover(#2ecc71);
     }
     .slide-5-btn{
         background-color: #d64541;
+        @include button-hover(#d64541);
+    }
+    .slide-6-btn{
+        @include button-hover(#926fb1);
     }
     .slide-7-btn{
         background-color: #f62459;
+        @include button-hover(#f62459);
     }
 }
 
