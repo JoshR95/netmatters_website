@@ -155,6 +155,7 @@ $('.our-work-examples, .bottom-bar-images').owlCarousel({
     nav: false,
     dots: false,
     autoplay: true,
+    autoplayHoverPause: true,
     autoplayTimeout: 2000,
     // this decides how many images are shown at each breakpoint
     responsive: {

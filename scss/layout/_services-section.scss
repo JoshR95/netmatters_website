@@ -13,6 +13,7 @@
     font-size: 43.2px;
     font-weight: 400;
     margin: 0px;
+    color: $primary-black;
 }
 .top-services-arrow{
     font-size: 36px;
@@ -129,7 +130,7 @@
     flex: wrap;
     text-align: center;
     gap: 10px;
-    padding: 30px;
+    padding: 25px;
     // this is what seperates each div
     margin-top: 30px;
     border: solid #ccc 1px;
@@ -141,13 +142,7 @@
 .services-container-padding{
     margin-left: 8px;
     margin-right: 8px;
-}
-
-// This gives every item in services padding, this needed to be done individually
-// and not in a container because of how it behaves in flex at higher viewports
-.service-padding{
-    padding-left: 15px;
-    padding-right: 15px;
+    
 }
 
 // This is what is styling the icons and their backgrounds for each service-item div
@@ -282,6 +277,14 @@
 
 @media (min-width: 768px){
 
+    // This gives every item in services padding, this needed to be done individually
+    // and not in a container because of how it behaves in flex at higher viewports
+
+    .service-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .services-container-padding{
         display: flex;
         flex-direction: column;
@@ -352,10 +355,6 @@
         flex-basis: 33.3%;
     }
     
-    // had to add this as was getting an annoying bug that was causing this main-item to be smaller
-    .services-section .service-item.digital-marketing {
-        min-height: 345px;
-    }
 
 }
 
@@ -371,14 +370,8 @@
         flex-wrap: wrap;
     }
 
-    .services-section .service-padding {
-        flex: 1 1 30%;
-        display: flex;
-        flex-direction: column; 
-    }
 
     .service-item {
-        flex-grow: 1; 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -397,5 +390,12 @@
         width: 100%;
     }
 
-    
+    // adds some margin so all the items on the top row in desktop are the same size
+    .service-item.digital-marketing .service-item-text {
+        margin-bottom: 32px;
+    }
+
+    // .service-item.developer-training {
+    //     padding: 30px 25px;
+    // }
 }
