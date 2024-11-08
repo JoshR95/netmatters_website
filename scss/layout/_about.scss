@@ -294,12 +294,26 @@
 
 /////////////////////////////////////////////////////////////////////
 
+/// ARTICLES 
+
+.author-details {
+    overflow: hidden;
+    padding-left: 20px;
+    .author-title{
+        font-size: 14px;
+    }
+    p{
+        margin: 0;
+    }
+}
+
+
+
+
+
 
 // Article-1
 // ==========================================================================
-
-
-
 
 // These are for the first articles text and picture styles.
 .author {
@@ -321,10 +335,7 @@
     height: 50px;
     border-radius: 50%;
 }
-.author-details {
-    overflow: hidden;
-    padding-left: 20px;
-}
+
 
 // Article-2
 // ==========================================================================
@@ -334,7 +345,7 @@
 
 // setting the font size and pushing the content down 20px's and to the center
 .view-all{
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
     a{
@@ -350,6 +361,10 @@
 /// ARTICLE 3   
 ////////////////////////////////////////////////////////////////////////////////
 
+// this adds some margin to the article 3 p text to make the article have the same height as the other two and be inline
+.article-3-p{
+    margin-top: 40px;
+}
 
 //  BOTTOM CLIENT BAR
 // ==========================================================================
@@ -544,6 +559,12 @@
     }
     // this adds some top padding in mobile view, not ideal
     // but was behaving weirdly
+}
+
+@media(min-width: 767px){
+    .latest-news-block{
+        padding-bottom: 50px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1259px){
