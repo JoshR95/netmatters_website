@@ -4,6 +4,10 @@
     background-color: white;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+    // had to change a lot of anchor for html validator, this removes underlines on anchors
+    a{
+        text-decoration: none;
+    }
 }
 
 // When header becomes fixed during scroll
@@ -133,6 +137,7 @@
     }
     &__text {
         font-size: 18px;
+        line-height: 46px; 
     }
 }
 
@@ -145,6 +150,9 @@
     border: none;
     background-color: #999aa2;
     color: #fff;
+    a{
+        color: $primary-white;
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -163,6 +171,7 @@
 }
 
 .hamburger-line{
+    display: block;
     width: 33px;
     height: 4px;
     background-color: #fff;
