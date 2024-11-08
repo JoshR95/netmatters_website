@@ -117,11 +117,13 @@ $(function() {
     const $sidebar = $('.sidebar');
     const $bodyContainer = $('#body-container');
     const $body = $('body');
+    const $footer = $('footer, .bottom-footer'); // this selector has to be added to shift the footer as it isnt inlucded in the body for some weird reason
     
     // Toggle sidebar function
     function toggleSidebar() {
         $sidebar.toggleClass('sidebar-hidden');
         $bodyContainer.toggleClass('body-shifted');
+        $footer.toggleClass('body-shifted'); // this line has to be added to shift the footer as it isnt inlucded in the body for some weird reason
         // this line here turns the hamburger into an x
         $hamburger.toggleClass('active');
     }

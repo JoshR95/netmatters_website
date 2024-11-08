@@ -77,7 +77,12 @@ button, a {
   pointer-events: none;
 }
 
-/* line 95, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 94, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+footer, .bottom-footer {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* line 100, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-help {
   position: fixed;
   bottom: 25px;
@@ -106,7 +111,7 @@ button, a {
 }
 
 @media (min-width: 992px) {
-  /* line 131, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+  /* line 136, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
   .body-shifted {
     transform: translateX(-350px);
   }
