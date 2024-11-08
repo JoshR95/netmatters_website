@@ -154,7 +154,7 @@ $('.our-work-examples, .bottom-bar-images').owlCarousel({
     margin: 30, // Set fixed margin between items
     nav: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     autoplayTimeout: 2000,
     // this decides how many images are shown at each breakpoint
