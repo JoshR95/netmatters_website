@@ -73,14 +73,20 @@
     padding: 5px 15px; 
     height: 56px;
     width: 174px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #cecece;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     color: #e5e5e5;
     font-size: 14px;
-    outline: 1px solid rgba(0, 0, 0, .075); 
     // adds a light blue box shadow to the search box when its clicked
     &:focus{
+        outline: none;  // This removes the orange outline inside the box when clicked
         border-color: #2cdff7; 
         box-shadow: 0 0 2px 2px #b3f1f1; 
+    }
+    &::placeholder {
+        color: #888888;
+        font-size: 14px;
+        font-family: $font-family--primary;
     }
  
 }
@@ -144,7 +150,7 @@
 // this is for the icon button in big view ports
 .icon-search-big-btn{
     height: 56px;
-    padding: 7px 20px 3px;
+    padding: 7px 20px;
     border-radius: 0 3px 3px 0;
     font-size: 23px;
     border: none;

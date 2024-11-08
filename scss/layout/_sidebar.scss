@@ -16,28 +16,8 @@
     transform: translateX(100%);
 }
 
-#body-container {
-    transition: transform 0.3s ease-in-out;
-}
 
-.body-shifted {
-    transform: translateX(-275px);
-    filter: brightness(0.6); // i need this or the header doesnt darken 
-    position: relative;
-    
-    // this adds a darkend element accross the whole page when the body shifts on the nav sidebar pop out
-    &::after {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 999;
-        pointer-events: none; 
-    }
-}
+
 
 // IMPORTANT - this styles the main-items in both the mobile and desktop viewports, it made sense to bring it out of the mobile/desktop sections
 

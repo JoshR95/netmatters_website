@@ -374,7 +374,9 @@
     object-fit: contain; /* Maintain aspect ratio */
 }
 
-
+.bottom-bar-images .owl-stage-outer{
+    overflow: visible;
+}
 
 .bottom-clients-bar{
     padding-top: 50px;

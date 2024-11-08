@@ -124,7 +124,6 @@ $(function() {
         $bodyContainer.toggleClass('body-shifted');
         // this line here turns the hamburger into an x
         $hamburger.toggleClass('active');
-        $body.toggleClass('body-no-scroll');
     }
     
     // Hamburger click event
@@ -146,6 +145,8 @@ $(function() {
     });
 });
 
+//////////////////////////////////////////////////////////////////////////////////////
+/// OWL CAROUSEL
 //////////////////////////////////////////////////////////////////////////////////////
 
 $('.our-work-examples, .bottom-bar-images').owlCarousel({
