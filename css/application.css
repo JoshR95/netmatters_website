@@ -60,11 +60,10 @@ button, a {
 /* line 74, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .body-shifted {
   transform: translateX(-275px);
-  filter: brightness(0.6);
   position: relative;
 }
 
-/* line 80, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 78, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .body-shifted::after {
   content: '';
   position: fixed;
@@ -73,16 +72,16 @@ button, a {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 999;
+  z-index: 9999;
   pointer-events: none;
 }
 
-/* line 94, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 93, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 footer, .bottom-footer {
   transition: transform 0.3s ease-in-out;
 }
 
-/* line 100, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+/* line 99, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
 .sticky-help {
   position: fixed;
   bottom: 25px;
@@ -111,7 +110,7 @@ footer, .bottom-footer {
 }
 
 @media (min-width: 992px) {
-  /* line 136, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
+  /* line 135, ../../../../../Nettmaters_main/assessments/websiteNew/scss/base/_base.scss */
   .body-shifted {
     transform: translateX(-350px);
   }
@@ -2124,7 +2123,7 @@ p {
   position: relative;
   width: 100%;
   background-color: white;
-  z-index: 1000;
+  z-index: 100;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -2133,7 +2132,7 @@ p {
   text-decoration: none;
 }
 
-/* line 14, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 15, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header--scrolling {
   position: fixed;
   top: 0;
@@ -2142,33 +2141,33 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-/* line 23, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 24, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header-visible {
   transform: translateY(0);
 }
 
-/* line 32, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 33, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .inner-header {
   padding: 20px 0;
 }
 
-/* line 36, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 37, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header--hidden {
   transform: translateY(-100%);
 }
 
-/* line 40, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 41, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header-bar-container {
   display: flex;
   flex-direction: column;
 }
 
-/* line 45, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 46, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header-netmatters {
   max-width: 100%;
 }
 
-/* line 49, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 50, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .top-header {
   display: flex;
   align-items: center;
@@ -2176,7 +2175,7 @@ p {
   width: 100%;
 }
 
-/* line 56, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 57, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header-phone-icon {
   color: #333645;
   background-color: white;
@@ -2184,18 +2183,18 @@ p {
   margin-left: auto;
 }
 
-/* line 63, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 64, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .header-search-and-icons {
   display: flex;
   flex-direction: row;
 }
 
-/* line 68, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 69, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-search-container {
   display: flex;
 }
 
-/* line 72, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 73, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-search-bar {
   padding: 5px 15px;
   height: 56px;
@@ -2206,21 +2205,21 @@ p {
   font-size: 14px;
 }
 
-/* line 81, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 82, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-search-bar:focus {
   outline: none;
   border-color: #2cdff7;
   box-shadow: 0 0 2px 2px #b3f1f1;
 }
 
-/* line 86, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 87, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-search-bar::placeholder {
   color: #888888;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
 
-/* line 95, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 96, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-mouse {
   transition: background-color 0.3s ease;
 }
@@ -2231,7 +2230,7 @@ p {
   color: white;
 }
 
-/* line 99, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 100, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-paperplane {
   transition: background-color 0.3s ease;
 }
@@ -2242,7 +2241,7 @@ p {
   color: white;
 }
 
-/* line 103, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 104, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .icon-search-big-btn {
   transition: background-color 0.3s ease;
 }
@@ -2253,7 +2252,7 @@ p {
   color: white;
 }
 
-/* line 107, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 108, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-icon {
   transition: background-color 0.3s ease;
 }
@@ -2264,7 +2263,7 @@ p {
   color: white;
 }
 
-/* line 112, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 113, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-mouse {
   height: 56px;
   line-height: 46px;
@@ -2276,18 +2275,18 @@ p {
   color: #fff;
 }
 
-/* line 121, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 122, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-mouse .icon-mouse {
   position: relative;
   top: 3px;
 }
 
-/* line 125, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 126, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-mouse__text {
   font-size: 18px;
 }
 
-/* line 130, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 131, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-paperplane {
   height: 56px;
   padding: 5px 15px;
@@ -2299,19 +2298,19 @@ p {
   color: #fff;
 }
 
-/* line 140, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 141, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-paperplane .icon-paperplane {
   position: relative;
   top: 3px;
 }
 
-/* line 144, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 145, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .large-screen-paperplane__text {
   font-size: 18px;
   line-height: 46px;
 }
 
-/* line 151, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 152, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .icon-search-big-btn {
   height: 56px;
   padding: 7px 20px;
@@ -2322,12 +2321,12 @@ p {
   color: #fff;
 }
 
-/* line 159, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 160, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .icon-search-big-btn a {
   color: #fff;
 }
 
-/* line 169, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 170, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-icon {
   position: relative;
   background-color: #333645;
@@ -2337,7 +2336,7 @@ p {
   border-radius: 3px;
 }
 
-/* line 179, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 180, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-line {
   display: block;
   width: 33px;
@@ -2346,7 +2345,7 @@ p {
   margin: 6px 0;
 }
 
-/* line 191, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 192, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-line-container {
   position: absolute;
   top: 50%;
@@ -2354,27 +2353,27 @@ p {
   transform: translate(-50%, -50%);
 }
 
-/* line 200, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 201, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-line {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 203, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 204, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-icon.active .hamburger-line:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
 }
 
-/* line 207, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 208, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-icon.active .hamburger-line:nth-child(2) {
   opacity: 0;
 }
 
-/* line 210, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 211, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .hamburger-icon.active .hamburger-line:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
 }
 
-/* line 220, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 221, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .small-screen-search-bar {
   display: flex;
   align-items: center;
@@ -2385,7 +2384,7 @@ p {
   margin-top: 11px;
 }
 
-/* line 230, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 231, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .small-screen-search-bar span {
   position: relative;
   padding: 5px 0px 5px 15px;
@@ -2393,7 +2392,7 @@ p {
   z-index: 2;
 }
 
-/* line 236, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 237, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .small-screen-search-bar .icon-search-small {
   position: relative;
   padding-right: 11px;
@@ -2403,7 +2402,7 @@ p {
   z-index: 2;
 }
 
-/* line 244, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 245, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .small-screen-search-bar .small-screen-search-input {
   position: absolute;
   width: 100%;
@@ -2415,13 +2414,13 @@ p {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-/* line 255, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+/* line 256, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
 .small-screen-search-bar .small-screen-search-input:focus {
   outline: none;
 }
 
 @media (max-width: 767px) {
-  /* line 267, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 268, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .large-screen-search-container,
   .icon-search-big-btn {
     display: none;
@@ -2429,22 +2428,22 @@ p {
 }
 
 @media (min-width: 768px) {
-  /* line 278, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 279, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /* line 285, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 286, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .header-phone-icon,
   .bottom-header {
     display: none;
   }
-  /* line 291, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 292, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .top-header {
     gap: 30px;
   }
-  /* line 296, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 297, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .header-netmatters {
     width: 345px;
     height: 60.06px;
@@ -2452,7 +2451,7 @@ p {
 }
 
 @media (max-width: 991px) {
-  /* line 308, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 309, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .large-screen-mouse,
   .large-screen-paperplane {
     display: none;
@@ -2460,23 +2459,23 @@ p {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  /* line 316, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 317, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .large-screen-search-bar {
     display: none;
   }
-  /* line 320, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 321, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .icon-search-big-btn {
     margin-left: 20px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 328, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 329, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .large-screen-search-container {
     display: block;
     padding-left: 20px;
   }
-  /* line 332, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
+  /* line 333, ../../../../../Nettmaters_main/assessments/websiteNew/scss/layout/_header.scss */
   .large-screen-search-bar {
     width: 240px;
   }

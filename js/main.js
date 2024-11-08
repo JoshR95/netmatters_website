@@ -117,7 +117,7 @@ $(function() {
     const $sidebar = $('.sidebar');
     const $bodyContainer = $('#body-container');
     const $body = $('body');
-    const $footer = $('footer, .bottom-footer'); // this selector has to be added to shift the footer as it isnt inlucded in the body for some weird reason
+    const $footer = $('footer, .bottom-footer');  // Add this line
     
     // Toggle sidebar function
     function toggleSidebar() {

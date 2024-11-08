@@ -73,10 +73,8 @@ button, a {
 // this moves the whole body over when the side bar opens 
 .body-shifted {
     transform: translateX(-275px);
-    filter: brightness(0.6); // i need this or the header doesnt darken 
     position: relative;
 
-    // this adds a darkend element accross the whole page when the body shifts on the nav sidebar pop out
     &::after {
         content: '';
         position: fixed;
@@ -85,10 +83,11 @@ button, a {
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.4);
-        z-index: 999;
+        z-index: 9999;
         pointer-events: none; 
     }
 }
+
 
 // this needs to be here as we have to specifically target the footer to shift as it doesnt include in the body for some weird reason
 footer, .bottom-footer {

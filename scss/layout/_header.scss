@@ -2,13 +2,14 @@
     position: relative;
     width: 100%;
     background-color: white;
-    z-index: 1000;
+    z-index: 100;
     transition: transform 0.3s ease-in-out;
     // had to change a lot of anchor for html validator, this removes underlines on anchors
     a{
         text-decoration: none;
     }
 }
+
 
 // When header becomes fixed during scroll
 .header--scrolling {
