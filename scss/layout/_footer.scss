@@ -12,6 +12,7 @@ footer {
    h4 {
        text-transform: uppercase;
        font-size: 1rem;
+       font-weight: 400;
        margin-bottom: 26px;
        margin-top: 0px;	
    }
@@ -106,6 +107,9 @@ footer {
    flex-wrap: wrap;
    flex-direction: column;
    padding-top: 27px;
+   h4{
+      font-weight: 400;
+   }
 }
 
 .footer-main-logo{
@@ -184,8 +188,8 @@ footer {
    }
 
    .footer-menu{
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 13px;
+      padding-right: 13px;
    }
 
    .top-footer{

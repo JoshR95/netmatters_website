@@ -164,6 +164,9 @@
     font-size: 1.625rem;
     font-weight: 600;
     text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 // this is what is aligning the latest news and view all -->

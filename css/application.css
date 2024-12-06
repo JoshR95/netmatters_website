@@ -189,6 +189,7 @@ footer {
 .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 26px;
   margin-top: 0px;
 }
@@ -283,6 +284,9 @@ footer {
           flex-direction: column;
   padding-top: 27px;
 }
+.netmatters-footer-info h4 {
+  font-weight: 400;
+}
 
 .footer-main-logo {
   width: 320px;
@@ -352,8 +356,8 @@ footer {
     padding-top: 0px;
   }
   .footer-menu {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
   .top-footer {
     display: -webkit-box;
@@ -536,6 +540,9 @@ p {
   font-size: 1.625rem;
   font-weight: 600;
   text-decoration: none;
+}
+.latest-news-view-all:hover {
+  text-decoration: underline;
 }
 
 .heading-container {
@@ -1041,6 +1048,9 @@ p {
   font-size: 36px;
   font-weight: 600;
   color: #333645;
+}
+.top-services-arrow:hover {
+  text-decoration: underline;
 }
 
 .service-item-header {
@@ -2164,6 +2174,7 @@ p {
   height: 56px;
   margin-left: 20px;
   border-radius: 3px;
+  border: none;
 }
 
 .hamburger-line {
