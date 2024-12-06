@@ -46,6 +46,7 @@
     
     h2 {
         font-size: 40px;
+        font-weight: 600;
         margin: 0 0 20px 0;
     }
     
@@ -151,6 +152,23 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// MEDIA QUERIES  
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media(max-width: 468px){
+
+    // this block of code makes the banner image, overlay and container bigger so the slide dots 
+    // dont overlap with the button
+    //////////////////////////
+    .banner-container{
+        height: 600px;
+    }
+    .banner-slider .banner-slide::before {
+        height: 600px;
+    }
+    .slide-1-banner-image{
+        height: 600px;
+    }
+    /////////////////////////////
+}
+
 
 @media (min-width: 992px) {
     .banner-slider {  // Add this parent selector

@@ -8,7 +8,7 @@ $(document).ready(function(){
         arrows: false,
         infinite: true,
         cssEase: 'linear',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         speed: 200, 
         pauseOnHover: false
@@ -156,7 +156,7 @@ $('.our-work-examples, .bottom-bar-images').owlCarousel({
     margin: 30, // Set fixed margin between items
     nav: false,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: true,
     autoplayTimeout: 2000,
     // this decides how many images are shown at each breakpoint
