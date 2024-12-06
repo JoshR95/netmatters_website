@@ -1343,7 +1343,6 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 750px;
   }
   .services-section {
     display: -webkit-box;
@@ -1365,11 +1364,6 @@ p {
   .service-view-work,
   .view-all {
     display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .services-section {
-    width: 750px;
   }
 }
 @media (min-width: 992px) and (max-width: 1259px) {
