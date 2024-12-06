@@ -62,6 +62,39 @@ button, a {
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+
+// this adds a semi transparent dark overlay when the side bar is open 
+#content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+// made the cookies their own overlay so it can be darker than the sidebars overlay and doesnt clash with the sidebar overlay either
+#cookie-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999; 
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
 /// CODE FOR BODY SHIFTING TO LEFT ON SIDEBAR OPENING
 
 #body-container {
@@ -82,7 +115,6 @@ button, a {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4);
         z-index: 9999;
         pointer-events: none; 
     }

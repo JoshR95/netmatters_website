@@ -19,32 +19,40 @@ $(document).ready(function(){
 ////////////////////////////////////////////////////////////////////////////////////////
 /// MANAGE CONSENT - CHECKING COOKIES 
 ////////////////////////////////////////////////////////////////////////////////////////
-// ... existing code ...
 
-// Cookie consent handling
+
 function handleCookieConsent() {
-    const cookiePopup = $('.cookie-popup'); // This selects the cookie popup element
-    const acceptButton = $('.accept-cookies'); // This selects the accept button
-    const changeSettingsButton = $('.change-settings'); // This selects the settings button (unused in current code)
+    if(!$('#cookie-overlay').length){
+        $('body').append('<div id="cookie-overlay"></div>');
+    }
+
+    const cookiePopup = $('.cookie-popup');
+    const acceptButton = $('.accept-cookies');
+    const cookieOverlay = $('#cookie-overlay');
     
     // Show popup on first load if consent not given
-    // !localStorage is checking if the 'accepted' value given below is not stored, show the pop up
     if (!localStorage.getItem('cookieConsent')) {
-        cookiePopup.addClass('active'); // Show popup if no consent stored
-    } else {
-        cookiePopup.removeClass('active'); // Hide popup if consent exists
+        cookiePopup.addClass('active');
+        cookieOverlay.addClass('active');
     }
 
     // Handle accept button click
     acceptButton.on('click', function() {
-        // this is storing the accepted into the local storage, it then is used in the code above when checking the webpage on re load
-        localStorage.setItem('cookieConsent', 'accepted'); // Stores consent in localStorage
-        cookiePopup.removeClass('active');                 // Hide the popup when accepted
+        localStorage.setItem('cookieConsent', 'accepted');
+        cookiePopup.removeClass('active');
+        cookieOverlay.removeClass('active');
     });
 
     // Handle manage consent button click
     $('.sticky-consent button').click(function() {
-        cookiePopup.addClass('active');         // This shows the  popup when manage consent is clicked
+        cookiePopup.addClass('active');
+        cookieOverlay.addClass('active');
+    });
+
+    // Close popup when clicking outside of it
+    cookieOverlay.on('click', function() {
+        cookiePopup.removeClass('active');
+        cookieOverlay.removeClass('active');
     });
 }
 
@@ -119,6 +127,13 @@ $(function() {
     const $body = $('body');
     const $footer = $('footer, .bottom-footer');  // Add this line
     
+    // this checks if content-overlay exists, if it doesnt it adds the dark overlay to the screen
+    //  if length is 0 it returns true so appends the overlay div,
+    // if the the length is false it returns 1 and doesnt need to append anything.
+    if(!$('#content-overlay').length){
+        $('body').append('<div id="content-overlay"></div>');
+    }
+    
     // Toggle sidebar function
     function toggleSidebar() {
         $sidebar.toggleClass('sidebar-hidden');
@@ -126,6 +141,8 @@ $(function() {
         $footer.toggleClass('body-shifted'); // this line has to be added to shift the footer as it isnt inlucded in the body for some weird reason
         // this line here turns the hamburger into an x
         $hamburger.toggleClass('active');
+        // Adds active to the content-overlay when sidebar is active so the dark overlay appears
+        $('#content-overlay').toggleClass('active');
     }
     
     // Hamburger click event
@@ -141,12 +158,21 @@ $(function() {
         }
     });
     
+    // this closes the sidebar when we click anywhere on the screen with the overlay
+    // this adds a click event listener to the overlay
+    $('#content-overlay').on('click', function() {
+        // if overlay is clicked and doesnt have the 'sidebar-hidden' class; so is visible
+        // it calls the toggleSidebar function and closes the sidebar
+        if (!$sidebar.hasClass('sidebar-hidden')) {
+            toggleSidebar();
+        }
+    });
+    
     // Prevent sidebar clicks from closing
     $sidebar.on('click', function(e) {
         e.stopPropagation();
     });
 });
-
 //////////////////////////////////////////////////////////////////////////////////////
 /// OWL CAROUSEL
 //////////////////////////////////////////////////////////////////////////////////////
