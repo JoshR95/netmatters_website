@@ -67,11 +67,11 @@
 // Arrow colors
 .banner-dropdown > li.banner-bespoke-software > a:first-child::after { border-top-color: #67809f; }
 .banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: $netmatters-blue; }
-.banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: #2ecc71; }
+.banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: $netmatters-green; }
 .banner-dropdown > li.banner-telecoms-services > a:first-child::after { border-top-color: #d64541; }
-.banner-dropdown > li.banner-web-design > a:first-child::after { border-top-color: #926fb1; }
-.banner-dropdown > li.banner-cyber-security > a:first-child::after { border-top-color: #f62459; }
-.banner-dropdown > li.banner-developer-course > a:first-child::after { border-top-color: #ce4125; }
+.banner-dropdown > li.banner-web-design > a:first-child::after { border-top-color: $netmatters-purple; }
+.banner-dropdown > li.banner-cyber-security > a:first-child::after { border-top-color: $netmatters-pink; }
+.banner-dropdown > li.banner-developer-course > a:first-child::after { border-top-color: $netmatters-red; }
 
 // Spacing between banner nav items
 .banner-dropdown a {
@@ -82,59 +82,62 @@
 .banner-bespoke-software {
     &:hover {
         background-color: #67809f;
-        .banner-avatar {
-            color: $primary-white;
-        }
     }
 }
 .banner-it-support {
     &:hover {
         background-color: $netmatters-blue;
-        .banner-avatar {
-            color: $primary-white;
-        }
     }
 }
 .banner-digital-marketing {
     &:hover {
-        background-color: #2ecc71;
-        .banner-avatar {
-            color: $primary-white;
-        }
+        background-color: $netmatters-green;
     }
 }
 .banner-telecoms-services {
     &:hover {
         background-color: #d64541;
-        .banner-avatar {
-            color: $primary-white;
-        }
     }
 }
 .banner-web-design {
     &:hover {
-        background-color: #926fb1;
-        .banner-avatar {
-            color: $primary-white;
-        }
+        background-color: $netmatters-purple;
     }
 }
 .banner-cyber-security {
     &:hover {
-        background-color: #f62459;
-        .banner-avatar {
-            color: $primary-white;
-        }
+        background-color: $netmatters-pink;
     }
 }
 .banner-developer-course {
     &:hover {
-        background-color: #ce4125;
+        background-color: $netmatters-red;
+    }
+}
+
+// this changes the icon to white when hovered 
+.banner-bespoke-software,
+.banner-it-support,
+.banner-digital-marketing,
+.banner-telecoms-services,
+.banner-web-design,
+.banner-cyber-security,
+.banner-developer-course {
+    &:hover {
         .banner-avatar {
             color: $primary-white;
         }
     }
 }
+
+// Inner dropdown background colors
+.inner-bespoke-software { background-color: #526781; }
+.inner-it-support { background-color: #286abd; }
+.inner-digital-marketing { background-color: #25a25a; }
+.inner-telecoms-services { background-color: #bc2c28; }
+.inner-web-design { background-color: #79539a; }
+.inner-cyber-security { background-color: #de093f; }
+.inner-developer-course { background-color: #a3331d; }
 
 // Stack text inside banner-dropdowns li
 .banner-dropdown li span {
@@ -144,11 +147,11 @@
 // Icon colors
 .banner-avatar.icon-laptop { color: #67809f; }
 .banner-avatar.icon-display { color: $netmatters-blue; }
-.banner-avatar.icon-bar-graph { color: #2ecc71; }
+.banner-avatar.icon-bar-graph { color: $netmatters-green; }
 .banner-avatar.icon-phone_in_talk { color: #d64541; }
-.banner-avatar.icon-embed2 { color: #926fb1; }
-.banner-avatar.icon-security { color: #f62459; }
-.banner-avatar.icon-study { color: #ce4125; }
+.banner-avatar.icon-embed2 { color: $netmatters-purple; }
+.banner-avatar.icon-security { color: $netmatters-pink; }
+.banner-avatar.icon-study { color: $netmatters-red; }
 
 .banner-text-small,
 .banner-bar-text {
@@ -220,14 +223,7 @@
     text-align: left;
 }
 
-// Inner dropdown background colors
-.inner-bespoke-software { background-color: #526781; }
-.inner-it-support { background-color: #286abd; }
-.inner-digital-marketing { background-color: #25a25a; }
-.inner-telecoms-services { background-color: #bc2c28; }
-.inner-web-design { background-color: #79539a; }
-.inner-cyber-security { background-color: #de093f; }
-.inner-developer-course { background-color: #a3331d; }
+
 
 // Dropdown link styles
 .banner-inner-dropdown-container a {

@@ -72,11 +72,11 @@
         }
     }
     &.it-support {
-        background-color: #4183d7;
+        background-color: $netmatters-blue;
         .icon-display,
         .it-support-btn{
             background-color: white;
-            color: #4183d7;
+            color: $netmatters-blue;
         }
     }
     &.digital-marketing {
@@ -165,7 +165,7 @@
     background-color: #67809f;
 }
 .services-avatar.icon-display {
-    background-color: #4183d7;
+    background-color: $netmatters-blue;
 }
 .services-avatar.icon-bar-graph {
     background-color: #2ecc71;
@@ -231,37 +231,27 @@
 // BUTTONS
 // ==========================================================================
 
-.btn{
-    display: inline-block;
-    text-decoration: none;
-    height: auto;
-    line-height: 35px;
-    padding: 5px 15px;
-    text-transform: uppercase;
-    font-size: 1.063rem;
-    border-radius: 3px;
-}
- 
+// were assigning colours and have a button template in mixins
 .bespoke-software .btn{
-    background-color: #f7b322;
+    @include BtnTemplate(#f7b322);
 }
 .it-support .btn{
-    background-color: #4183d7;
+    @include BtnTemplate($netmatters-blue);
 }
 .digital-marketing .btn{
-    background-color: #2ecc71;
+    @include BtnTemplate($netmatters-green);
 }
 .telecoms-services .btn{
-    background-color: #d64541;
+    @include BtnTemplate(#d64541);
 }
 .web-design .btn{
-    background-color: #926fb1;
+    @include BtnTemplate($netmatters-purple);
 }
 .cyber-security .btn{
-    background-color: #f62459;
+    @include BtnTemplate($netmatters-pink);
 }
 .developer-training .btn{
-    background-color: #ce4125;
+    @include BtnTemplate($netmatters-red);
 }
 
 /////////////////////////////////////////////////////////////////////////////

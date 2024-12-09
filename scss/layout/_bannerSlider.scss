@@ -65,7 +65,7 @@
         display: inline-block;
         text-decoration: none;
         color: $primary-white;
-        background-color: #926fb1;
+        background-color: $netmatters-purple;
         
         span {
             margin-left: 12px;
@@ -75,30 +75,30 @@
     }
 
     .slide-1-btn{
-        @include button-hover(#926fb1);
+        @include button-hover($netmatters-purple);
     }
     .slide-2-btn{
-        background-color: #f7b322;
-        @include button-hover(#f7b322);
+        background-color: $netmatters-orange;
+        @include button-hover($netmatters-orange);
     }
     .slide-3-btn{
-        background-color: #4183d7;
-        @include button-hover(#4183d7);
+        background-color: $netmatters-blue;
+        @include button-hover($netmatters-blue);
     }
     .slide-4-btn{
-        background-color: #2ecc71;
-        @include button-hover(#2ecc71);
+        background-color: $netmatters-green;
+        @include button-hover($netmatters-green);
     }
     .slide-5-btn{
         background-color: #d64541;
         @include button-hover(#d64541);
     }
     .slide-6-btn{
-        @include button-hover(#926fb1);
+        @include button-hover($netmatters-purple);
     }
     .slide-7-btn{
-        background-color: #f62459;
-        @include button-hover(#f62459);
+        background-color: $netmatters-pink;
+        @include button-hover($netmatters-pink);
     }
 }
 

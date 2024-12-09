@@ -486,16 +486,14 @@ p {
 }
 
 .btn {
-  font-weight: 400;
+  display: inline-block;
   text-decoration: none;
-  color: #fff;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
   text-transform: uppercase;
   font-size: 1.063rem;
   border-radius: 3px;
-  white-space: normal;
 }
 .btn .main-buttons {
   padding: 10px 30px;
@@ -1278,7 +1276,8 @@ p {
      object-fit: contain;
 }
 
-.btn {
+.bespoke-software .btn {
+  background-color: #f7b322;
   display: inline-block;
   text-decoration: none;
   height: auto;
@@ -1289,32 +1288,76 @@ p {
   border-radius: 3px;
 }
 
-.bespoke-software .btn {
-  background-color: #f7b322;
-}
-
 .it-support .btn {
   background-color: #4183d7;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 .digital-marketing .btn {
   background-color: #2ecc71;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 .telecoms-services .btn {
   background-color: #d64541;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 .web-design .btn {
   background-color: #926fb1;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 .cyber-security .btn {
   background-color: #f62459;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 .developer-training .btn {
   background-color: #ce4125;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
 }
 
 @media (max-width: 767px) {
@@ -1534,50 +1577,67 @@ p {
 .banner-bespoke-software:hover {
   background-color: #67809f;
 }
-.banner-bespoke-software:hover .banner-avatar {
-  color: #fff;
-}
 
 .banner-it-support:hover {
   background-color: #4183d7;
-}
-.banner-it-support:hover .banner-avatar {
-  color: #fff;
 }
 
 .banner-digital-marketing:hover {
   background-color: #2ecc71;
 }
-.banner-digital-marketing:hover .banner-avatar {
-  color: #fff;
-}
 
 .banner-telecoms-services:hover {
   background-color: #d64541;
-}
-.banner-telecoms-services:hover .banner-avatar {
-  color: #fff;
 }
 
 .banner-web-design:hover {
   background-color: #926fb1;
 }
-.banner-web-design:hover .banner-avatar {
-  color: #fff;
-}
 
 .banner-cyber-security:hover {
   background-color: #f62459;
-}
-.banner-cyber-security:hover .banner-avatar {
-  color: #fff;
 }
 
 .banner-developer-course:hover {
   background-color: #ce4125;
 }
+
+.banner-bespoke-software:hover .banner-avatar,
+.banner-it-support:hover .banner-avatar,
+.banner-digital-marketing:hover .banner-avatar,
+.banner-telecoms-services:hover .banner-avatar,
+.banner-web-design:hover .banner-avatar,
+.banner-cyber-security:hover .banner-avatar,
 .banner-developer-course:hover .banner-avatar {
   color: #fff;
+}
+
+.inner-bespoke-software {
+  background-color: #526781;
+}
+
+.inner-it-support {
+  background-color: #286abd;
+}
+
+.inner-digital-marketing {
+  background-color: #25a25a;
+}
+
+.inner-telecoms-services {
+  background-color: #bc2c28;
+}
+
+.inner-web-design {
+  background-color: #79539a;
+}
+
+.inner-cyber-security {
+  background-color: #de093f;
+}
+
+.inner-developer-course {
+  background-color: #a3331d;
 }
 
 .banner-dropdown li span {
@@ -1690,34 +1750,6 @@ p {
 
 .banner-inner-dropdown-container .banner-dropdown-item {
   text-align: left;
-}
-
-.inner-bespoke-software {
-  background-color: #526781;
-}
-
-.inner-it-support {
-  background-color: #286abd;
-}
-
-.inner-digital-marketing {
-  background-color: #25a25a;
-}
-
-.inner-telecoms-services {
-  background-color: #bc2c28;
-}
-
-.inner-web-design {
-  background-color: #79539a;
-}
-
-.inner-cyber-security {
-  background-color: #de093f;
-}
-
-.inner-developer-course {
-  background-color: #a3331d;
 }
 
 .banner-inner-dropdown-container a {
@@ -2110,6 +2142,14 @@ p {
 
 .large-screen-mouse {
   background-color: #4183d7;
+  display: inline-block;
+  text-decoration: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   height: 56px;

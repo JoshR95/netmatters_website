@@ -100,18 +100,7 @@
 }
 
 .btn{
-    font-weight: 400;
-    text-decoration: none;
-    color: $primary-white;
-
-    height: auto;
-    line-height: 35px;
-    padding: 5px 15px;
-    text-transform: uppercase;
-    font-size: 1.063rem;
-    border-radius: 3px;
-    white-space: normal;
-
+    @include BtnTemplate(null);
     .main-buttons{
         padding: 10px 30px;
     }
@@ -202,7 +191,7 @@
 }
 // this is a secondary class to the .news-link so it has a unique color
 .news-link-one{
-    background-color: #926fb1;
+    background-color: $netmatters-purple;
 }
 // this is a secondary class to the .new-link so it has a unique color
 .news-link-two{
@@ -235,7 +224,7 @@
 // this block of selectors lets me set the titles colors individually
 .block {
     .btn-article-1{
-        background-color: #926fb1;
+        background-color: $netmatters-purple;
     }
     .btn-article-2{
         background-color: #db8c0d;
@@ -244,7 +233,7 @@
         background-color: #d64541;
     }
     .article-1-h3{
-        color: #926fb1;
+        color: $netmatters-purple;
         font-weight: 600;
     }
     .article-2-h3{
@@ -491,7 +480,7 @@
 
             .tooltip-button {
                 display: inline-block;
-                background-color: #926fb1;
+                background-color: $netmatters-purple;
                 width: 90%;
                 color: #fff;
                 padding: 15px 15px;
@@ -501,14 +490,14 @@
                 transition: background-color 0.3s;
 
                 &:hover {
-                    background-color: darken(#926fb1, 10%);
+                    background-color: darken($netmatters-purple, 10%);
                 }
             }
             .green-tooltip-button{
-                background-color: #2ecc71;
+                background-color: $netmatters-green;
             }
             .blue-tooltip-button{
-                background-color: #4183d7;
+                background-color: $netmatters-blue;
             }
             .orange-tooltip-button{
                 background-color: #db8c0d;
