@@ -66,7 +66,7 @@
 
 // Arrow colors
 .banner-dropdown > li.banner-bespoke-software > a:first-child::after { border-top-color: #67809f; }
-.banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: #4183d7; }
+.banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: $netmatters-blue; }
 .banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: #2ecc71; }
 .banner-dropdown > li.banner-telecoms-services > a:first-child::after { border-top-color: #d64541; }
 .banner-dropdown > li.banner-web-design > a:first-child::after { border-top-color: #926fb1; }
@@ -89,7 +89,7 @@
 }
 .banner-it-support {
     &:hover {
-        background-color: #4183d7;
+        background-color: $netmatters-blue;
         .banner-avatar {
             color: $primary-white;
         }
@@ -143,7 +143,7 @@
 
 // Icon colors
 .banner-avatar.icon-laptop { color: #67809f; }
-.banner-avatar.icon-display { color: #4183d7; }
+.banner-avatar.icon-display { color: $netmatters-blue; }
 .banner-avatar.icon-bar-graph { color: #2ecc71; }
 .banner-avatar.icon-phone_in_talk { color: #d64541; }
 .banner-avatar.icon-embed2 { color: #926fb1; }

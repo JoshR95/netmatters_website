@@ -2081,15 +2081,6 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
-.large-screen-mouse {
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-.large-screen-mouse:hover {
-  background-color: #286abd;
-  color: white;
-}
-
 .large-screen-paperplane {
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -2118,14 +2109,20 @@ p {
 }
 
 .large-screen-mouse {
+  background-color: #4183d7;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   height: 56px;
   line-height: 46px;
   padding: 5px 15px;
   border-radius: 3px;
   font-size: 23px;
   border: none;
-  background-color: #4183d7;
   color: #fff;
+}
+.large-screen-mouse:hover {
+  background-color: #286abd;
+  color: white;
 }
 .large-screen-mouse .icon-mouse {
   position: relative;
