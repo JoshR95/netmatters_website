@@ -994,6 +994,9 @@ p {
   }
 }
 @media (min-width: 1260px) {
+  .article-list {
+    margin: 0 -15px;
+  }
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1001,7 +1004,7 @@ p {
   }
   .row .article-1 {
     width: 33.3%;
-    padding: 0 15px 0 0;
+    padding: 0 15px;
   }
   .row .article-2 {
     width: 33.3%;
@@ -1010,7 +1013,7 @@ p {
   }
   .row .article-3 {
     width: 33.3%;
-    padding: 0 0 0 15px;
+    padding: 0 15px;
     padding-top: 0px;
   }
   .button-container {
@@ -1415,17 +1418,26 @@ p {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-item {
-    padding: 0px;
+@media (min-width: 992px) {
+  .services-section-wrapper {
+    margin: 0 -15px;
   }
+  .services-section {
+    width: 100%;
+  }
+  .bs-container,
   .ts-container,
-  .cs-container {
-    padding-left: 0px;
-  }
+  .cs-container,
+  .dm-container,
   .wd-container,
   .dt-container {
-    padding-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services-section-wrapper {
+    margin: 0 -15px;
   }
 }
 @media (min-width: 992px) and (max-width: 1259px) {
@@ -1438,16 +1450,6 @@ p {
   .services-section > .main-item {
     -ms-flex-preferred-size: 33.3%;
         flex-basis: 33.3%;
-  }
-  .bs-container,
-  .ts-container,
-  .cs-container {
-    padding-left: 0px;
-  }
-  .dm-container,
-  .wd-container,
-  .dt-container {
-    padding-right: 0px;
   }
 }
 @media (min-width: 1260px) {
@@ -1484,14 +1486,6 @@ p {
   }
   .service-item.digital-marketing .service-item-text {
     margin-bottom: 32px;
-  }
-  .bs-container,
-  .ts-container {
-    padding-left: 0px;
-  }
-  .dm-container,
-  .dt-container {
-    padding-right: 0px;
   }
 }
 .banner-header {

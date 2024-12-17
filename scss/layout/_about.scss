@@ -652,12 +652,16 @@
 // this shows all three articles in full screen and sizes them correctly 
 @media (min-width: 1260px){
 
+    .article-list {
+        margin: 0 -15px;  // Negative margin to offset padding
+    }
+
     .row{
         display: flex;
 
         .article-1{
             width: 33.3%;
-            padding: 0 15px 0 0;
+            padding: 0 15px;
         }
 
         .article-2{
@@ -668,7 +672,7 @@
 
         .article-3{
             width: 33.3%;
-            padding: 0 0 0 15px;
+            padding: 0 15px;
             padding-top: 0px;
         }
 

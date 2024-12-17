@@ -325,20 +325,33 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 992px) {
+    // Add this new wrapper class
+    .services-section-wrapper {
+        margin: 0 -15px;  // Negative margin to offset padding
+    }
 
-    // these styling selectors remove the outside padding so it 
-    // alligns with the rest of the sections on the page 
-    .main-item{
-        padding: 0px;
+    .services-section {
+        width: 100%;
     }
+
+    // Remove the padding removal from individual containers
+    .bs-container,
     .ts-container,
-    .cs-container {
-        padding-left: 0px;
-    }
+    .cs-container,
+    .dm-container,
     .wd-container,
     .dt-container {
-        padding-right: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+
+    .services-section-wrapper {
+        margin: 0 -15px;  // Negative margin to offset padding
     }
 
 }
@@ -357,16 +370,6 @@
         flex-basis: 33.3%;
     }
     
-    .bs-container,
-    .ts-container,
-    .cs-container {
-        padding-left: 0px;
-    }
-    .dm-container,
-    .wd-container,
-    .dt-container {
-        padding-right: 0px;
-    }
 
 }
 
@@ -407,13 +410,5 @@
         margin-bottom: 32px;
     }
 
-    .bs-container,
-    .ts-container {
-        padding-left: 0px;
-    }
-    .dm-container,
-    .dt-container {
-        padding-right: 0px;
-    }
 
 }
