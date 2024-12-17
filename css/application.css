@@ -1001,7 +1001,7 @@ p {
   }
   .row .article-1 {
     width: 33.3%;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
   }
   .row .article-2 {
     width: 33.3%;
@@ -1010,7 +1010,7 @@ p {
   }
   .row .article-3 {
     width: 33.3%;
-    padding: 0 15px;
+    padding: 0 0 0 15px;
     padding-top: 0px;
   }
   .button-container {
@@ -1025,10 +1025,6 @@ p {
   .btn-google,
   .btn-trustpilot {
     margin-top: 30px;
-  }
-  .heading-container {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 .services-section service-item {
@@ -1419,6 +1415,19 @@ p {
     display: none;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-item {
+    padding: 0px;
+  }
+  .ts-container,
+  .cs-container {
+    padding-left: 0px;
+  }
+  .wd-container,
+  .dt-container {
+    padding-right: 0px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1259px) {
   .services-section {
     width: 100%;
@@ -1429,6 +1438,16 @@ p {
   .services-section > .main-item {
     -ms-flex-preferred-size: 33.3%;
         flex-basis: 33.3%;
+  }
+  .bs-container,
+  .ts-container,
+  .cs-container {
+    padding-left: 0px;
+  }
+  .dm-container,
+  .wd-container,
+  .dt-container {
+    padding-right: 0px;
   }
 }
 @media (min-width: 1260px) {
@@ -1465,6 +1484,14 @@ p {
   }
   .service-item.digital-marketing .service-item-text {
     margin-bottom: 32px;
+  }
+  .bs-container,
+  .ts-container {
+    padding-left: 0px;
+  }
+  .dm-container,
+  .dt-container {
+    padding-right: 0px;
   }
 }
 .banner-header {

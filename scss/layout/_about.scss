@@ -657,7 +657,7 @@
 
         .article-1{
             width: 33.3%;
-            padding: 0 15px;
+            padding: 0 15px 0 0;
         }
 
         .article-2{
@@ -668,7 +668,7 @@
 
         .article-3{
             width: 33.3%;
-            padding: 0 15px;
+            padding: 0 0 0 15px;
             padding-top: 0px;
         }
 
@@ -688,9 +688,4 @@
         margin-top: 30px;
     }
 
-    // this has to be left and right or it messes with the top padding already set
-    .heading-container{
-        padding-left:  15px;
-        padding-right: 15px;
-    }
 }
