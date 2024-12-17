@@ -64,94 +64,67 @@
     }
 }
 
-// Arrow colors
-.banner-dropdown > li.banner-bespoke-software > a:first-child::after { border-top-color: #67809f; }
-.banner-dropdown > li.banner-it-support > a:first-child::after { border-top-color: $netmatters-blue; }
-.banner-dropdown > li.banner-digital-marketing > a:first-child::after { border-top-color: $netmatters-green; }
-.banner-dropdown > li.banner-telecoms-services > a:first-child::after { border-top-color: #d64541; }
-.banner-dropdown > li.banner-web-design > a:first-child::after { border-top-color: $netmatters-purple; }
-.banner-dropdown > li.banner-cyber-security > a:first-child::after { border-top-color: $netmatters-pink; }
-.banner-dropdown > li.banner-developer-course > a:first-child::after { border-top-color: $netmatters-red; }
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/// SETTING MIXINS COLOURS FOR THE BANNERDROP DOWN 
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Spacing between banner nav items
-.banner-dropdown a {
-    padding: 10px; 
-}
+// Bespoke Software
+@include bannerDropdown(
+  #67809f,                  // primary colour (main colour)
+  #526781,                  // secondary colour (background colour)
+  'bespoke-software',         // service name (selects colour for main square and arrow depending on name given added turning icon white on hover to this too)
+  'icon-laptop'               // icon class (selects the icon to assign its main colour depending on name given)
+);
 
-// Hover background colors
-.banner-bespoke-software {
-    &:hover {
-        background-color: #67809f;
-    }
-}
-.banner-it-support {
-    &:hover {
-        background-color: $netmatters-blue;
-    }
-}
-.banner-digital-marketing {
-    &:hover {
-        background-color: $netmatters-green;
-    }
-}
-.banner-telecoms-services {
-    &:hover {
-        background-color: #d64541;
-    }
-}
-.banner-web-design {
-    &:hover {
-        background-color: $netmatters-purple;
-    }
-}
-.banner-cyber-security {
-    &:hover {
-        background-color: $netmatters-pink;
-    }
-}
-.banner-developer-course {
-    &:hover {
-        background-color: $netmatters-red;
-    }
-}
+// IT Support
+@include bannerDropdown(
+  $netmatters-blue,          
+  #286abd,
+  'it-support',
+  'icon-display'
+);
 
-// this changes the icon to white when hovered 
-.banner-bespoke-software,
-.banner-it-support,
-.banner-digital-marketing,
-.banner-telecoms-services,
-.banner-web-design,
-.banner-cyber-security,
-.banner-developer-course {
-    &:hover {
-        .banner-avatar {
-            color: $primary-white;
-        }
-    }
-}
+// Digital Marketing
+@include bannerDropdown(
+  $netmatters-green,         
+  #25a25a,
+  'digital-marketing',
+  'icon-bar-graph'
+);
 
-// Inner dropdown background colors
-.inner-bespoke-software { background-color: #526781; }
-.inner-it-support { background-color: #286abd; }
-.inner-digital-marketing { background-color: #25a25a; }
-.inner-telecoms-services { background-color: #bc2c28; }
-.inner-web-design { background-color: #79539a; }
-.inner-cyber-security { background-color: #de093f; }
-.inner-developer-course { background-color: #a3331d; }
+// Telecoms Services
+@include bannerDropdown(
+  #d64541,
+  #bc2c28,
+  'telecoms-services',
+  'icon-phone_in_talk'
+);
 
-// Stack text inside banner-dropdowns li
-.banner-dropdown li span {
-    display: block; 
-}
+// Web Design
+@include bannerDropdown(
+  $netmatters-purple,        
+  #79539a,
+  'web-design',
+  'icon-embed2'
+);
 
-// Icon colors
-.banner-avatar.icon-laptop { color: #67809f; }
-.banner-avatar.icon-display { color: $netmatters-blue; }
-.banner-avatar.icon-bar-graph { color: $netmatters-green; }
-.banner-avatar.icon-phone_in_talk { color: #d64541; }
-.banner-avatar.icon-embed2 { color: $netmatters-purple; }
-.banner-avatar.icon-security { color: $netmatters-pink; }
-.banner-avatar.icon-study { color: $netmatters-red; }
+// Cyber Security
+@include bannerDropdown(
+  $netmatters-pink,          
+  #de093f,
+  'cyber-security',
+  'icon-security'
+);
+
+// Developer Course
+@include bannerDropdown(
+  $netmatters-red,         
+  #a3331d,
+  'developer-course',
+  'icon-study'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////
 
 .banner-text-small,
 .banner-bar-text {

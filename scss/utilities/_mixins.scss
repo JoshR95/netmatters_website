@@ -64,3 +64,35 @@
   border-radius: 3px;
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// BANNER HOVER COLOUR
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ive made a mixin to easily add colours to the different dropdowns and not repeat code.
+@mixin bannerDropdown($primaryColor, $secondaryColor, $serviceName, $iconClass) {
+
+  // sets the icons icon color before hover based on the string given in the scss using scss string interpolation '#{$iconClass}'
+  .banner-avatar.#{$iconClass} { 
+    color: $primaryColor;
+  }
+
+  // sets the hover colour for each items background in the dropdown bar
+  .banner-#{$serviceName} {
+    &:hover {
+      background-color: $primaryColor;
+      .banner-avatar {
+        color: $primary-white;
+      }
+    }
+  }
+
+  // sets the arrow color the serviceName is using string interpolation to target the right element
+  .banner-dropdown > li.banner-#{$serviceName} > a:first-child::after { 
+    border-top-color: $primaryColor; 
+  }
+  
+  // sets the background colour of the big dropdown depending on service name given
+  .inner-#{$serviceName} { 
+    background-color: $secondaryColor;
+  }
+}

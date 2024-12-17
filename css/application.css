@@ -1569,134 +1569,137 @@ p {
   display: block;
 }
 
-.banner-dropdown > li.banner-bespoke-software > a:first-child::after {
-  border-top-color: #67809f;
-}
-
-.banner-dropdown > li.banner-it-support > a:first-child::after {
-  border-top-color: #4183d7;
-}
-
-.banner-dropdown > li.banner-digital-marketing > a:first-child::after {
-  border-top-color: #2ecc71;
-}
-
-.banner-dropdown > li.banner-telecoms-services > a:first-child::after {
-  border-top-color: #d64541;
-}
-
-.banner-dropdown > li.banner-web-design > a:first-child::after {
-  border-top-color: #926fb1;
-}
-
-.banner-dropdown > li.banner-cyber-security > a:first-child::after {
-  border-top-color: #f62459;
-}
-
-.banner-dropdown > li.banner-developer-course > a:first-child::after {
-  border-top-color: #ce4125;
-}
-
-.banner-dropdown a {
-  padding: 10px;
+.banner-avatar.icon-laptop {
+  color: #67809f;
 }
 
 .banner-bespoke-software:hover {
   background-color: #67809f;
 }
-
-.banner-it-support:hover {
-  background-color: #4183d7;
-}
-
-.banner-digital-marketing:hover {
-  background-color: #2ecc71;
-}
-
-.banner-telecoms-services:hover {
-  background-color: #d64541;
-}
-
-.banner-web-design:hover {
-  background-color: #926fb1;
-}
-
-.banner-cyber-security:hover {
-  background-color: #f62459;
-}
-
-.banner-developer-course:hover {
-  background-color: #ce4125;
-}
-
-.banner-bespoke-software:hover .banner-avatar,
-.banner-it-support:hover .banner-avatar,
-.banner-digital-marketing:hover .banner-avatar,
-.banner-telecoms-services:hover .banner-avatar,
-.banner-web-design:hover .banner-avatar,
-.banner-cyber-security:hover .banner-avatar,
-.banner-developer-course:hover .banner-avatar {
+.banner-bespoke-software:hover .banner-avatar {
   color: #fff;
+}
+
+.banner-dropdown > li.banner-bespoke-software > a:first-child::after {
+  border-top-color: #67809f;
 }
 
 .inner-bespoke-software {
   background-color: #526781;
 }
 
-.inner-it-support {
-  background-color: #286abd;
-}
-
-.inner-digital-marketing {
-  background-color: #25a25a;
-}
-
-.inner-telecoms-services {
-  background-color: #bc2c28;
-}
-
-.inner-web-design {
-  background-color: #79539a;
-}
-
-.inner-cyber-security {
-  background-color: #de093f;
-}
-
-.inner-developer-course {
-  background-color: #a3331d;
-}
-
-.banner-dropdown li span {
-  display: block;
-}
-
-.banner-avatar.icon-laptop {
-  color: #67809f;
-}
-
 .banner-avatar.icon-display {
   color: #4183d7;
+}
+
+.banner-it-support:hover {
+  background-color: #4183d7;
+}
+.banner-it-support:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-it-support > a:first-child::after {
+  border-top-color: #4183d7;
+}
+
+.inner-it-support {
+  background-color: #286abd;
 }
 
 .banner-avatar.icon-bar-graph {
   color: #2ecc71;
 }
 
+.banner-digital-marketing:hover {
+  background-color: #2ecc71;
+}
+.banner-digital-marketing:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-digital-marketing > a:first-child::after {
+  border-top-color: #2ecc71;
+}
+
+.inner-digital-marketing {
+  background-color: #25a25a;
+}
+
 .banner-avatar.icon-phone_in_talk {
   color: #d64541;
+}
+
+.banner-telecoms-services:hover {
+  background-color: #d64541;
+}
+.banner-telecoms-services:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-telecoms-services > a:first-child::after {
+  border-top-color: #d64541;
+}
+
+.inner-telecoms-services {
+  background-color: #bc2c28;
 }
 
 .banner-avatar.icon-embed2 {
   color: #926fb1;
 }
 
+.banner-web-design:hover {
+  background-color: #926fb1;
+}
+.banner-web-design:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-web-design > a:first-child::after {
+  border-top-color: #926fb1;
+}
+
+.inner-web-design {
+  background-color: #79539a;
+}
+
 .banner-avatar.icon-security {
   color: #f62459;
 }
 
+.banner-cyber-security:hover {
+  background-color: #f62459;
+}
+.banner-cyber-security:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-cyber-security > a:first-child::after {
+  border-top-color: #f62459;
+}
+
+.inner-cyber-security {
+  background-color: #de093f;
+}
+
 .banner-avatar.icon-study {
   color: #ce4125;
+}
+
+.banner-developer-course:hover {
+  background-color: #ce4125;
+}
+.banner-developer-course:hover .banner-avatar {
+  color: #fff;
+}
+
+.banner-dropdown > li.banner-developer-course > a:first-child::after {
+  border-top-color: #ce4125;
+}
+
+.inner-developer-course {
+  background-color: #a3331d;
 }
 
 .banner-text-small,
