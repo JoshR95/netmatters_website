@@ -1,5 +1,10 @@
 <?php  // Opens PHP code block
 
+// when connecting project to a database, remember the project has to be in xampps htdocs folder if using XAMPP to work,
+// we can create a symbolic link to our original project so github still links with code like this run in command prompt - 
+// mklink /D "C:\xampp\htdocs\netmatters_website" "C:\Nettmaters_main\assessments\websiteNew"  
+//                   htdocs location              original project location linked to github    - IMPORTANT - has to be ran as adiminstrator
+
 // 1. Database Configuration
 $host = 'localhost';      // Server where database is hosted (usually localhost for local development)
 $dbname = 'netmatters_website';  // Name of your database
@@ -31,3 +36,6 @@ try {  // Start of try block - attempts to execute the code inside
 } catch (PDOException $e) {  // Catches any database errors
     die("Connection failed: " . $e->getMessage());  // Stops execution and shows error message
 }
+
+
+ 

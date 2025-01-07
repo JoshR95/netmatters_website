@@ -1,3 +1,11 @@
+<?php
+require_once 'includes/database.php';
+
+// get articles from database
+$stmt = $pdo->query("SELECT * FROM news_articles ORDER BY  post_date DESC LIMIT 3");
+$articles = $stmt-> fetchAll();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -709,6 +717,47 @@
                         </div>
 
                         <div class="content-section">
+                        <!-- <div class="article-list">
+                                <div class="row">
+                                    <?php foreach($articles as $article): ?>
+                                        <div class="article">
+                                            <div class="img-container">
+                                                <a class="news-link news-link-one" href="<?php echo htmlspecialchars($article['article_link'] ?? '#'); ?>">
+                                                    NEWS
+                                                </a>
+                                                <a href="#" class="article-link">
+                                                    <img class="responsive-image" src="<?php echo htmlspecialchars($article['image_url']); ?>" alt="">
+                                                    <div class="block">
+                                                        <h3>
+                                                            <?php echo htmlspecialchars($article['title']); ?>
+                                                            <?php if($article['time_to_read']): ?>
+                                                                <span class="time-to-read">- <?php echo htmlspecialchars($article['time_to_read']); ?></span>
+                                                            <?php endif; ?>
+                                                        </h3>
+                                                        <p>
+                                                            <?php echo htmlspecialchars($article['description']); ?>
+                                                        </p>
+                                                        <div class="btn">Read More</div>
+                                                        <div class="author">
+                                                            <hr>
+                                                            <div class="posted-by">
+                                                                <div class="author-img">
+                                                                    <img src="<?php echo htmlspecialchars($article['author_image_url']); ?>" alt="">
+                                                                </div>
+                                                                <div class="author-details">
+                                                                    <strong>Posted by <?php echo htmlspecialchars($article['author_name']); ?></strong>
+                                                                    <br>
+                                                                    <p><?php echo date('jS F Y', strtotime($article['post_date'])); ?></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div> -->
                             <div class="article-list">
                                 <div class="row">
                                     <div class="article-1">
