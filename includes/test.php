@@ -1,7 +1,7 @@
 <?php
-require_once 'includes/database.php';
+require_once 'database.php';  // Remove 'includes/' since they're in the same directory
 
 // If we got this far without errors, we can look at our data
 echo "<pre>";
-print_r($newsItems);  // This will show all your data in an easy-to-read format
+print_r($newsItems);
 echo "</pre>";

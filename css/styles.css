@@ -939,6 +939,9 @@ p {
   .article-padding {
     padding-top: 0px;
   }
+  .article-list .row > div:last-child {
+    display: none;
+  }
   .container .view-all {
     display: none;
   }

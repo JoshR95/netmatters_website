@@ -585,6 +585,10 @@
         padding-top: 0px;
     }
 
+    .article-list .row > div:last-child {
+        display: none;
+    }
+
     // this gets rid of the view all and -->
     .container .view-all {
         display: none;

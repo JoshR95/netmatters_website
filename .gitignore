@@ -1,0 +1,11 @@
+# Environment files
+.env
+.env.backup
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# System files
+.DS_Store
+Thumbs.db

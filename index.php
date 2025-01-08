@@ -717,19 +717,19 @@ $articles = $stmt-> fetchAll();
                         </div>
 
                         <div class="content-section">
-                        <!-- <div class="article-list">
+                            <div class="article-list">
                                 <div class="row">
                                     <?php foreach($articles as $article): ?>
-                                        <div class="article">
+                                        <div class="<?php echo htmlspecialchars($article['style_class']); ?> <?php echo ($article['style_class'] !== 'article-1' ? 'article-padding' : ''); ?>">
                                             <div class="img-container">
-                                                <a class="news-link news-link-one" href="<?php echo htmlspecialchars($article['article_link'] ?? '#'); ?>">
+                                                <a class="news-link news-link-<?php echo ($article['style_class'] === 'article-1' ? 'one' : 'two'); ?>" href="#">
                                                     NEWS
                                                 </a>
                                                 <a href="#" class="article-link">
                                                     <img class="responsive-image" src="<?php echo htmlspecialchars($article['image_url']); ?>" alt="">
                                                     <div class="block">
-                                                        <h3>
-                                                            <?php echo htmlspecialchars($article['title']); ?>
+                                                        <h3 class="<?php echo $article['style_class'] . '-h3'; ?>">
+                                                            <a href="#"><?php echo htmlspecialchars($article['title']); ?></a>
                                                             <?php if($article['time_to_read']): ?>
                                                                 <span class="time-to-read">- <?php echo htmlspecialchars($article['time_to_read']); ?></span>
                                                             <?php endif; ?>
@@ -737,7 +737,9 @@ $articles = $stmt-> fetchAll();
                                                         <p>
                                                             <?php echo htmlspecialchars($article['description']); ?>
                                                         </p>
-                                                        <div class="btn">Read More</div>
+                                                        <div class="btn btn-<?php echo $article['style_class']; ?>">
+                                                            Read More
+                                                        </div>
                                                         <div class="author">
                                                             <hr>
                                                             <div class="posted-by">
@@ -757,8 +759,8 @@ $articles = $stmt-> fetchAll();
                                         </div>
                                     <?php endforeach; ?>
                                 </div>
-                            </div> -->
-                            <div class="article-list">
+                            </div>
+                            <!-- <div class="article-list">
                                 <div class="row">
                                     <div class="article-1">
                                         <div class="img-container">
@@ -864,7 +866,7 @@ $articles = $stmt-> fetchAll();
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
