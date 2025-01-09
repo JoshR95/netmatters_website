@@ -157,7 +157,39 @@
                         </div>
                     </div>
                     <div class="contact-section-form">
-
+                        <form action="process-contact.php" method="post">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input class="form-input-field" type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input class="form-input-field" type="text" id="company" name="company" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input class="form-input-field" type="text" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Your Telephone Number</label>
+                                <input class="form-input-field" type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-input-field" id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" id="marketing" name="marketing" class="form-check-input">
+                                    <label for="marketing" class="form-check-label">
+                                        Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn cu-form-btn">Send Enquiry</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
