@@ -13,6 +13,7 @@
 
 .middle-header{
     background-color: $primary-black;
+    margin: 0 0 50px 0;
     padding: 24px 0;
 }
 
@@ -26,14 +27,141 @@
 }
 
 ////////////////////////////////
-/// LOCATIONS
+/// CU-OFFICES
 ////////////////////////////////
+
+.cu-offices{
+    margin-bottom: 40px;
+}
+
+.cu-offices-container{
+    margin-top: 20px;
+}
+
+// making the office elements flex and display in a column by default
+.cu-offices-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+// adding some spacing with margin and box shadows for the office blocks
+.cu-offices-element{
+    margin-top: 30px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+}
+
+.office-bottom-spacing{
+    margin-bottom: 30px;
+}
+
+.offices-image{
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        // added block otherwise the img is treated as inline and leaves a gap between the img and content section
+        display: block;
+    }
+}
+
+.offices-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    h2{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+        color: $primary-black;
+    }
+    p{
+        margin: 15px 0 15px 0;
+        font-size: 13px;
+        line-height: 22px;
+        color: #666666
+    }
+    .offices-telephone{
+        a{
+            font-size: 26px;
+            font-weight: 700;
+            color: $netmatters-purple;
+            text-decoration: none;
+        }
+    }
+    .offices-button{
+        .btn{
+            margin-top: 15px;
+            padding: 5px 30px 5px 30px;
+            font-size: 14.4px;
+            background-color: $netmatters-purple;
+        }
+
+    }
+}
+
 
 
 ////////////////////////////////
 /// CONTACT SECTION
 ////////////////////////////////
 
+.cu-contact-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contact-section-info-top{
+    display: flex;
+    flex-direction: column;
+    *{
+        margin: 0 0 25px 0;
+    }
+    p{
+        color: $primary-black;
+    }
+    a{
+        font-size: 26px;
+        font-weight: 600;
+        color: $netmatters-purple;
+        text-decoration: none;
+    }
+}
+
+// for some reason i had to set this to when not active or it would underline when the accordian wasnt set to active
+// .contact-section-accordian h3:not(.active) {
+//     text-decoration: underline;
+// }
+
+.contact-section-accordian h3.active {
+    text-decoration: underline;
+}
+
+.contact-section-accordian{
+    h3{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    // // for some reason i had to set this to when not active or it would underline when the accordian wasnt set to active
+    // h3.active {
+    //     text-decoration: underline;
+    // }
+}
+// here we are setting the content in the accordian to have max height of 0 so it isnt shown
+// when the h3 is clicked and its given the active class by js, we then give it a max-height and transition so it smoothly shows the content in a dropdown
+.accordian-dropdown-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    &.active{
+        display: block;
+        max-height: 500px;
+    }
+}
 
 /////////////////////////////////
 // MEDIA QUERIES

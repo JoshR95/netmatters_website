@@ -33,6 +33,133 @@
                         </div>
                     </div>
                 </div>
+                <div class="cu-offices">
+                    <div class="cu-offices-container container">
+                        <div class="cu-offices-wrapper">
+                            <div class="cu-offices-element office-bottom-spacing">
+                                <div class="cambridge-office">
+                                    <div class="offices-image">
+                                        <a href="#">
+                                            <img src="../img/cambridge.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="offices-content">
+                                        <h2>Cambridge Office</h2>
+                                        <p>
+                                            Unit 1.31,
+                                            <br>
+                                            St Johns Innovation Centre,
+                                            <br>
+                                            Cowley Road, Milton,
+                                            <br>
+                                            Cambridge,
+                                            <br>
+                                            CB4 0WS
+                                        </p>
+                                        <div class="offices-telephone">
+                                            <a>01223 37 57 72</a>
+                                        </div>
+                                        <div class="offices-button">
+                                            <a class="btn ">view more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cu-offices-element office-bottom-spacing">
+                                <div class="wymondham-office">
+                                    <div class="offices-image">
+                                        <a href="#">
+                                            <img src="../img/wymondham.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="offices-content">
+                                        <h2>Wymondham Office</h2>
+                                        <p>
+                                            Unit 15,
+                                            <br>
+                                            Penfold Drive,
+                                            <br>
+                                            Gateway 11 Business Park,
+                                            <br>
+                                            Wymondham, Norfolk,
+                                            <br>
+                                            NR18 0WZ
+                                        </p>
+                                        <div class="offices-telephone">
+                                            <a>01603 70 40 20</a>
+                                        </div>
+                                        <div class="offices-button">
+                                            <a class="btn ">view more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cu-offices-element">
+                                <div class="great-yarmouth-office">
+                                    <div class="offices-image">
+                                        <a href="#">
+                                            <img src="../img/yarmouth-2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="offices-content">
+                                        <h2>Great Yarmouth Office</h2>
+                                        <p>
+                                            Suite F23,
+                                            <br>
+                                            Beacon Innovation Centre,
+                                            <br>
+                                            Beacon Park, Garleston,
+                                            <br>
+                                            Great Yarmouth, Norfolk
+                                            <br>
+                                            NR31 7RA
+                                        </p>
+                                        <div class="offices-telephone">
+                                            <a href="#">01493 60 32 04</a>
+                                        </div>
+                                        <div class="offices-button">
+                                            <a class="btn ">view more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cu-contact-section container">
+                    <div class="contact-section-info">
+                        <div class="contact-section-info-top">
+                            <p>Email us on:</p>
+                            <!-- <div class="contact-info-sales-link"> -->
+                            <a href="#">sales@netmatters.com</a>
+                            <!-- </div> -->
+                            <p>Business hours:</p>
+                            <p>Monday - Friday 07:00 - 18:00</p>
+                        </div>
+                        <div class="contact-section-info-bottom">
+                            <div class="contact-section-accordian">
+                                <h3>Out of Hours IT Support</h3>
+                                <div class="accordian-dropdown-content">
+                                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                    <p>
+                                        <strong>Monday - Friday 18:00 - 22:00  Saturday 08:00 - 16:00</strong>
+                                        <br>
+                                        <strong>Sunday 10:00 - 18:00</strong>
+                                    </p>
+                                    <p> 
+                                        To log a critical task, you will need to call our main line number and select Option 2 to 
+                                        leave an Out of Hours  voicemail. A technician will contact you on the number provided within 
+                                        45 minutes of your call. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-section-form">
+
+                    </div>
+                </div>
             </div>
 
             <?php include '../includes/layouts/footer.php'; ?>
@@ -71,6 +198,7 @@
         <script src="../js/jquery-3.7.1.min.js"></script>
         <script src="../js/slick/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/pages-js/contact-us.js"></script>
         <script src="../js/main.js"></script>
     </body>
 </html>
