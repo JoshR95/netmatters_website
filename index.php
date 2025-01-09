@@ -653,7 +653,7 @@ $articles = $stmt-> fetchAll();
                 </div>
             </div>
 
-             <?php include 'includes/layouts/footer.php'; ?>
+            <?php include 'includes/layouts/footer.php'; ?>
             
             <button class="sticky-help">
                 <span class="icon-chat"></span>

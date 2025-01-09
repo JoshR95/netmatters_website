@@ -2,7 +2,7 @@
     <div class="container">
         <div class="top-footer">
             <div class="netmatters-footer-info">
-                <img class ="footer-main-logo" src="img/nm-logo-white-med.png" alt="Netmatters Logo in white">
+                <img class ="footer-main-logo" src="/img/nm-logo-white-med.png" alt="Netmatters Logo in white">
                 <h4>FOLLOW US ON:</h4>
                 <div class="footer-follow-links">
                     <a class="facebook-btn" href="#">

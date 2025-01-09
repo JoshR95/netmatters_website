@@ -136,6 +136,26 @@ footer, .bottom-footer {
             transform: translateX(-350px);
   }
 }
+.section {
+  margin-top: 50px;
+}
+
+.contact-us-top {
+  margin-top: 0;
+}
+
+.middle-header {
+  background-color: #333645;
+  padding: 24px 0;
+}
+
+.contact-us-top.section h1 {
+  margin: 0;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

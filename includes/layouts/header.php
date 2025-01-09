@@ -4,7 +4,7 @@
             <div class="header-bar-container">
                 <div class="top-header">
                     <a href="#">
-                        <img class="header-netmatters" src="./img/f-logo.png" srcset="././img/f-logo.webp" alt="Netmatters Logo in black">
+                        <img class="header-netmatters" src="/img/f-logo.png" srcset="/img/f-logo.webp" alt="Netmatters Logo in black">
                     </a>
                     <span class="icon-phone_in_talk header-phone-icon"></span>
                     <div class="header-search-and-icons">
