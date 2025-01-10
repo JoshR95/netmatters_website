@@ -15,6 +15,8 @@
 
         <link rel="stylesheet" href="../img/icomoon-main/style.css">
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,6 +29,11 @@
 
             <div id="middle">
                 <div class="contact-us-top section">
+                    <div class="top-middle-header">
+                        <div class="container">
+                            <strong><a href="#">Home</a></strong> / Our Offices
+                        </div>
+                    </div>
                     <div class="middle-header">
                         <div class="container">
                             <h1>Our Offices</h1>
@@ -36,94 +43,99 @@
                 <div class="cu-offices">
                     <div class="cu-offices-container container">
                         <div class="cu-offices-wrapper">
-                            <div class="cu-offices-element office-bottom-spacing">
-                                <div class="cambridge-office">
-                                    <div class="offices-image">
-                                        <a href="#">
-                                            <img src="../img/cambridge.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="offices-content">
-                                        <h2>Cambridge Office</h2>
-                                        <p>
-                                            Unit 1.31,
-                                            <br>
-                                            St Johns Innovation Centre,
-                                            <br>
-                                            Cowley Road, Milton,
-                                            <br>
-                                            Cambridge,
-                                            <br>
-                                            CB4 0WS
-                                        </p>
-                                        <div class="offices-telephone">
-                                            <a>01223 37 57 72</a>
+                            <div class="container">
+                                <div class="cu-offices-element office-bottom-spacing">
+                                    <div class="cambridge-office">
+                                        <div class="offices-image">
+                                            <a href="#">
+                                                <img src="../img/cambridge.jpg">
+                                            </a>
                                         </div>
-                                        <div class="offices-button">
-                                            <a class="btn ">view more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cu-offices-element office-bottom-spacing">
-                                <div class="wymondham-office">
-                                    <div class="offices-image">
-                                        <a href="#">
-                                            <img src="../img/wymondham.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="offices-content">
-                                        <h2>Wymondham Office</h2>
-                                        <p>
-                                            Unit 15,
-                                            <br>
-                                            Penfold Drive,
-                                            <br>
-                                            Gateway 11 Business Park,
-                                            <br>
-                                            Wymondham, Norfolk,
-                                            <br>
-                                            NR18 0WZ
-                                        </p>
-                                        <div class="offices-telephone">
-                                            <a>01603 70 40 20</a>
-                                        </div>
-                                        <div class="offices-button">
-                                            <a class="btn ">view more</a>
+                                        <div class="offices-content">
+                                            <h2>Cambridge Office</h2>
+                                            <p>
+                                                Unit 1.31,
+                                                <br>
+                                                St Johns Innovation Centre,
+                                                <br>
+                                                Cowley Road, Milton,
+                                                <br>
+                                                Cambridge,
+                                                <br>
+                                                CB4 0WS
+                                            </p>
+                                            <div class="offices-telephone">
+                                                <a>01223 37 57 72</a>
+                                            </div>
+                                            <div class="offices-button">
+                                                <a class="btn ">view more</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="cu-offices-element">
-                                <div class="great-yarmouth-office">
-                                    <div class="offices-image">
-                                        <a href="#">
-                                            <img src="../img/yarmouth-2.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="offices-content">
-                                        <h2>Great Yarmouth Office</h2>
-                                        <p>
-                                            Suite F23,
-                                            <br>
-                                            Beacon Innovation Centre,
-                                            <br>
-                                            Beacon Park, Garleston,
-                                            <br>
-                                            Great Yarmouth, Norfolk
-                                            <br>
-                                            NR31 7RA
-                                        </p>
-                                        <div class="offices-telephone">
-                                            <a href="#">01493 60 32 04</a>
+                            <div class="container">
+                                <div class="cu-offices-element office-bottom-spacing">
+                                    <div class="wymondham-office">
+                                        <div class="offices-image">
+                                            <a href="#">
+                                                <img src="../img/wymondham.jpg">
+                                            </a>
                                         </div>
-                                        <div class="offices-button">
-                                            <a class="btn ">view more</a>
+                                        <div class="offices-content">
+                                            <h2>Wymondham Office</h2>
+                                            <p>
+                                                Unit 15,
+                                                <br>
+                                                Penfold Drive,
+                                                <br>
+                                                Gateway 11 Business Park,
+                                                <br>
+                                                Wymondham, Norfolk,
+                                                <br>
+                                                NR18 0WZ
+                                            </p>
+                                            <div class="offices-telephone">
+                                                <a>01603 70 40 20</a>
+                                            </div>
+                                            <div class="offices-button">
+                                                <a class="btn ">view more</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="container">
+                                <div class="cu-offices-element">
+                                    <div class="great-yarmouth-office">
+                                        <div class="offices-image">
+                                            <a href="#">
+                                                <img src="../img/yarmouth-2.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="offices-content">
+                                            <h2>Great Yarmouth Office</h2>
+                                            <p>
+                                                Suite F23,
+                                                <br>
+                                                Beacon Innovation Centre,
+                                                <br>
+                                                Beacon Park, Garleston,
+                                                <br>
+                                                Great Yarmouth, Norfolk
+                                                <br>
+                                                NR31 7RA
+                                            </p>
+                                            <div class="offices-telephone">
+                                                <a href="#">01493 60 32 04</a>
+                                            </div>
+                                            <div class="offices-button">
+                                                <a class="btn ">view more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,36 +170,56 @@
                     </div>
                     <div class="contact-section-form">
                         <form action="process-contact.php" method="post">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input class="form-input-field" type="text" id="name" name="name" class="form-control" required>
+                            <div class="form-row">
+                                <div class="form-group form-padding-right">
+                                    <label for="name">Your Name <span class="require-red">*</span> </label>
+                                    <input class="form-input-field" type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group form-padding-left">
+                                    <label for="company">Company Name</label>
+                                    <input class="form-input-field" type="text" id="company" name="company" class="form-control">
+                                </div>
+                                <div class="form-group form-padding-right">
+                                    <label for="email">Your Email <span class="require-red">*</span> </label>
+                                    <input class="form-input-field" type="text" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group form-padding-left">
+                                    <label for="phone">Your Telephone Number <span class="require-red">*</span> </label>
+                                    <input class="form-input-field" type="tel" id="phone" name="phone" class="form-control" required>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label for="company">Company Name</label>
-                                <input class="form-input-field" type="text" id="company" name="company" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input class="form-input-field" type="text" id="email" name="email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Your Telephone Number</label>
-                                <input class="form-input-field" type="tel" id="phone" name="phone" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
+                                <label for="message">Message <span class="require-red">*</span> </label>
                                 <textarea class="form-input-field" id="message" name="message" class="form-control" rows="5" required></textarea>
                             </div>
                             <div class="form-group">
                                 <div class="form-check">
-                                    <input type="checkbox" id="marketing" name="marketing" class="form-check-input">
-                                    <label for="marketing" class="form-check-label">
-                                        Please tick this box if you wish to recieve marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
+                                    <label>
+                                        <span class="media-left checkbox-left">
+                                            <input type="checkbox" id="marketing_preference" type="checkbox" value="1">
+                                            <span class="custom-checkbox"></span>
+                                        </span>
+                                        <span class="media-body">
+                                            Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
+                                        </span>
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="cu-form-legal">
+                                <p>
+                                    This site is protected by reCAPTCHA and the Google
+                                    <a href="#"><u>Privacy Policy</u></a>
+                                    and
+                                    <a href="#"><u>Terms of service</u></a>
+                                    apply.
+                                </p>
+                            </div>
+                            <div class="form-group cu-form-button-group">
                                 <button type="submit" class="btn cu-form-btn">Send Enquiry</button>
+                                <small class="cu-helper">
+                                    <span class="require-red">*</span>
+                                    Field Required
+                                </small>
                             </div>
                         </form>
                     </div>

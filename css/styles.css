@@ -140,6 +140,22 @@ footer, .bottom-footer {
   margin-top: 50px;
 }
 
+.top-middle-header {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #333645;
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+  z-index: 1;
+}
+.top-middle-header * {
+  font-size: 13px;
+  color: #333645;
+  text-decoration: none;
+}
+
 .contact-us-top {
   margin-top: 0;
 }
@@ -147,7 +163,7 @@ footer, .bottom-footer {
 .middle-header {
   background-color: #333645;
   margin: 0 0 50px 0;
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 .contact-us-top.section h1 {
@@ -290,6 +306,7 @@ footer, .bottom-footer {
 
 .contact-section-form {
   padding: 30px;
+  margin-bottom: 50px;
   border-radius: 10px;
   background-color: #e6e7e9;
   color: #333645;
@@ -322,6 +339,185 @@ footer, .bottom-footer {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
+.require-red {
+  color: red;
+}
+
+.cu-form-legal p, .cu-form-legal a {
+  font-size: 11px;
+  color: #333645;
+  font-weight: 600;
+  line-height: 1.42857143;
+}
+
+.cu-form-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cu-form-button-group .cu-form-btn {
+  background: #333645;
+}
+
+.form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.form-check label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: pointer;
+}
+
+.media-left {
+  position: relative;
+  margin-right: 10px;
+}
+
+.media-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 32px;
+}
+.media-body p, .media-body a {
+  color: #333645;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid #333645;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  cursor: pointer;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #333645;
+  border-color: #333645;
+}
+input[type=checkbox]:checked + .custom-checkbox:before {
+  content: "";
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  display: block;
+}
+
+.media-body {
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .top-middle-header {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .cu-offices-wrapper .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .middle-header {
+    background-color: white;
+  }
+  .middle-header .container h1 {
+    color: #333645;
+  }
+  .cu-offices-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-row .form-group {
+    width: 50%;
+  }
+  .form-row .form-padding-right {
+    padding-right: 15px;
+  }
+  .form-row .form-padding-left {
+    padding-left: 15px;
+  }
+  .cu-contact-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .contact-section-form {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .contact-section-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media (min-width: 992px) and (max-width: 1259px) {
+  .cu-offices-wrapper {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+  }
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;

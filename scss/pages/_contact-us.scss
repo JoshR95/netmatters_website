@@ -6,6 +6,22 @@
 /// TOP
 ////////////////////////////////
 
+// i had to add position relative and have a background colour to make the box shadow work
+.top-middle-header {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid #333645;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
+    padding: 14px 0 13px;
+    z-index: 1;  
+    *{
+        font-size: 13px;
+        color: $primary-black;
+        text-decoration: none;
+    }
+}
+
 .contact-us-top{
     // removing default margin
     margin-top: 0;
@@ -14,7 +30,7 @@
 .middle-header{
     background-color: $primary-black;
     margin: 0 0 50px 0;
-    padding: 24px 0;
+    padding: 20px 0;
 }
 
 .contact-us-top.section h1{
@@ -37,6 +53,7 @@
 .cu-offices-container{
     margin-top: 20px;
 }
+
 
 // making the office elements flex and display in a column by default
 .cu-offices-wrapper{
@@ -132,10 +149,6 @@
     }
 }
 
-// for some reason i had to set this to when not active or it would underline when the accordian wasnt set to active
-// .contact-section-accordian h3:not(.active) {
-//     text-decoration: underline;
-// }
 
 .contact-section-accordian h3.active {
     text-decoration: underline;
@@ -150,10 +163,7 @@
             text-decoration: underline;
         }
     }
-    // // for some reason i had to set this to when not active or it would underline when the accordian wasnt set to active
-    // h3.active {
-    //     text-decoration: underline;
-    // }
+
 }
 // here we are setting the content in the accordian to have max height of 0 so it isnt shown
 // when the h3 is clicked and its given the active class by js, we then give it a max-height and transition so it smoothly shows the content in a dropdown
@@ -173,6 +183,7 @@
 
  .contact-section-form{
     padding: 30px;
+    margin-bottom: 50px;
     border-radius: 10px;
     background-color: #e6e7e9;
     color: $primary-black;
@@ -207,6 +218,178 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, .6);
 }
 
+// this colours the asterix for the required input fields
+.require-red{
+    color: red;
+}
+
+.cu-form-legal{
+    p, a{
+        font-size: 11px;
+        color: $primary-black;
+        font-weight: 600;
+        line-height: 1.42857143;
+    }
+}
+
+
+// adds space between the btn and required text
+// also styles the button
+.cu-form-button-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cu-form-btn{
+        background: $primary-black;
+    }
+}
+
+
+/// CHECK BOX FOR FORM
+///////////////////////////
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+
+    label {
+        display: flex;
+        align-items: flex-start;
+        cursor: pointer;
+    }
+}
+
+.media-left {
+    position: relative;
+    margin-right: 10px;
+}
+
+.media-body {
+    flex: 1;
+    line-height: 32px;
+    p, a{
+        color: $primary-black;
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-checkbox {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: 2px solid #333645;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #333645;
+    border-color: #333645;
+    &:before {
+        content: '';
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        display: block;
+    }
+}
+
+.media-body {
+    margin-top: 5px;
+}
+
+
+///////////////////////////////
+
 /////////////////////////////////
 // MEDIA QUERIES
 /////////////////////////////////
+
+@media(min-width: 768px){
+    .top-middle-header{
+        display: block;
+    }
+}
+
+@media(max-width: 991px){
+    // this removes the container for the office elements untill at 992px so it confrims to netmatters styling
+    .cu-offices-wrapper {
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media(min-width: 992px){
+    .middle-header{
+        background-color: white;
+        .container{
+            h1{
+                color: $primary-black;
+            }
+        }
+    }
+
+    .cu-offices-wrapper{
+        flex-direction: row;
+    }
+
+
+    // this turns the first 4 rows of the contact form into flex rows so its two on each row and 2 rows
+    .form-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // were making the input fields 50% so they can have 2 on each row
+        .form-group{
+            width: 50%;
+        }
+        // adding padding between the input fields 
+        .form-padding-right{
+            padding-right: 15px;
+        }
+        .form-padding-left{
+            padding-left: 15px;
+        }
+    }
+    .cu-contact-section{
+        flex-direction: row;
+        // we have it in row-reverse so the form is on the left
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+
+    // this makes the form take up 2/3rds of the space
+    .contact-section-form {
+        flex: 2; 
+    }
+    // this makes the info take up 1/3rd of the space
+    .contact-section-info {
+        flex: 1;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1259px){
+    .cu-offices-wrapper{
+        width: 100%; 
+        max-width: 970px; 
+        margin: 0 auto;
+    }
+}
