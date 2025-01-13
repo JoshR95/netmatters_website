@@ -13,3 +13,72 @@ $(document).ready(function() {
         $(this).next('.accordian-dropdown-content').toggleClass('active');
     })
 });
+
+
+/////////////////////////////////////////////
+/// FORM VALIDATION 
+/////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    const inputs = form.querySelectorAll('input[required], textarea[required]');
+
+    // Validation patterns
+    const patterns = {
+        name: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
+        email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        phone: /^(?:\+?\d{10,}|\d{10,})$/
+    };
+
+    const showError = (input) => {
+        input.classList.add('invalid');
+    };
+
+    const removeError = (input) => {
+        input.classList.remove('invalid');
+    };
+
+    const validateInput = (input) => {
+        // Check if empty
+        if (!input.value.trim()) {
+            showError(input);
+            return false;
+        }
+
+        // Pattern validation for specific fields
+        if (patterns[input.id]) {
+            if (!patterns[input.id].test(input.value.trim())) {
+                showError(input);
+                return false;
+            }
+        }
+
+        removeError(input);
+        return true;
+    };
+
+    // Real-time validation
+    inputs.forEach(input => {
+        input.addEventListener('blur', () => validateInput(input));
+        input.addEventListener('input', () => validateInput(input));
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+        
+        inputs.forEach(input => {
+            if (!validateInput(input)) {
+                isValid = false;
+            }
+        });
+
+        if (isValid) {
+            form.removeEventListener('submit', arguments.callee);
+            form.submit();
+        }
+    });
+});

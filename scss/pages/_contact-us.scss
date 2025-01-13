@@ -244,6 +244,26 @@
     }
 }
 
+.form-input-field{
+    color: $primary-black;
+    font-size: 14px;
+    font-family: $font-family--primary;
+}
+
+/// FORM ERROR MESSAGES
+///////////////////////////
+
+.form-input-field.invalid {
+    border-color: #ff0000;
+    outline-color: #ff0000;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.8em;
+    margin-top: 5px;
+    min-height: 1em;
+}
 
 /// CHECK BOX FOR FORM
 ///////////////////////////
@@ -343,6 +363,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
         .container{
             h1{
                 color: $primary-black;
+                padding-left: 20px;
             }
         }
     }

@@ -365,6 +365,24 @@ footer, .bottom-footer {
   background: #333645;
 }
 
+.form-input-field {
+  color: #333645;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-input-field.invalid {
+  border-color: #ff0000;
+  outline-color: #ff0000;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 0.8em;
+  margin-top: 5px;
+  min-height: 1em;
+}
+
 .form-check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,6 +483,7 @@ input[type=checkbox]:checked + .custom-checkbox:before {
   }
   .middle-header .container h1 {
     color: #333645;
+    padding-left: 20px;
   }
   .cu-offices-wrapper {
     -webkit-box-orient: horizontal;

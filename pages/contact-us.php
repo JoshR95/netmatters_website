@@ -169,34 +169,39 @@
                         </div>
                     </div>
                     <div class="contact-section-form">
-                        <form action="process-contact.php" method="post">
+                        <form action="process-contact.php" method="post" id="contactForm" novalidate>
                             <div class="form-row">
                                 <div class="form-group form-padding-right">
-                                    <label for="name">Your Name <span class="require-red">*</span> </label>
-                                    <input class="form-input-field" type="text" id="name" name="name" class="form-control" required>
+                                    <label for="name">Your Name <span class="require-red">*</span></label>
+                                    <input class="form-input-field" type="text" id="name" name="name" required>
                                 </div>
+                                
                                 <div class="form-group form-padding-left">
                                     <label for="company">Company Name</label>
-                                    <input class="form-input-field" type="text" id="company" name="company" class="form-control">
+                                    <input class="form-input-field" type="text" id="company" name="company">
                                 </div>
+
                                 <div class="form-group form-padding-right">
-                                    <label for="email">Your Email <span class="require-red">*</span> </label>
-                                    <input class="form-input-field" type="text" id="email" name="email" class="form-control" required>
+                                    <label for="email">Your Email <span class="require-red">*</span></label>
+                                    <input class="form-input-field" type="email" id="email" name="email" required>
                                 </div>
+
                                 <div class="form-group form-padding-left">
-                                    <label for="phone">Your Telephone Number <span class="require-red">*</span> </label>
-                                    <input class="form-input-field" type="tel" id="phone" name="phone" class="form-control" required>
+                                    <label for="phone">Your Telephone Number <span class="require-red">*</span></label>
+                                    <input class="form-input-field" type="tel" id="phone" name="phone" required>
                                 </div>
                             </div>
+
                             <div class="form-group">
-                                <label for="message">Message <span class="require-red">*</span> </label>
-                                <textarea class="form-input-field" id="message" name="message" class="form-control" rows="5" required></textarea>
+                                <label for="message">Message <span class="require-red">*</span></label>
+                                <textarea class="form-input-field" id="message" name="message" rows="5" required>Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                             </div>
+
                             <div class="form-group">
                                 <div class="form-check">
                                     <label>
                                         <span class="media-left checkbox-left">
-                                            <input type="checkbox" id="marketing_preference" type="checkbox" value="1">
+                                            <input type="checkbox" id="marketing_preference" name="marketing_preference" value="1">
                                             <span class="custom-checkbox"></span>
                                         </span>
                                         <span class="media-body">
@@ -205,6 +210,7 @@
                                     </label>
                                 </div>
                             </div>
+
                             <div class="cu-form-legal">
                                 <p>
                                     This site is protected by reCAPTCHA and the Google
@@ -214,6 +220,7 @@
                                     apply.
                                 </p>
                             </div>
+
                             <div class="form-group cu-form-button-group">
                                 <button type="submit" class="btn cu-form-btn">Send Enquiry</button>
                                 <small class="cu-helper">
