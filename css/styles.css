@@ -466,6 +466,32 @@ input[type=checkbox]:checked + .custom-checkbox:before {
   margin-top: 5px;
 }
 
+.form-success {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.form-error {
+  background-color: #ce4125;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #ce4125;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+.error {
+  border-color: #ce4125 !important;
+}
+
 @media (min-width: 768px) {
   .top-middle-header {
     display: block;

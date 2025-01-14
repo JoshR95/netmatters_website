@@ -19,66 +19,109 @@ $(document).ready(function() {
 /// FORM VALIDATION 
 /////////////////////////////////////////////
 
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    if (!form) return;
+$(document).ready(function() {
+    // Form validation
+    function validateForm() {
+        let isValid = true;
+        const errors = {};
 
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-
-    // Validation patterns
-    const patterns = {
-        name: /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/,
-        email: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        phone: /^(?:\+?\d{10,}|\d{10,})$/
-    };
-
-    const showError = (input) => {
-        input.classList.add('invalid');
-    };
-
-    const removeError = (input) => {
-        input.classList.remove('invalid');
-    };
-
-    const validateInput = (input) => {
-        // Check if empty
-        if (!input.value.trim()) {
-            showError(input);
-            return false;
+        // Name validation
+        const name = $('#name').val().trim();
+        if (!name) {
+            errors.name = 'Name is required';
+            isValid = false;
         }
 
-        // Pattern validation for specific fields
-        if (patterns[input.id]) {
-            if (!patterns[input.id].test(input.value.trim())) {
-                showError(input);
-                return false;
-            }
+        // Email validation
+        const email = $('#email').val().trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email) {
+            errors.email = 'Email is required';
+            isValid = false;
+        } else if (!emailRegex.test(email)) {
+            errors.email = 'Please enter a valid email';
+            isValid = false;
         }
 
-        removeError(input);
-        return true;
-    };
+        // Phone validation
+        const phone = $('#phone').val().trim();
+        if (!phone) {
+            errors.phone = 'Phone number is required';
+            isValid = false;
+        }
 
-    // Real-time validation
-    inputs.forEach(input => {
-        input.addEventListener('blur', () => validateInput(input));
-        input.addEventListener('input', () => validateInput(input));
-    });
+        // Message validation
+        const message = $('#message').val().trim();
+        if (!message) {
+            errors.message = 'Message is required';
+            isValid = false;
+        }
+
+        return { isValid, errors };
+    }
+
+    // Show error message under input
+    function showError(field, message) {
+        const errorDiv = $(`<div class="error-message">${message}</div>`);
+        $(field).addClass('error').after(errorDiv);
+    }
+
+    // Clear all error messages
+    function clearErrors() {
+        $('.error-message').remove();
+        $('.error').removeClass('error');
+        $('.form-success, .form-error').remove();
+    }
 
     // Form submission
-    form.addEventListener('submit', function(e) {
+    $('#contactForm').on('submit', function(e) {
         e.preventDefault();
-        let isValid = true;
-        
-        inputs.forEach(input => {
-            if (!validateInput(input)) {
-                isValid = false;
+        clearErrors();
+
+        const validation = validateForm();
+        if (!validation.isValid) {
+            // Show validation errors
+            Object.keys(validation.errors).forEach(key => {
+                showError($(`#${key}`), validation.errors[key]);
+            });
+            return;
+        }
+
+        // Get form data
+        let formData = $(this).serialize();
+
+        // Submit form using AJAX
+        $.ajax({
+            type: 'POST',
+            url: 'process-contact.php',
+            data: formData,
+            dataType: 'json',
+            success: function(response) {
+                if (response.success) {
+                    // Clear the form
+                    $('#contactForm')[0].reset();
+                    // Show simple success message
+                    $('.contact-section-form').prepend('<div class="form-success">Message sent successfully</div>');
+                } else {
+                    // Show simple error message
+                    $('.contact-section-form').prepend('<div class="form-error">Failed to send message</div>');
+                }
+            },
+            error: function() {
+                // Show simple error message
+                $('.contact-section-form').prepend('<div class="form-error">Failed to send message</div>');
             }
         });
+    });
 
-        if (isValid) {
-            form.removeEventListener('submit', arguments.callee);
-            form.submit();
+    // Real-time validation on blur
+    $('#contactForm input, #contactForm textarea').on('blur', function() {
+        clearErrors();
+        const field = $(this);
+        const value = field.val().trim();
+        
+        if (!value && field.prop('required')) {
+            showError(field, `${field.prev('label').text().replace(' *', '')} is required`);
         }
     });
 });

@@ -334,6 +334,34 @@ input[type="checkbox"]:checked + .custom-checkbox {
     margin-top: 5px;
 }
 
+//// FORM VALIDATION
+/////////////////////////////////////////
+
+.form-success {
+    background-color: $netmatters-green;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.form-error {
+    background-color: $netmatters-red;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: $netmatters-red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: $netmatters-red !important;
+}
 
 ///////////////////////////////
 
