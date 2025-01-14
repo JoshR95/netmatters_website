@@ -12,7 +12,7 @@
                             <span class="icon-mouse"></span>
                             <span class="large-screen-mouse__text">SUPPORT</span>
                         </a>
-                        <a href="#" class="large-screen-paperplane">
+                        <a href="/pages/contact-us.php" class="large-screen-paperplane">
                             <span class="icon-paperplane"></span>
                             <span class="large-screen-paperplane__text">CONTACT</span>
                         </a>
