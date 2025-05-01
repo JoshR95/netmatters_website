@@ -2,6 +2,7 @@
     margin-top: 50px;
 }
 
+
 ////////////////////////////////
 /// TOP
 ////////////////////////////////
@@ -46,12 +47,15 @@
 /// CU-OFFICES
 ////////////////////////////////
 
+
 .cu-offices{
     margin-bottom: 40px;
 }
 
+
 .cu-offices-container{
     margin-top: 20px;
+    padding-left: 0 !important;
 }
 
 
@@ -63,7 +67,7 @@
 
 // adding some spacing with margin and box shadows for the office blocks
 .cu-offices-element{
-    margin-top: 30px;
+    margin: 30px 15px 0 15px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
 }
 
@@ -89,7 +93,7 @@
     border: 1px solid #ccc;
     h2{
         margin: 0;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 400;
         color: $primary-black;
     }
@@ -391,7 +395,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
         .container{
             h1{
                 color: $primary-black;
-                padding-left: 20px;
+                // padding-left: 20px;
             }
         }
     }

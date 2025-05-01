@@ -43,7 +43,7 @@
                 <div class="cu-offices">
                     <div class="cu-offices-container container">
                         <div class="cu-offices-wrapper">
-                            <div class="container">
+                            <!-- <div class="container"> -->
                                 <div class="cu-offices-element office-bottom-spacing">
                                     <div class="cambridge-office">
                                         <div class="offices-image">
@@ -73,8 +73,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="container">
+                            <!-- </div> -->
+                            <!-- <div class="container"> -->
                                 <div class="cu-offices-element office-bottom-spacing">
                                     <div class="wymondham-office">
                                         <div class="offices-image">
@@ -104,9 +104,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="container">
-                                <div class="cu-offices-element">
+                            <!-- </div> -->
+                            <!-- <div class="container"> -->
+                                <div class="cu-offices-element office-bottom-spacing">
                                     <div class="great-yarmouth-office">
                                         <div class="offices-image">
                                             <a href="#">
@@ -135,7 +135,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
