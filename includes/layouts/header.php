@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header-bar-container">
                 <div class="top-header">
-                    <a href="#">
+                    <a href="../../index.php">
                         <img class="header-netmatters" src="/img/f-logo.png" srcset="/img/f-logo.webp" alt="Netmatters Logo in black">
                     </a>
                     <span class="icon-phone_in_talk header-phone-icon"></span>

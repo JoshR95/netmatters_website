@@ -45,8 +45,12 @@ $(document).ready(function() {
 
         // Phone validation
         const phone = $('#phone').val().trim();
+        const phoneRegex = /^(?:0|\+44)(?:\d\s?){9,10}$/;
         if (!phone) {
             errors.phone = 'Phone number is required';
+            isValid = false;
+        } else if (!phoneRegex.test(phone)) {
+            errors.phone = 'Please enter a valid UK phone number';
             isValid = false;
         }
 
