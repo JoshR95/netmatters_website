@@ -160,10 +160,11 @@
     .banner-container{
         height: 600px;
     }
+    .banner-slider .banner-slide,
     .banner-slider .banner-slide::before {
         height: 600px;
     }
-    .slide-1-banner-image{
+    .banner-image {
         height: 600px;
     }
     /////////////////////////////
