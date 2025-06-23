@@ -24,8 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors['email'] = 'Email is required';
     } else {
         $emailRegex = '/^[^\s@]+@[^\s@]+\.[^\s@]+$/';
-        // preg_match() test if $email matches the $emailRegex pattern,
-        // the ! negates it so the error is set when it doesnt match
         if (!preg_match($emailRegex, $email)) {
             $errors['email'] = 'Please enter a valid email';
         }
@@ -47,12 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // If there are validation errors, return them
-    // If errors array is not empty
     if (!empty($errors)) {
         echo json_encode([
-            // Tells javaScript the form submission failed
             'success' => false, 
-            // sends the error message to javaScript
             'errors' => $errors
         ]);
         exit;

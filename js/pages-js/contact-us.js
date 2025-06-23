@@ -107,8 +107,16 @@ $(document).ready(function() {
                     // Show simple success message
                     $('.contact-section-form').prepend('<div class="form-success">Message sent successfully</div>');
                 } else {
-                    // Show simple error message
-                    $('.contact-section-form').prepend('<div class="form-error">Failed to send message</div>');
+                    // Handle validation errors from PHP
+                    if (response.errors) {
+                        // Show specific validation errors
+                        Object.keys(response.errors).forEach(key => {
+                            showError($(`#${key}`), response.errors[key]);
+                        });
+                    } else {
+                        // Show generic error message
+                        $('.contact-section-form').prepend('<div class="form-error">Failed to send message</div>');
+                    }
                 }
             },
             error: function() {

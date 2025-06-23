@@ -107,7 +107,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 44px;
+    bottom: 20px;
     text-align: center;
 
     
@@ -193,5 +193,10 @@
         p{
             font-size: 26px;
         }
+    }
+    
+    // moves the dots down a bit to be in correct position in full screen
+    .slick-dots {
+        bottom: 44px;
     }
 }
