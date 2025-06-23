@@ -293,6 +293,7 @@ footer, .bottom-footer {
 }
 .contact-section-accordian h3:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .accordian-dropdown-content {

@@ -151,7 +151,7 @@
                         </div>
                         <div class="contact-section-info-bottom">
                             <div class="contact-section-accordian">
-                                <h3>Out of Hours IT Support</h3>
+                                <h3>Out of Hours IT Support <span class="icon-chevron-down"> </span></h3>
                                 <div class="accordian-dropdown-content">
                                     <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                     <p>
