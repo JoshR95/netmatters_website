@@ -30,9 +30,8 @@ $articles = $stmt-> fetchAll();
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+        <?php include 'includes/layouts/header.php'; ?>
         <div id="body-container">
-
-            <?php include 'includes/layouts/header.php'; ?>
 
             <div id="banner">
                 <div class="banner-container dark-overlay">

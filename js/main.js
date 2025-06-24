@@ -125,7 +125,7 @@ $(function() {
     const $sidebar = $('.sidebar');
     const $bodyContainer = $('#body-container');
     const $body = $('body');
-    const $footer = $('footer, .bottom-footer');  // Add this line
+    const $footer = $('footer, .bottom-footer');
     
     // this checks if content-overlay exists, if it doesnt it adds the dark overlay to the screen
     //  if length is 0 it returns true so appends the overlay div,
@@ -146,7 +146,8 @@ $(function() {
     
     // Hamburger click event
     $hamburger.on('click', function(e) {
-        e.stopPropagation(); // Prevent click from bubbling to body
+        // Prevent click from bubbling to body
+        e.stopPropagation();
         toggleSidebar();
     });
     

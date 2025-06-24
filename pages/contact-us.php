@@ -24,9 +24,8 @@
         <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
+        <?php include '../includes/layouts/header.php'; ?>
         <div id="body-container">
-            <?php include '../includes/layouts/header.php'; ?>
-
             <div id="middle">
                 <div class="contact-us-top section">
                     <div class="top-middle-header">
